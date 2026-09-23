@@ -23,3 +23,4 @@ exports all added reviews from that tab, one row per model and sample, with a
 column for each scoring tab. Names, scores, preferences, and notes are not sent
 to a server or stored across reloads. Download the CSV before closing or
 reloading the tab.
+.
