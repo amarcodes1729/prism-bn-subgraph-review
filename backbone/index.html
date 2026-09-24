@@ -27,6 +27,18 @@
     <section class="review">
       <h2>Human scores</h2>
       <p>Use continuous scores from 0 to 1 for the five criteria. The separate text score is from 1 to 5.</p>
+      <details class="scoring-guide" open>
+        <summary>Scoring guide — keep this open while reviewing</summary>
+        <div class="scoring-guide-body">
+          <div class="guide-item"><strong>Nodes</strong><span>How completely does the generated text cover the distinct concepts, entities, and variables in the original?</span></div>
+          <div class="guide-item"><strong>States</strong><span>Are the original values, categories, dates, quantities, and alternatives represented under the right concepts?</span></div>
+          <div class="guide-item"><strong>Edges</strong><span>Are the original connections, directions, dependencies, and relationships represented without reversals or inventions?</span></div>
+          <div class="guide-item"><strong>Relationship type</strong><span>Does the generated text preserve whether a relationship is causal, historical, administrative, conditional, temporal, or merely associated?</span></div>
+          <div class="guide-item"><strong>Overall similarity</strong><span>How faithfully does the generated text preserve the original meaning, scope, important facts, and qualifiers?</span></div>
+          <div class="guide-item"><strong>Direct text score</strong><span>Give one independent overall rating for the original versus generated text, from 1 to 5.</span></div>
+        </div>
+        <div class="score-scale"><strong>Scale:</strong> 0.0 = no meaningful coverage · 0.5 = partial or mixed coverage · 1.0 = complete faithful coverage. For the direct score, 1 = very poor match, 3 = mixed match, and 5 = highly faithful match. Decimals are allowed.</div>
+      </details>
       <div class="scores">
         <label>Nodes<input data-score="nodes" type="number" min="0" max="1" step="any"></label>
         <label>States<input data-score="states" type="number" min="0" max="1" step="any"></label>
