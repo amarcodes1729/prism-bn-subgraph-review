@@ -23,6 +23,94 @@ function graphFromRaw(raw) {
   return { nodes: raw.nodes || [], edges: raw.edges || [], joints: raw.joints || [] };
 }
 
+function displayGraph(raw) {
+  return {
+    nodes: (raw.nodes || []).map((node) => ({
+      node: node.node || node.name || "Unnamed node",
+      states: Array.isArray(node.states) ? node.states : [],
+    })),
+    edges: (raw.edges || []).map((edge) => ({
+      parent: String(edge.parent || ""), child: String(edge.child || ""),
+    })),
+  };
+}
+
+function svgElement(name, attributes = {}) {
+  const element = document.createElementNS("http://www.w3.org/2000/svg", name);
+  for (const [key, value] of Object.entries(attributes)) element.setAttribute(key, value);
+  return element;
+}
+
+function graphLayout(graph) {
+  const names = new Set(graph.nodes.map((node) => node.node));
+  const indegree = new Map(graph.nodes.map((node) => [node.node, 0]));
+  const children = new Map(graph.nodes.map((node) => [node.node, []]));
+  for (const edge of graph.edges) {
+    if (!names.has(edge.parent) || !names.has(edge.child)) continue;
+    indegree.set(edge.child, indegree.get(edge.child) + 1);
+    children.get(edge.parent).push(edge.child);
+  }
+  const levels = new Map();
+  const queue = graph.nodes.filter((node) => indegree.get(node.node) === 0).map((node) => node.node);
+  queue.forEach((name) => levels.set(name, 0));
+  for (let cursor = 0; cursor < queue.length; cursor += 1) {
+    const current = queue[cursor];
+    for (const child of children.get(current) || []) {
+      levels.set(child, Math.max(levels.get(child) || 0, (levels.get(current) || 0) + 1));
+      indegree.set(child, indegree.get(child) - 1);
+      if (indegree.get(child) === 0) queue.push(child);
+    }
+  }
+  const fallback = levels.size ? Math.max(...levels.values()) + 1 : 0;
+  graph.nodes.forEach((node) => { if (!levels.has(node.node)) levels.set(node.node, fallback); });
+  const groups = new Map();
+  graph.nodes.forEach((node) => { const level = levels.get(node.node); if (!groups.has(level)) groups.set(level, []); groups.get(level).push(node.node); });
+  const nodeW = 190, nodeH = 68, xGap = 65, yGap = 28, margin = 30;
+  const columns = [...groups.keys()].sort((a, b) => a - b);
+  const maxRows = Math.max(1, ...[...groups.values()].map((group) => group.length));
+  const width = Math.max(560, margin * 2 + columns.length * nodeW + Math.max(0, columns.length - 1) * xGap);
+  const height = Math.max(330, margin * 2 + maxRows * nodeH + Math.max(0, maxRows - 1) * yGap);
+  const positions = new Map();
+  columns.forEach((level, column) => {
+    const group = groups.get(level);
+    const groupHeight = group.length * nodeH + Math.max(0, group.length - 1) * yGap;
+    const yStart = (height - groupHeight) / 2;
+    group.forEach((name, row) => positions.set(name, { x: margin + column * (nodeW + xGap), y: yStart + row * (nodeH + yGap) }));
+  });
+  return { width, height, positions, nodeW, nodeH };
+}
+
+function renderGraph(targetId, raw, accent, label) {
+  const target = $(targetId);
+  target.replaceChildren();
+  const graph = displayGraph(raw);
+  const layout = graphLayout(graph);
+  const svg = svgElement("svg", { viewBox: `0 0 ${layout.width} ${layout.height}`, role: "img", "aria-label": label });
+  const markerId = `arrow-${targetId}`;
+  const defs = svgElement("defs");
+  const marker = svgElement("marker", { id: markerId, markerWidth: 9, markerHeight: 7, refX: 8, refY: 3.5, orient: "auto", markerUnits: "strokeWidth" });
+  marker.append(svgElement("path", { d: "M0,0 L9,3.5 L0,7 Z", fill: "#78817d" }));
+  defs.append(marker); svg.append(defs);
+  for (const edge of graph.edges) {
+    const from = layout.positions.get(edge.parent); const to = layout.positions.get(edge.child);
+    if (!from || !to) continue;
+    const x1 = from.x + layout.nodeW, y1 = from.y + layout.nodeH / 2, x2 = to.x, y2 = to.y + layout.nodeH / 2;
+    const bend = Math.max(30, Math.abs(x2 - x1) * .42);
+    svg.append(svgElement("path", { class: "backbone-edge", d: `M ${x1} ${y1} C ${x1 + bend} ${y1}, ${x2 - bend} ${y2}, ${x2} ${y2}`, "marker-end": `url(#${markerId})` }));
+  }
+  for (const node of graph.nodes) {
+    const position = layout.positions.get(node.node); if (!position) continue;
+    const group = svgElement("g", { class: "backbone-node", tabindex: "0", role: "button", "aria-label": `Inspect ${node.node}` });
+    group.setAttribute("transform", `translate(${position.x} ${position.y})`);
+    group.append(svgElement("rect", { width: layout.nodeW, height: layout.nodeH, rx: 5, "data-accent": accent }));
+    const title = svgElement("title"); title.textContent = `${node.node}: ${node.states.join(", ") || "no states"}`; group.append(title);
+    const heading = svgElement("text", { x: 15, y: 23, class: "backbone-node-title" }); heading.textContent = node.node.length > 25 ? `${node.node.slice(0, 24)}…` : node.node;
+    const stateLine = svgElement("text", { x: 15, y: 47, class: "backbone-node-state" }); stateLine.textContent = `${node.states.length} states · ${node.states.slice(0, 2).join(", ")}`;
+    group.append(heading, stateLine); svg.append(group);
+  }
+  target.append(svg);
+}
+
 function renderNodes(targetId, nodes) {
   const target = $(targetId);
   target.replaceChildren();
@@ -136,8 +224,8 @@ function loadCase(caseId) {
   $("next").disabled = index === state.cases.length - 1;
   $("original").textContent = source?.text || "Original text unavailable";
   $("generated").textContent = data.generated;
-  $("truth").textContent = JSON.stringify(graphFromRaw(source || {}), null, 2);
-  $("prediction").textContent = JSON.stringify(data.prediction, null, 2);
+  renderGraph("truth-graph", source || {}, "green", "Ground truth backbone graph");
+  renderGraph("prediction-graph", data.prediction, "orange", "Generated backbone graph");
   renderNodes("truth-nodes", source?.nodes);
   renderNodes("prediction-nodes", data.prediction.nodes);
   renderStates("truth-states", source?.nodes);

@@ -29,8 +29,8 @@
       <div class="grid">
         <article><h2>Original text</h2><p class="panel-help">This is the reference article. Use it as the source of truth.</p><pre id="original"></pre></article>
         <article><h2>Generated text</h2><p class="panel-help">This was written from the generated backbone.</p><pre id="generated"></pre></article>
-        <article><h2>Ground truth backbone</h2><p class="panel-help">Reference graph supplied with the dataset.</p><pre id="truth"></pre></article>
-        <article><h2>Generated backbone</h2><p class="panel-help">GPT-5.6 backbone used to produce the generated text.</p><pre id="prediction"></pre></article>
+        <article><h2>Ground truth backbone</h2><p class="panel-help">Reference graph supplied with the dataset. Select a node for its states.</p><div id="truth-graph" class="network-canvas"></div></article>
+        <article><h2>Generated backbone</h2><p class="panel-help">GPT-5.6 backbone used to produce the generated text. Select a node for its states.</p><div id="prediction-graph" class="network-canvas"></div></article>
       </div>
     </div>
     <div id="nodes-panel" class="tab-panel"><div class="comparison-columns"><article><h2>Ground truth nodes</h2><p class="panel-help">Every reference node should be represented in the generated backbone.</p><div id="truth-nodes" class="inventory"></div></article><article><h2>Generated nodes</h2><p class="panel-help">Check for omitted, merged, or invented nodes.</p><div id="prediction-nodes" class="inventory"></div></article></div></div>

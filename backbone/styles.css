@@ -40,6 +40,15 @@ nav a.active { background: var(--green); color: white; box-shadow: 0 4px 10px rg
 .edge-item { padding: 9px 11px; border: 1px solid #e3e0d7; background: #fff; font-size: 11px; }
 .edge-item + .edge-item { border-top: 0; }
 .edge-item strong { color: var(--green-2); font-size: 15px; padding: 0 5px; }
+.network-canvas { min-height: 360px; height: 360px; overflow: auto; border: 1px solid #e1ded5; border-radius: 3px; background-color: #f6f5f0; background-image: radial-gradient(#d4d4cc .8px, transparent .8px); background-size: 18px 18px; }
+.network-canvas svg { display: block; min-width: 100%; }
+.backbone-edge { fill: none; stroke: #78817d; stroke-width: 1.5; opacity: .82; }
+.backbone-node { cursor: pointer; }
+.backbone-node rect { fill: #fff; stroke: #929b97; stroke-width: 1.2; filter: drop-shadow(0 3px 5px rgba(20, 38, 31, .08)); }
+.backbone-node rect[data-accent="orange"] { stroke: var(--orange); }
+.backbone-node:hover rect, .backbone-node:focus rect { fill: #f3f6df; stroke: var(--green-2); stroke-width: 2; }
+.backbone-node-title { fill: var(--ink); font: 600 12px Inter, ui-sans-serif, sans-serif; }
+.backbone-node-state { fill: #75807b; font: 10px Inter, ui-sans-serif, sans-serif; }
 main { max-width: 1500px; margin: 0 auto; padding: 0 22px 90px; }
 .toolbar, .meta, article, .review, .scoring-guide { border: 1px solid var(--line); border-radius: 5px; background: var(--surface); box-shadow: 0 7px 24px rgba(23, 36, 31, .05); }
 .toolbar { display: flex; align-items: end; flex-wrap: wrap; gap: 12px; margin-top: 26px; padding: 22px 25px; }
