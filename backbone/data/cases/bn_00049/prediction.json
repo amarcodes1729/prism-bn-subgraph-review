@@ -1,0 +1,341 @@
+{
+  "nodes": [
+    {
+      "node": "activist constituency",
+      "states": [
+        "poor people",
+        "working people",
+        "none"
+      ]
+    },
+    {
+      "node": "campaign objective",
+      "states": [
+        "rights for poor people",
+        "end to poverty",
+        "none"
+      ]
+    },
+    {
+      "node": "organizational orientation",
+      "states": [
+        "militant activism",
+        "left-wing anarchism",
+        "anti-poverty campaigning",
+        "none"
+      ]
+    },
+    {
+      "node": "protest tactic",
+      "states": [
+        "sit-in",
+        "squat",
+        "vandalism",
+        "disruptive protest",
+        "small-scale riot",
+        "none"
+      ]
+    },
+    {
+      "node": "protest target",
+      "states": [
+        "low-income housing project closure",
+        "2010 Winter Olympics",
+        "none"
+      ]
+    },
+    {
+      "node": "public response",
+      "states": [
+        "considerable attention",
+        "none"
+      ]
+    },
+    {
+      "node": "social condition",
+      "states": [
+        "poverty",
+        "homelessness",
+        "none"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "parent": "activist constituency",
+      "child": "campaign objective"
+    },
+    {
+      "parent": "social condition",
+      "child": "campaign objective"
+    },
+    {
+      "parent": "campaign objective",
+      "child": "protest target"
+    },
+    {
+      "parent": "campaign objective",
+      "child": "protest tactic"
+    },
+    {
+      "parent": "organizational orientation",
+      "child": "protest tactic"
+    },
+    {
+      "parent": "protest target",
+      "child": "protest tactic"
+    },
+    {
+      "parent": "protest tactic",
+      "child": "public response"
+    }
+  ],
+  "cpds": [
+    {
+      "parent": "activist constituency",
+      "child": "campaign objective",
+      "matrix": [
+        [
+          0.5185,
+          0.4722,
+          0.3
+        ],
+        [
+          0.4444,
+          0.4444,
+          0.2
+        ],
+        [
+          0.037,
+          0.0833,
+          0.5
+        ]
+      ]
+    },
+    {
+      "parent": "social condition",
+      "child": "campaign objective",
+      "matrix": [
+        [
+          0.4151,
+          0.4687,
+          0.2667
+        ],
+        [
+          0.5283,
+          0.4375,
+          0.2
+        ],
+        [
+          0.0566,
+          0.0937,
+          0.5333
+        ]
+      ]
+    },
+    {
+      "parent": "campaign objective",
+      "child": "protest target",
+      "matrix": [
+        [
+          0.5714,
+          0.3913,
+          0.4
+        ],
+        [
+          0.3265,
+          0.5217,
+          0.2
+        ],
+        [
+          0.102,
+          0.087,
+          0.4
+        ]
+      ]
+    },
+    {
+      "parent": "campaign objective",
+      "child": "protest tactic",
+      "matrix": [
+        [
+          0.1875,
+          0.1702,
+          0.1
+        ],
+        [
+          0.1667,
+          0.1489,
+          0.1
+        ],
+        [
+          0.1458,
+          0.1277,
+          0.1
+        ],
+        [
+          0.2292,
+          0.2553,
+          0.1
+        ],
+        [
+          0.1667,
+          0.1915,
+          0.1
+        ],
+        [
+          0.1042,
+          0.1064,
+          0.5
+        ]
+      ]
+    },
+    {
+      "parent": "organizational orientation",
+      "child": "protest tactic",
+      "matrix": [
+        [
+          0.1571,
+          0.14,
+          0.2,
+          0.1
+        ],
+        [
+          0.1429,
+          0.16,
+          0.1667,
+          0.05
+        ],
+        [
+          0.1857,
+          0.2,
+          0.1167,
+          0.05
+        ],
+        [
+          0.2286,
+          0.22,
+          0.2333,
+          0.1
+        ],
+        [
+          0.2,
+          0.18,
+          0.1167,
+          0.05
+        ],
+        [
+          0.0857,
+          0.1,
+          0.1667,
+          0.65
+        ]
+      ]
+    },
+    {
+      "parent": "protest target",
+      "child": "protest tactic",
+      "matrix": [
+        [
+          0.2222,
+          0.08,
+          0.1
+        ],
+        [
+          0.2222,
+          0.06,
+          0.1
+        ],
+        [
+          0.1778,
+          0.12,
+          0.1
+        ],
+        [
+          0.2,
+          0.34,
+          0.1
+        ],
+        [
+          0.0667,
+          0.32,
+          0.1
+        ],
+        [
+          0.1111,
+          0.08,
+          0.5
+        ]
+      ]
+    },
+    {
+      "parent": "protest tactic",
+      "child": "public response",
+      "matrix": [
+        [
+          0.6875,
+          0.6429,
+          0.7143,
+          0.875,
+          0.9091,
+          0.2
+        ],
+        [
+          0.3125,
+          0.3571,
+          0.2857,
+          0.125,
+          0.0909,
+          0.8
+        ]
+      ]
+    }
+  ],
+  "inferred_components": [
+    {
+      "type": "node",
+      "value": "social condition",
+      "justification": "Present with compatible states and a CPD into campaign objective in subgraphs 002, 003, 004, and 006; retained when merging views that omit it."
+    },
+    {
+      "type": "node",
+      "value": "protest target",
+      "justification": "Present with compatible states and supported incident edges in subgraphs 001, 005, 006, 007, and 008; retained when merging views that omit it."
+    },
+    {
+      "type": "node",
+      "value": "organizational orientation",
+      "justification": "Present with compatible states and a CPD into protest tactic in subgraphs 001, 003, 008, and 009; retained when merging views that omit it."
+    },
+    {
+      "type": "node",
+      "value": "public response",
+      "justification": "Present with compatible states and a CPD from protest tactic in subgraphs 001, 002, and 003; retained when merging views that omit it."
+    },
+    {
+      "type": "edge",
+      "value": "social condition -> campaign objective",
+      "justification": "Repeatedly supported by an identical compatible CPD and combines acyclically with the other submitted components."
+    },
+    {
+      "type": "edge",
+      "value": "campaign objective -> protest target",
+      "justification": "Repeatedly supported by an identical compatible CPD in every submitted view containing protest target."
+    },
+    {
+      "type": "edge",
+      "value": "organizational orientation -> protest tactic",
+      "justification": "Repeatedly supported by an identical compatible CPD across multiple submitted views."
+    },
+    {
+      "type": "edge",
+      "value": "protest target -> protest tactic",
+      "justification": "Repeatedly supported by an identical compatible CPD in every submitted view containing both variables."
+    },
+    {
+      "type": "edge",
+      "value": "protest tactic -> public response",
+      "justification": "Repeatedly supported by an identical compatible CPD in all submitted views containing public response."
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "backbone_id": "bn_00035",
+  "source_id": "wiki_00034",
+  "subgraph_count": 2,
+  "hierarchy_levels": 1,
+  "judgment": {
+    "criteria": {
+      "nodes": {
+        "score": 0.8,
+        "reason": "Preserves technology ethics, technoethics, ethical thinking, technological development, producers, consumers, Hans Jonas, and Mario Bunge. Omits the technology age, societal transition, personal computers, subsequent devices, and information transfer."
+      },
+      "states": {
+        "score": 0.78,
+        "reason": "Retains new technologies rising in prominence and ethical dilemmas affecting both producers and consumers. Omits the original's characterization of the technology age as a transitional societal shift involving quick and easy information transfer."
+      },
+      "edges": {
+        "score": 0.79,
+        "reason": "Preserves the connections between technology and ethical inquiry, technological development and ethical concerns, and dilemmas and both producers and consumers. Omits the connection from computers and subsequent devices to rapid information transfer and does not explicitly preserve the field's evolution alongside technology."
+      },
+      "relationship_type": {
+        "score": 0.84,
+        "reason": "Most connections retain their ethical and developmental character. However, 'Technology poses an ethical dilemma' becomes the weaker 'can generate' dilemmas, and philosophers who 'have studied' technoethics become philosophers associated with the field's development, suggesting a contribution not explicitly stated in the original."
+      },
+      "overall_similarity": {
+        "score": 0.8,
+        "reason": "Accurately conveys the central subject, its application to emerging technologies, its relevance to producers and consumers, and the named philosophers. It loses the original's specific societal and information-transfer context and slightly alters the strength and nature of some claims."
+      }
+    },
+    "score_out_of_5": 4.01,
+    "overall_reason": "The generated text is a broadly faithful summary of the central ethical topic, but it omits the technology-age explanation and introduces small shifts in how technological dilemmas and the philosophers' roles are described."
+  },
+  "structural_metrics": {
+    "nodes": {
+      "correct": 6,
+      "predicted": 6,
+      "target": 9,
+      "missed": 3,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "f1": 0.8,
+      "missing_labels": [
+        "information transfer capability",
+        "societal context",
+        "technology medium"
+      ],
+      "extra_labels": []
+    },
+    "states": {
+      "correct": 20,
+      "predicted": 20,
+      "target": 30,
+      "missed": 10,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "f1": 0.8,
+      "missing_by_node": {
+        "information transfer capability": [
+          "easy transfer of information",
+          "none",
+          "quick transfer of information"
+        ],
+        "societal context": [
+          "none",
+          "technology age",
+          "transitional shift in society"
+        ],
+        "technology medium": [
+          "new technologies",
+          "none",
+          "personal computers",
+          "subsequent devices"
+        ]
+      },
+      "extra_by_node": {}
+    },
+    "edges": {
+      "correct": 6,
+      "predicted": 6,
+      "target": 8,
+      "missed": 2,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1": 0.8571428571428571,
+      "missing_due_to_absent_nodes": [
+        {
+          "parent": "information transfer capability",
+          "child": "societal context",
+          "absent_endpoints": [
+            "information transfer capability",
+            "societal context"
+          ]
+        },
+        {
+          "parent": "technology medium",
+          "child": "information transfer capability",
+          "absent_endpoints": [
+            "technology medium",
+            "information transfer capability"
+          ]
+        }
+      ],
+      "missing_relationships_between_present_nodes": [],
+      "extra_edges": []
+    },
+    "cpds": {
+      "skipped": false,
+      "predicted_edges": 6,
+      "target_edges": 8,
+      "matched_edges": 6,
+      "missing_edges": 2,
+      "extra_edges": 0,
+      "complete_target_edges": 6,
+      "target_numeric_cells": 93,
+      "comparable_numeric_cells": 72,
+      "missing_numeric_cells": 21,
+      "cell_coverage": 0.7741935483870968,
+      "mean_absolute_error": 2.499691399719499e-05,
+      "max_absolute_error": 4.7368421052629284e-05,
+      "complete_columns": 22,
+      "mean_column_kl": 6.447609011915759e-09
+    },
+    "full_coverage": {
+      "nodes": false,
+      "states": false,
+      "edges": false,
+      "nodes_states_edges": false
+    }
+  }
+}

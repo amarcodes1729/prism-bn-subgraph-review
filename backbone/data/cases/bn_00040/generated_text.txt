@@ -1,0 +1,3 @@
+An audio production system may take the form of an electronic device, application software, an integrated stand-alone unit, or a component system controlled by a central computer. Its central interface supports the principal stages of audio work, including recording, editing, and producing audio files, as well as altering multiple recordings and mixing multiple tracks.
+
+These functions enable the creation of specialized audio such as podcasts, sound effects, and complex recorded audio. In particular, workflows involving multiple recordings and tracks are closely associated with producing complex recorded material.

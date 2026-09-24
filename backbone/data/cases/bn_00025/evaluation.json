@@ -1,0 +1,94 @@
+{
+  "backbone_id": "bn_00025",
+  "source_id": "wiki_00024",
+  "subgraph_count": 15,
+  "hierarchy_levels": 1,
+  "judgment": {
+    "criteria": {
+      "nodes": {
+        "score": 0.9,
+        "reason": "The generated text preserves color books, governments, the four named national publications, World War I, and propaganda-related purposes and practices. It omits the explicit identification of diplomatic correspondence as collected material and the 17th-century origin."
+      },
+      "states": {
+        "score": 0.79,
+        "reason": "The named book colors and national associations are retained, as are educational and political purposes and white propaganda. However, the British Blue Books' status as the earliest examples and their 17th-century date are missing, and the original's statement that all major powers had color books in World War I is weakened to prominent examples."
+      },
+      "edges": {
+        "score": 0.85,
+        "reason": "Government publication, promotion of official positions, justification of action, assignment of blame, and the connection between document selection/presentation/order and propaganda are preserved. The British Blue Books' connection to the earliest historical period is lost. The generated text adds unsupported connections between crisis conditions and heavier concentration on current events, and between government curation and the publication's identity."
+      },
+      "relationship_type": {
+        "score": 0.86,
+        "reason": "The generated text largely retains the original's purpose relationships and qualified claim that curation can make a publication propaganda. However, it turns possible manipulation through selection and ordering into an assertion that presentation 'often involved' strategic practices, adds an unsupported claim of genuine material, and replaces the explicit historical statement that these books 'have been used' as white propaganda with the more hypothetical 'could function' as such."
+      },
+      "overall_similarity": {
+        "score": 0.85,
+        "reason": "The central definition, national examples, governmental purposes, and propaganda mechanism are faithfully conveyed. Fidelity is reduced by omission of the earliest British examples' date, less explicit coverage of diplomatic correspondence and universal World War I adoption, and added claims about authenticity and intensified current-event coverage during crises."
+      }
+    },
+    "score_out_of_5": 4.25,
+    "overall_reason": "The generated text closely preserves the main account of color books as official diplomatic collections used to advance governmental positions through selective presentation. It loses important historical specificity and introduces several unsupported elaborations, so it is substantially faithful but not complete."
+  },
+  "structural_metrics": {
+    "nodes": {
+      "correct": 8,
+      "predicted": 8,
+      "target": 8,
+      "missed": 0,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "missing_labels": [],
+      "extra_labels": []
+    },
+    "states": {
+      "correct": 34,
+      "predicted": 34,
+      "target": 34,
+      "missed": 0,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "missing_by_node": {},
+      "extra_by_node": {}
+    },
+    "edges": {
+      "correct": 9,
+      "predicted": 9,
+      "target": 9,
+      "missed": 0,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "missing_due_to_absent_nodes": [],
+      "missing_relationships_between_present_nodes": [],
+      "extra_edges": []
+    },
+    "cpds": {
+      "skipped": false,
+      "predicted_edges": 9,
+      "target_edges": 9,
+      "matched_edges": 9,
+      "missing_edges": 0,
+      "extra_edges": 0,
+      "complete_target_edges": 9,
+      "target_numeric_cells": 180,
+      "comparable_numeric_cells": 180,
+      "missing_numeric_cells": 0,
+      "cell_coverage": 1.0,
+      "mean_absolute_error": 1.4304892638234061e-05,
+      "max_absolute_error": 4.999999999999796e-05,
+      "complete_columns": 43,
+      "mean_column_kl": 1.12938203282805e-08
+    },
+    "full_coverage": {
+      "nodes": true,
+      "states": true,
+      "edges": true,
+      "nodes_states_edges": true
+    }
+  }
+}

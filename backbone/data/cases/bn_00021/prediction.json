@@ -1,0 +1,205 @@
+{
+  "nodes": [
+    {
+      "node": "historical rupture",
+      "states": [
+        "1917 Russian Revolution",
+        "Treaty of Brest-Litovsk",
+        "Allied intervention in the Russian Civil War",
+        "breakdown of US-Soviet relations",
+        "none"
+      ]
+    },
+    {
+      "node": "ideological orientation",
+      "states": [
+        "communism",
+        "capitalist democracy",
+        "democratic Europe",
+        "none"
+      ]
+    },
+    {
+      "node": "interstate relationship",
+      "states": [
+        "US-Soviet wartime alliance",
+        "strained Western-Soviet cooperation",
+        "mutual Western-Soviet suspicion",
+        "US-Soviet rivalry",
+        "none"
+      ]
+    },
+    {
+      "node": "territorial change",
+      "states": [
+        "Soviet Russia ceding territories to Germany",
+        "Soviet control of Eastern Europe",
+        "division of Europe",
+        "none"
+      ]
+    },
+    {
+      "node": "war outcome",
+      "states": [
+        "defeat of Nazi Germany",
+        "World War II victory by Allied powers",
+        "liberation of Eastern Europe from Nazi control",
+        "none"
+      ]
+    },
+    {
+      "node": "military presence",
+      "states": [
+        "Red Army presence in Eastern Europe",
+        "Western access to Berlin",
+        "none"
+      ]
+    },
+    {
+      "node": "regime installation",
+      "states": [
+        "Soviet establishment of communist regimes",
+        "Western preference for democratic governments",
+        "none"
+      ]
+    },
+    {
+      "node": "economic policy goal",
+      "states": [
+        "European financial reconstruction",
+        "stabilization of capitalist economies",
+        "economic cooperation among communist states",
+        "none"
+      ]
+    },
+    {
+      "node": "economic policy initiative",
+      "states": [
+        "Marshall Plan",
+        "Comecon",
+        "none"
+      ]
+    },
+    {
+      "node": "strategic perception",
+      "states": [
+        "Soviet expansionism",
+        "US imposition of influence in Europe",
+        "spread of communism",
+        "none"
+      ]
+    },
+    {
+      "node": "military confrontation",
+      "states": [
+        "Berlin Blockade",
+        "Berlin Airlift",
+        "brink of direct military conflict",
+        "none"
+      ]
+    },
+    {
+      "node": "policy response",
+      "states": [
+        "Soviet rejection of the Marshall Plan",
+        "Soviet establishment of Comecon",
+        "US provision of aid to Europe",
+        "none"
+      ]
+    },
+    {
+      "node": "conflict intensity",
+      "states": [
+        "diplomatic tensions",
+        "military tensions",
+        "geopolitical confrontation",
+        "Cold War solidification",
+        "none"
+      ]
+    },
+    {
+      "node": "security alliance formation",
+      "states": [
+        "creation of NATO",
+        "formalization of Western Bloc military alliances",
+        "none"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "parent": "historical rupture",
+      "child": "interstate relationship"
+    },
+    {
+      "parent": "historical rupture",
+      "child": "territorial change"
+    },
+    {
+      "parent": "ideological orientation",
+      "child": "interstate relationship"
+    },
+    {
+      "parent": "ideological orientation",
+      "child": "regime installation"
+    },
+    {
+      "parent": "territorial change",
+      "child": "interstate relationship"
+    },
+    {
+      "parent": "war outcome",
+      "child": "military presence"
+    },
+    {
+      "parent": "military presence",
+      "child": "regime installation"
+    },
+    {
+      "parent": "military presence",
+      "child": "strategic perception"
+    },
+    {
+      "parent": "regime installation",
+      "child": "strategic perception"
+    },
+    {
+      "parent": "economic policy goal",
+      "child": "economic policy initiative"
+    },
+    {
+      "parent": "economic policy initiative",
+      "child": "strategic perception"
+    },
+    {
+      "parent": "economic policy initiative",
+      "child": "policy response"
+    },
+    {
+      "parent": "military confrontation",
+      "child": "conflict intensity"
+    },
+    {
+      "parent": "military confrontation",
+      "child": "policy response"
+    },
+    {
+      "parent": "strategic perception",
+      "child": "conflict intensity"
+    },
+    {
+      "parent": "strategic perception",
+      "child": "policy response"
+    },
+    {
+      "parent": "interstate relationship",
+      "child": "conflict intensity"
+    },
+    {
+      "parent": "conflict intensity",
+      "child": "security alliance formation"
+    }
+  ],
+  "cpds": [],
+  "inferred_components": []
+}

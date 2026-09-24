@@ -1,0 +1,162 @@
+{
+  "backbone_id": "bn_00009",
+  "source_id": "wiki_00008",
+  "subgraph_count": 218,
+  "hierarchy_levels": 3,
+  "judgment": {
+    "criteria": {
+      "nodes": {
+        "score": 0.65,
+        "reason": "The generated text retains GDP, banking, production, consumption, trade, R&D, the dollar, Treasuries, gold, and major companies. However, it omits the original's household and employee incomes, income inequality, billionaires and their wealth, labor-market flexibility, job security, immigration, social security and expenditure, NYSE, Nasdaq, and equity and bond markets. It also omits the named trading partners: Mexico, Canada, China, Japan, and Germany."
+      },
+      "states": {
+        "score": 0.55,
+        "reason": "Several important values survive, including 26% of global output, $25 trillion in bank assets, 3.46% of GDP for R&D, one-fifth of global manufacturing, and 139 of the 500 largest companies. However, ninth- and tenth-place GDP-per-capita rankings become merely 'high,' and world's-largest production of petroleum, natural gas, and blood products becomes 'leading positions.' Missing values include income rankings, $5.7 trillion in billionaire wealth, roughly 30% social expenditure, and over $134.7 trillion in capital-market activity. The original's WWII, 2026, 2023, and 1990s time qualifications are also absent."
+      },
+      "edges": {
+        "score": 0.56,
+        "reason": "The generated text correctly links the United States to its GDP rankings, manufacturing share, import/export rankings, bank assets, and the dollar's international roles. It loses all connections concerning income, labor, migration, social protection, and stock exchanges. It also introduces connections not stated in the original, such as economic scale being associated with banking assets, the business environment and economic size supporting corporate presence, and macroeconomic conditions, Treasuries, and gold reinforcing the dollar's global role."
+      },
+      "relationship_type": {
+        "score": 0.6,
+        "reason": "Many retained relationships preserve their original descriptive or ranking character, and productivity, technology, infrastructure, and resources remain drivers of the economy. However, the generated text repeatedly turns separately reported facts into explanatory dependencies: trade is 'supported by' agreements and partnerships, business conditions support corporate presence, and macroeconomic conditions underpin the dollar. These causal or reinforcing relationships are not asserted in the original. Removing historical qualifications also turns claims such as relatively steady growth since WWII into broader, unqualified characterizations."
+      },
+      "overall_similarity": {
+        "score": 0.58,
+        "reason": "The generated text faithfully conveys much of the original's account of economic scale, production, consumption, innovation, and currency prominence. Nevertheless, it drops substantial sections on living standards, inequality, labor conditions, immigration, social spending, and financial exchanges, while weakening some exact rankings and removing all temporal anchors. Its added explanatory narrative also goes beyond the original's factual claims."
+      }
+    },
+    "score_out_of_5": 2.94,
+    "overall_reason": "This is a recognizable but substantially incomplete account of the original. Many headline economic facts and figures are preserved, but major socioeconomic and capital-market details disappear, and several new causal interpretations replace the original's more descriptive presentation."
+  },
+  "structural_metrics": {
+    "nodes": {
+      "correct": 13,
+      "predicted": 13,
+      "target": 20,
+      "missed": 7,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 0.65,
+      "f1": 0.787878787878788,
+      "missing_labels": [
+        "capital market depth",
+        "income and inequality condition",
+        "labor market condition",
+        "migration condition",
+        "social protection",
+        "trading partner composition",
+        "wealth concentration"
+      ],
+      "extra_labels": []
+    },
+    "states": {
+      "correct": 56,
+      "predicted": 56,
+      "target": 84,
+      "missed": 28,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "f1": 0.8,
+      "missing_by_node": {
+        "capital market depth": [
+          "$134.7 trillion combined equity and bond activity",
+          "none",
+          "vast capital markets",
+          "world's largest stock exchanges by market capitalization",
+          "world's largest stock exchanges by transaction volume"
+        ],
+        "income and inequality condition": [
+          "high income inequality among developed countries",
+          "highest median household income among OECD countries",
+          "none",
+          "sixth-highest average household income among OECD states",
+          "sixth-highest employee income among OECD states"
+        ],
+        "labor market condition": [
+          "highly flexible labor market",
+          "none",
+          "relatively low job security"
+        ],
+        "migration condition": [
+          "high net migration rate",
+          "immigrant-attracting labor market",
+          "none"
+        ],
+        "social protection": [
+          "highly efficient social security system",
+          "none",
+          "social expenditure around 30% of GDP"
+        ],
+        "trading partner composition": [
+          "Canada as major trading partner",
+          "China as major trading partner",
+          "Germany as major trading partner",
+          "Japan as major trading partner",
+          "Mexico as major trading partner",
+          "none"
+        ],
+        "wealth concentration": [
+          "$5.7 trillion billionaire wealth",
+          "none",
+          "world's highest number of billionaires"
+        ]
+      },
+      "extra_by_node": {}
+    },
+    "edges": {
+      "correct": 16,
+      "predicted": 16,
+      "target": 18,
+      "missed": 2,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 0.8888888888888888,
+      "f1": 0.9411764705882353,
+      "missing_due_to_absent_nodes": [
+        {
+          "parent": "income and inequality condition",
+          "child": "wealth concentration",
+          "absent_endpoints": [
+            "income and inequality condition",
+            "wealth concentration"
+          ]
+        },
+        {
+          "parent": "labor market condition",
+          "child": "migration condition",
+          "absent_endpoints": [
+            "labor market condition",
+            "migration condition"
+          ]
+        }
+      ],
+      "missing_relationships_between_present_nodes": [],
+      "extra_edges": []
+    },
+    "cpds": {
+      "skipped": false,
+      "predicted_edges": 16,
+      "target_edges": 18,
+      "matched_edges": 16,
+      "missing_edges": 2,
+      "extra_edges": 0,
+      "complete_target_edges": 16,
+      "target_numeric_cells": 375,
+      "comparable_numeric_cells": 351,
+      "missing_numeric_cells": 24,
+      "cell_coverage": 0.936,
+      "mean_absolute_error": 1.475924221022757e-05,
+      "max_absolute_error": 4.999999999999449e-05,
+      "complete_columns": 77,
+      "mean_column_kl": 5.791959298729013e-09
+    },
+    "full_coverage": {
+      "nodes": false,
+      "states": false,
+      "edges": false,
+      "nodes_states_edges": false
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "backbone_id": "bn_00013",
+  "source_id": "wiki_00012",
+  "subgraph_count": 13,
+  "hierarchy_levels": 1,
+  "judgment": {
+    "criteria": {
+      "nodes": {
+        "score": 0.96,
+        "reason": "The generated text retains hantavirus, HPS, Latin America and the Caribbean, biodiversity, infected rodents, Cricetidae, Andes virus, climate change, rainfall, temperature, extreme weather, and outbreaks. It adds geographic setting as an explanatory factor not identified in the original."
+      },
+      "states": {
+        "score": 0.92,
+        "reason": "High biodiversity, significant public-health risk, rodent reservoir status, and principal transmission through infected-rodent contact are preserved. However, Andes virus's uniquely human-to-human-transmissible status is reduced to simply having that transmission route, and HPS loses the original's particular emphasis."
+      },
+      "edges": {
+        "score": 0.9,
+        "reason": "The principal connections between climate change, environmental conditions, rodent dynamics, and outbreak potential are preserved, as are Cricetidae reservoir status and Andes virus human-to-human transmission. The generated text additionally makes biodiversity and geographic setting determinants of environmental conditions, whereas the original only identifies high biodiversity as regional context."
+      },
+      "relationship_type": {
+        "score": 0.87,
+        "reason": "Reservoir relationships and the primacy of rodent-contact transmission remain intact. However, the original's direct statement that climate change is altering conditions and amplifying rodent dynamics becomes an association with conditions that 'can' amplify populations. Likewise, Andes virus 'transmits between humans' becomes human-to-human transmission being 'associated with' it, weakening the original's definite and unique characterization."
+      },
+      "overall_similarity": {
+        "score": 0.92,
+        "reason": "The generated text faithfully preserves the main public-health account of climate-related environmental changes, rodent reservoirs, transmission, and hantavirus outbreak potential in Latin America and the Caribbean. Minor unsupported ecological elaborations, weaker causal wording, and loss of Andes virus's stated uniqueness prevent complete equivalence."
+      }
+    },
+    "score_out_of_5": 4.57,
+    "overall_reason": "The generated text closely matches the original's central entities and transmission-and-climate narrative, but adds a geographic/ecological dependency and softens several explicit claims, particularly climate causation and the uniqueness of Andes virus human-to-human transmission."
+  },
+  "structural_metrics": {
+    "nodes": {
+      "correct": 9,
+      "predicted": 9,
+      "target": 9,
+      "missed": 0,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "missing_labels": [],
+      "extra_labels": []
+    },
+    "states": {
+      "correct": 29,
+      "predicted": 29,
+      "target": 29,
+      "missed": 0,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "missing_by_node": {},
+      "extra_by_node": {}
+    },
+    "edges": {
+      "correct": 10,
+      "predicted": 10,
+      "target": 10,
+      "missed": 0,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "missing_due_to_absent_nodes": [],
+      "missing_relationships_between_present_nodes": [],
+      "extra_edges": []
+    },
+    "cpds": {
+      "skipped": false,
+      "predicted_edges": 10,
+      "target_edges": 10,
+      "matched_edges": 10,
+      "missing_edges": 0,
+      "extra_edges": 0,
+      "complete_target_edges": 10,
+      "target_numeric_cells": 96,
+      "comparable_numeric_cells": 96,
+      "missing_numeric_cells": 0,
+      "cell_coverage": 1.0,
+      "mean_absolute_error": 1.4303751803770295e-05,
+      "max_absolute_error": 4.545454545457073e-05,
+      "complete_columns": 32,
+      "mean_column_kl": 3.1662285551082825e-09
+    },
+    "full_coverage": {
+      "nodes": true,
+      "states": true,
+      "edges": true,
+      "nodes_states_edges": true
+    }
+  }
+}

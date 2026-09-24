@@ -1,0 +1,147 @@
+{
+  "backbone_id": "bn_00012",
+  "source_id": "wiki_00011",
+  "subgraph_count": 31,
+  "hierarchy_levels": 2,
+  "judgment": {
+    "criteria": {
+      "nodes": {
+        "score": 0.65,
+        "reason": "The generated text retains the Indus, its major tributaries, mountain ranges, tectonic plates, suture zone, Punjab, Arabian Sea and Karachi. It omits China, Sengge Zangbo, Kashmir, Ladakh, Gilgit-Baltistan, Pakistan and the Brahmaputra identification, as well as the entire historical set of civilizations, religious texts, kingdoms and explorers."
+      },
+      "states": {
+        "score": 0.68,
+        "reason": "The length, drainage area, annual flow, top-50 ranking, bank assignments, flow directions, Early Eocene dating and ecosystem categories are substantially preserved. Missing details include the transboundary and South/Central Asian classifications, Kashmir's disputed status and administrative divisions, the approximately 50-million-year date, and all historical dates and names. Zanskar's specific location in Ladakh becomes the less precise 'upper reaches.'"
+      },
+      "edges": {
+        "score": 0.67,
+        "reason": "The generated text preserves the source-to-sea trajectory in outline, mountain water supply, tributary connections, plate collision, Himalayan limits and ecosystem support. It omits the ordered passage through Indian-administered Ladakh, Pakistani-administered Gilgit-Baltistan and Pakistan's provinces; the headwaters' explicit alignment along the suture zone; the Yarlung Tsangpo's continuation as the Brahmaputra; and every historical connection. Punjab formation is retained less precisely than the original's Indus-and-tributaries formation after leaving the narrow valley."
+      },
+      "relationship_type": {
+        "score": 0.85,
+        "reason": "Most retained connections preserve their kind and strength: approximate measurements remain approximate, tributary bank relationships remain directional, and the bend, bifurcation and sea entry retain their sequence. However, Himalayan uplift causing continual diversion becomes uplift 'accompanied by' diversion, weakening causality. Punjab formation likewise becomes an association rather than the original explicit formation relationship."
+      },
+      "overall_similarity": {
+        "score": 0.66,
+        "reason": "The generated text is a largely accurate condensed account of the river's physical geography, hydrology and some geology. It nevertheless removes the entire historical account and most political and regional geography, while losing several geological and locational specifics. It therefore preserves a substantial core but not the original's full factual scope."
+      }
+    },
+    "score_out_of_5": 3.51,
+    "overall_reason": "The reconstruction faithfully retains many physical features and quantitative facts without major contradictions, but its extensive historical and geopolitical omissions substantially reduce coverage. A few retained causal and geographic relationships are also less explicit or precise."
+  },
+  "structural_metrics": {
+    "nodes": {
+      "correct": 11,
+      "predicted": 11,
+      "target": 17,
+      "missed": 6,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 0.6470588235294118,
+      "f1": 0.7857142857142858,
+      "missing_labels": [
+        "administrative corridor",
+        "ancient regional polity",
+        "external exploration event",
+        "historical urban development",
+        "river designation",
+        "textual-cultural reference"
+      ],
+      "extra_labels": []
+    },
+    "states": {
+      "correct": 53,
+      "predicted": 53,
+      "target": 77,
+      "missed": 24,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 0.6883116883116883,
+      "f1": 0.8153846153846155,
+      "missing_by_node": {
+        "administrative corridor": [
+          "disputed Kashmir region",
+          "Indian-administered Ladakh",
+          "none",
+          "Pakistan provinces",
+          "Pakistani-administered Gilgit-Baltistan"
+        ],
+        "ancient regional polity": [
+          "Gandhara kingdom",
+          "none",
+          "Sindhu-Sauvira kingdom"
+        ],
+        "external exploration event": [
+          "c.515 BC exploration",
+          "classical-period Western knowledge",
+          "Darius of Persia commission",
+          "none",
+          "Scylax of Caryanda exploration"
+        ],
+        "historical urban development": [
+          "3rd millennium BC development",
+          "Bronze Age urban civilization",
+          "Indus Valley Civilisation rise",
+          "none"
+        ],
+        "river designation": [
+          "Indus",
+          "none",
+          "Sengge Zangbo"
+        ],
+        "textual-cultural reference": [
+          "Avesta Hapta Hendu mention",
+          "none",
+          "Rigveda Sapta Sindhu mention",
+          "seven rivers concept"
+        ]
+      },
+      "extra_by_node": {}
+    },
+    "edges": {
+      "correct": 13,
+      "predicted": 13,
+      "target": 14,
+      "missed": 1,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 0.9285714285714286,
+      "f1": 0.962962962962963,
+      "missing_due_to_absent_nodes": [
+        {
+          "parent": "administrative corridor",
+          "child": "river designation",
+          "absent_endpoints": [
+            "administrative corridor",
+            "river designation"
+          ]
+        }
+      ],
+      "missing_relationships_between_present_nodes": [],
+      "extra_edges": []
+    },
+    "cpds": {
+      "skipped": false,
+      "predicted_edges": 13,
+      "target_edges": 14,
+      "matched_edges": 13,
+      "missing_edges": 1,
+      "extra_edges": 0,
+      "complete_target_edges": 13,
+      "target_numeric_cells": 321,
+      "comparable_numeric_cells": 306,
+      "missing_numeric_cells": 15,
+      "cell_coverage": 0.9532710280373832,
+      "mean_absolute_error": 1.853260718550446e-05,
+      "max_absolute_error": 5.000000000000143e-05,
+      "complete_columns": 65,
+      "mean_column_kl": 1.1063774773858479e-08
+    },
+    "full_coverage": {
+      "nodes": false,
+      "states": false,
+      "edges": false,
+      "nodes_states_edges": false
+    }
+  }
+}

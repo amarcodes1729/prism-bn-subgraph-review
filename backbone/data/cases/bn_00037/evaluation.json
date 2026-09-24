@@ -1,0 +1,94 @@
+{
+  "backbone_id": "bn_00037",
+  "source_id": "wiki_00036",
+  "subgraph_count": 75,
+  "hierarchy_levels": 2,
+  "judgment": {
+    "criteria": {
+      "nodes": {
+        "score": 0.73,
+        "reason": "The generated text retains most environmental concepts, societal pressures, harms, and fossil-fuel uses. It omits Alexey Pavlov, Arthur Tansley, Paul Crutzen, climax plant communities, the term Anthropocene, and the explicit definition of anthropogenic."
+      },
+      "states": {
+        "score": 0.62,
+        "reason": "The lists of societal pressures, environmental harms, and combustion uses are largely preserved, as is the Agricultural Revolution reference. Missing details include the mid-1970s date, the first technical versus first English uses of anthropogenic, the scientists' nationalities and disciplines, and the term's broad applicability beyond pollution. The original's proposed catastrophic-risk status is also made more definite."
+      },
+      "edges": {
+        "score": 0.58,
+        "reason": "Both texts connect human activity with environmental change and fossil-fuel burning with warming. However, all historical attribution connections are omitted. The generated text adds connections not stated in the original: societal pressures leading to combustion and land-use changes, warming and acidification threatening biodiversity and potentially causing mass extinction, and mass extinction providing a human-survival risk pathway."
+      },
+      "relationship_type": {
+        "score": 0.52,
+        "reason": "Several explicit causal claims in the original become weaker associations, such as damaging human activities becoming pressures 'associated with' consumption and land-use changes. Conversely, the original says warming and biodiversity loss 'have been proposed' as catastrophic risks, whereas the generated text states that pressures 'pose risks' and constructs explanatory pathways. It also replaces the original example relationship between environmental degradation and ocean acidification with additional causal relationships."
+      },
+      "overall_similarity": {
+        "score": 0.62,
+        "reason": "The generated text captures much of the original's environmental subject matter and its concern about human survival, but omits nearly the entire terminology-history discussion and the explicit societal-needs explanation for environmental modification. It reorganizes a broad description and list of impacts into a more elaborate causal narrative containing unsupported pathways and stronger risk assertions."
+      }
+    },
+    "score_out_of_5": 3.07,
+    "overall_reason": "There is substantial overlap in environmental entities and examples, but incomplete coverage of definitions and history. The generated text also changes the structure and strength of several claims, adding causal pathways rather than faithfully preserving the original's stated relationships and qualifications."
+  },
+  "structural_metrics": {
+    "nodes": {
+      "correct": 10,
+      "predicted": 10,
+      "target": 10,
+      "missed": 0,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "missing_labels": [],
+      "extra_labels": []
+    },
+    "states": {
+      "correct": 39,
+      "predicted": 39,
+      "target": 39,
+      "missed": 0,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "missing_by_node": {},
+      "extra_by_node": {}
+    },
+    "edges": {
+      "correct": 15,
+      "predicted": 15,
+      "target": 15,
+      "missed": 0,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "missing_due_to_absent_nodes": [],
+      "missing_relationships_between_present_nodes": [],
+      "extra_edges": []
+    },
+    "cpds": {
+      "skipped": false,
+      "predicted_edges": 15,
+      "target_edges": 15,
+      "matched_edges": 15,
+      "missing_edges": 0,
+      "extra_edges": 0,
+      "complete_target_edges": 15,
+      "target_numeric_cells": 234,
+      "comparable_numeric_cells": 234,
+      "missing_numeric_cells": 0,
+      "cell_coverage": 1.0,
+      "mean_absolute_error": 3.9215686274642084e-06,
+      "max_absolute_error": 4.705882352941393e-05,
+      "complete_columns": 61,
+      "mean_column_kl": 1.1826482101136978e-09
+    },
+    "full_coverage": {
+      "nodes": true,
+      "states": true,
+      "edges": true,
+      "nodes_states_edges": true
+    }
+  }
+}

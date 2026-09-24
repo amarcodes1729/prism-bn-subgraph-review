@@ -1,0 +1,94 @@
+{
+  "backbone_id": "bn_00031",
+  "source_id": "wiki_00030",
+  "subgraph_count": 45,
+  "hierarchy_levels": 2,
+  "judgment": {
+    "criteria": {
+      "nodes": {
+        "score": 0.94,
+        "reason": "The generated text retains nearly all central concepts: ring modulation, frequency mixing, amplitude modulation, carrier and modulator signals, multiplication, sidebands, harmonics, square waves, diode rings, and bridge rectifiers. It omits the explicit electronics context and the historical naming explanation."
+      },
+      "states": {
+        "score": 0.88,
+        "reason": "The numerical frequencies, positive-shifted versus unshifted modulators, square-wave overtones, and four equally oriented diodes are preserved. However, the original's typical carrier state (a sine wave or other simple waveform) and typical modulator state (more complicated) are not assigned to those signals in the generated text. The original's non-harmonically-related sideband outcome is also presented less definitively."
+      },
+      "edges": {
+        "score": 0.89,
+        "reason": "The generated text correctly connects carrier–modulator multiplication to the output, the example input frequencies to 1,900 Hz and 1,100 Hz sidebands, harmonics to additional sideband pairs, and the diode ring to its polarization pattern. It omits the connection between the ring modulator's name and its original ring-shaped diode implementation, and replaces the typical waveform-to-signal-role connections with a general discussion of waveforms."
+      },
+      "relationship_type": {
+        "score": 0.85,
+        "reason": "Most operational and comparative relationships are faithful, including multiplication and the contrast with amplitude modulation. Some definite claims are weakened: ring modulation 'can use' an unshifted modulator rather than using it as the defining distinction, and each harmonic 'can generate' sidebands rather than generating them. The original's statement that the resulting sideband pairs are not harmonically related becomes a possibility whose presence is influenced by additional sidebands. The historical original implementation is recast merely as a possible implementation."
+      },
+      "overall_similarity": {
+        "score": 0.89,
+        "reason": "The generated text accurately preserves the main signal-processing mechanism, frequency example, harmonic-sideband explanation, and diode orientation. Its principal losses are the naming history and typical signal roles, alongside weaker language about the unshifted modulator and non-harmonic sideband outcome. These changes leave the core explanation intact but reduce precision and completeness."
+      }
+    },
+    "score_out_of_5": 4.45,
+    "overall_reason": "This is a largely faithful paraphrase of the technical explanation, with correct frequencies and circuit details. It loses historical and typical-waveform information and softens several defining or categorical statements into possibilities."
+  },
+  "structural_metrics": {
+    "nodes": {
+      "correct": 13,
+      "predicted": 13,
+      "target": 13,
+      "missed": 0,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "missing_labels": [],
+      "extra_labels": []
+    },
+    "states": {
+      "correct": 45,
+      "predicted": 45,
+      "target": 45,
+      "missed": 0,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "missing_by_node": {},
+      "extra_by_node": {}
+    },
+    "edges": {
+      "correct": 13,
+      "predicted": 13,
+      "target": 13,
+      "missed": 0,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "missing_due_to_absent_nodes": [],
+      "missing_relationships_between_present_nodes": [],
+      "extra_edges": []
+    },
+    "cpds": {
+      "skipped": false,
+      "predicted_edges": 0,
+      "target_edges": 13,
+      "matched_edges": 0,
+      "missing_edges": 13,
+      "extra_edges": 0,
+      "complete_target_edges": 0,
+      "target_numeric_cells": 165,
+      "comparable_numeric_cells": 0,
+      "missing_numeric_cells": 165,
+      "cell_coverage": 0.0,
+      "mean_absolute_error": null,
+      "max_absolute_error": null,
+      "complete_columns": 0,
+      "mean_column_kl": null
+    },
+    "full_coverage": {
+      "nodes": true,
+      "states": true,
+      "edges": true,
+      "nodes_states_edges": true
+    }
+  }
+}

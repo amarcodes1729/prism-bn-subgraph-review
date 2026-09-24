@@ -1,0 +1,395 @@
+{
+  "nodes": [
+    {
+      "node": "ascetic practice",
+      "states": [
+        "voluntary poverty",
+        "self-denial",
+        "abandonment of material wealth",
+        "full-time worship of God",
+        "none"
+      ]
+    },
+    {
+      "node": "attitude toward material wealth",
+      "states": [
+        "renunciation of material wealth",
+        "enjoyment of worldly goods",
+        "sharing with the poor",
+        "sacrificing worldly possessions",
+        "none"
+      ]
+    },
+    {
+      "node": "doctrinal justification",
+      "states": [
+        "Quranic admonition against forbidding good things",
+        "message of sharing with the poor",
+        "necessity of sacrificing worldly possessions",
+        "none"
+      ]
+    },
+    {
+      "node": "historical transition",
+      "states": [
+        "Middle Ages peak",
+        "Hijra flight from Mecca",
+        "post-Hijra transformation",
+        "none"
+      ]
+    },
+    {
+      "node": "movement character",
+      "states": [
+        "charitable religious message",
+        "political character",
+        "conquest-oriented character",
+        "none"
+      ]
+    },
+    {
+      "node": "poverty framing",
+      "states": [
+        "tenuous relationship with voluntary poverty",
+        "idealization of poverty",
+        "poverty as spiritually virtuous",
+        "Islamic ideas about the nature of poverty",
+        "none"
+      ]
+    },
+    {
+      "node": "religious tradition",
+      "states": [
+        "Sufism",
+        "Sunni scholarship",
+        "Shi'ite scholarship",
+        "none"
+      ]
+    },
+    {
+      "node": "scholarly treatment",
+      "states": [
+        "encouragement of renunciation",
+        "rejection of self-denial",
+        "veneration of wealth abandonment",
+        "none"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "parent": "historical transition",
+      "child": "movement character"
+    },
+    {
+      "parent": "movement character",
+      "child": "attitude toward material wealth"
+    },
+    {
+      "parent": "religious tradition",
+      "child": "doctrinal justification"
+    },
+    {
+      "parent": "doctrinal justification",
+      "child": "attitude toward material wealth"
+    },
+    {
+      "parent": "religious tradition",
+      "child": "ascetic practice"
+    },
+    {
+      "parent": "attitude toward material wealth",
+      "child": "ascetic practice"
+    },
+    {
+      "parent": "ascetic practice",
+      "child": "scholarly treatment"
+    },
+    {
+      "parent": "scholarly treatment",
+      "child": "poverty framing"
+    }
+  ],
+  "cpds": [
+    {
+      "parent": "historical transition",
+      "child": "movement character",
+      "matrix": [
+        [
+          0.32,
+          0.16,
+          0.0667,
+          0.15
+        ],
+        [
+          0.08,
+          0.4,
+          0.4667,
+          0.1
+        ],
+        [
+          0.04,
+          0.24,
+          0.4,
+          0.05
+        ],
+        [
+          0.56,
+          0.2,
+          0.0667,
+          0.7
+        ]
+      ]
+    },
+    {
+      "parent": "movement character",
+      "child": "attitude toward material wealth",
+      "matrix": [
+        [
+          0.08,
+          0.0333,
+          0.025,
+          0.1
+        ],
+        [
+          0.06,
+          0.4,
+          0.45,
+          0.16
+        ],
+        [
+          0.68,
+          0.1333,
+          0.075,
+          0.14
+        ],
+        [
+          0.16,
+          0.1,
+          0.2,
+          0.06
+        ],
+        [
+          0.02,
+          0.3333,
+          0.25,
+          0.54
+        ]
+      ]
+    },
+    {
+      "parent": "religious tradition",
+      "child": "doctrinal justification",
+      "matrix": [
+        [
+          0.0667,
+          0.64,
+          0.65,
+          0.12
+        ],
+        [
+          0.1667,
+          0.08,
+          0.075,
+          0.4
+        ],
+        [
+          0.2667,
+          0.04,
+          0.025,
+          0.32
+        ],
+        [
+          0.5,
+          0.24,
+          0.25,
+          0.16
+        ]
+      ]
+    },
+    {
+      "parent": "doctrinal justification",
+      "child": "attitude toward material wealth",
+      "matrix": [
+        [
+          0.0441,
+          0.0541,
+          0.2,
+          0.1
+        ],
+        [
+          0.6471,
+          0.0811,
+          0.0286,
+          0.2
+        ],
+        [
+          0.0882,
+          0.7027,
+          0.1143,
+          0.1333
+        ],
+        [
+          0.0147,
+          0.1081,
+          0.5714,
+          0.0667
+        ],
+        [
+          0.2059,
+          0.0541,
+          0.0857,
+          0.5
+        ]
+      ]
+    },
+    {
+      "parent": "religious tradition",
+      "child": "ascetic practice",
+      "matrix": [
+        [
+          0.2333,
+          0.04,
+          0.04,
+          0.06
+        ],
+        [
+          0.2,
+          0.02,
+          0.02,
+          0.04
+        ],
+        [
+          0.2667,
+          0.02,
+          0.02,
+          0.16
+        ],
+        [
+          0.1333,
+          0.04,
+          0.045,
+          0.24
+        ],
+        [
+          0.1667,
+          0.88,
+          0.875,
+          0.5
+        ]
+      ]
+    },
+    {
+      "parent": "attitude toward material wealth",
+      "child": "ascetic practice",
+      "matrix": [
+        [
+          0.25,
+          0.02,
+          0.075,
+          0.2333,
+          0.05
+        ],
+        [
+          0.2,
+          0.02,
+          0.05,
+          0.1667,
+          0.025
+        ],
+        [
+          0.3,
+          0.02,
+          0.1,
+          0.3667,
+          0.075
+        ],
+        [
+          0.15,
+          0.04,
+          0.1,
+          0.1667,
+          0.1
+        ],
+        [
+          0.1,
+          0.9,
+          0.675,
+          0.0667,
+          0.75
+        ]
+      ]
+    },
+    {
+      "parent": "ascetic practice",
+      "child": "scholarly treatment",
+      "matrix": [
+        [
+          0.4667,
+          0.2083,
+          0.2,
+          0.1667,
+          0.0571
+        ],
+        [
+          0.1333,
+          0.5833,
+          0.05,
+          0.0278,
+          0.0857
+        ],
+        [
+          0.2667,
+          0.0417,
+          0.65,
+          0.6667,
+          0.0571
+        ],
+        [
+          0.1333,
+          0.1667,
+          0.1,
+          0.1389,
+          0.8
+        ]
+      ]
+    },
+    {
+      "parent": "scholarly treatment",
+      "child": "poverty framing",
+      "matrix": [
+        [
+          0.16,
+          0.5,
+          0.0667,
+          0.16
+        ],
+        [
+          0.24,
+          0.025,
+          0.4,
+          0.08
+        ],
+        [
+          0.32,
+          0.025,
+          0.2,
+          0.06
+        ],
+        [
+          0.2,
+          0.15,
+          0.3,
+          0.2
+        ],
+        [
+          0.08,
+          0.3,
+          0.0333,
+          0.5
+        ]
+      ]
+    }
+  ],
+  "inferred_components": []
+}

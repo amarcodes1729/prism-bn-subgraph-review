@@ -1,0 +1,512 @@
+{
+  "nodes": [
+    {
+      "node": "actor group",
+      "states": [
+        "historical Luddites",
+        "neo-Luddites",
+        "technophobic people",
+        "none"
+      ]
+    },
+    {
+      "node": "historical period",
+      "states": [
+        "1811 to 1817",
+        "modern era",
+        "none"
+      ]
+    },
+    {
+      "node": "movement organization",
+      "states": [
+        "leaderless movement",
+        "non-affiliated groups",
+        "none"
+      ]
+    },
+    {
+      "node": "perceived technology risk",
+      "states": [
+        "economic implications",
+        "individual impact",
+        "community impact",
+        "environmental harm",
+        "unknown effects",
+        "none"
+      ]
+    },
+    {
+      "node": "resistance practice",
+      "states": [
+        "passive abandonment of technology",
+        "protest against harmful technology",
+        "simple living advocacy",
+        "technology sabotage",
+        "none"
+      ]
+    },
+    {
+      "node": "technology adoption rule",
+      "states": [
+        "precautionary principle",
+        "proof of safety before adoption",
+        "none"
+      ]
+    },
+    {
+      "node": "technology context",
+      "states": [
+        "modern technology",
+        "improving technology",
+        "industrialization",
+        "new technology",
+        "none"
+      ]
+    },
+    {
+      "node": "technology ideology",
+      "states": [
+        "neo-Luddism",
+        "technophobia",
+        "anti-globalization",
+        "anarcho-primitivism",
+        "radical environmentalism",
+        "deep ecology",
+        "none"
+      ]
+    },
+    {
+      "node": "technology outcome target",
+      "states": [
+        "primitive technology level",
+        "safe technology adoption",
+        "reduced technology use",
+        "none"
+      ]
+    },
+    {
+      "node": "technology stance",
+      "states": [
+        "opposition to modern technology",
+        "distrust of technological improvement",
+        "return to primitive technology",
+        "concern over technological impact",
+        "none"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "parent": "historical period",
+      "child": "technology context"
+    },
+    {
+      "parent": "technology context",
+      "child": "perceived technology risk"
+    },
+    {
+      "parent": "perceived technology risk",
+      "child": "technology adoption rule"
+    },
+    {
+      "parent": "perceived technology risk",
+      "child": "technology ideology"
+    },
+    {
+      "parent": "technology ideology",
+      "child": "technology outcome target"
+    },
+    {
+      "parent": "technology ideology",
+      "child": "technology stance"
+    },
+    {
+      "parent": "actor group",
+      "child": "resistance practice"
+    },
+    {
+      "parent": "movement organization",
+      "child": "resistance practice"
+    },
+    {
+      "parent": "technology stance",
+      "child": "resistance practice"
+    }
+  ],
+  "cpds": [
+    {
+      "parent": "historical period",
+      "child": "technology context",
+      "matrix": [
+        [
+          0.01,
+          0.45,
+          0.05
+        ],
+        [
+          0.35,
+          0.2,
+          0.05
+        ],
+        [
+          0.45,
+          0.05,
+          0.02
+        ],
+        [
+          0.04,
+          0.25,
+          0.03
+        ],
+        [
+          0.15,
+          0.05,
+          0.85
+        ]
+      ]
+    },
+    {
+      "parent": "technology context",
+      "child": "perceived technology risk",
+      "matrix": [
+        [
+          0.15,
+          0.3,
+          0.55,
+          0.1,
+          0.04
+        ],
+        [
+          0.25,
+          0.2,
+          0.1,
+          0.15,
+          0.04
+        ],
+        [
+          0.2,
+          0.15,
+          0.15,
+          0.15,
+          0.04
+        ],
+        [
+          0.2,
+          0.15,
+          0.1,
+          0.2,
+          0.04
+        ],
+        [
+          0.15,
+          0.15,
+          0.05,
+          0.35,
+          0.04
+        ],
+        [
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.8
+        ]
+      ]
+    },
+    {
+      "parent": "perceived technology risk",
+      "child": "technology adoption rule",
+      "matrix": [
+        [
+          0.25,
+          0.3,
+          0.3,
+          0.45,
+          0.45,
+          0.05
+        ],
+        [
+          0.25,
+          0.35,
+          0.35,
+          0.35,
+          0.45,
+          0.05
+        ],
+        [
+          0.5,
+          0.35,
+          0.35,
+          0.2,
+          0.1,
+          0.9
+        ]
+      ]
+    },
+    {
+      "parent": "perceived technology risk",
+      "child": "technology ideology",
+      "matrix": [
+        [
+          0.35,
+          0.4,
+          0.35,
+          0.25,
+          0.3,
+          0.05
+        ],
+        [
+          0.1,
+          0.25,
+          0.1,
+          0.05,
+          0.25,
+          0.04
+        ],
+        [
+          0.25,
+          0.05,
+          0.2,
+          0.1,
+          0.05,
+          0.03
+        ],
+        [
+          0.05,
+          0.1,
+          0.1,
+          0.1,
+          0.08,
+          0.03
+        ],
+        [
+          0.05,
+          0.03,
+          0.1,
+          0.25,
+          0.07,
+          0.04
+        ],
+        [
+          0.03,
+          0.02,
+          0.05,
+          0.15,
+          0.05,
+          0.03
+        ],
+        [
+          0.17,
+          0.15,
+          0.1,
+          0.1,
+          0.2,
+          0.78
+        ]
+      ]
+    },
+    {
+      "parent": "technology ideology",
+      "child": "technology outcome target",
+      "matrix": [
+        [
+          0.3,
+          0.1,
+          0.05,
+          0.6,
+          0.15,
+          0.25,
+          0.02
+        ],
+        [
+          0.3,
+          0.4,
+          0.25,
+          0.1,
+          0.35,
+          0.25,
+          0.05
+        ],
+        [
+          0.35,
+          0.3,
+          0.4,
+          0.25,
+          0.4,
+          0.4,
+          0.05
+        ],
+        [
+          0.05,
+          0.2,
+          0.3,
+          0.05,
+          0.1,
+          0.1,
+          0.88
+        ]
+      ]
+    },
+    {
+      "parent": "technology ideology",
+      "child": "technology stance",
+      "matrix": [
+        [
+          0.35,
+          0.25,
+          0.2,
+          0.2,
+          0.15,
+          0.1,
+          0.03
+        ],
+        [
+          0.25,
+          0.4,
+          0.2,
+          0.15,
+          0.15,
+          0.1,
+          0.03
+        ],
+        [
+          0.15,
+          0.05,
+          0.05,
+          0.5,
+          0.05,
+          0.2,
+          0.01
+        ],
+        [
+          0.2,
+          0.2,
+          0.4,
+          0.1,
+          0.55,
+          0.5,
+          0.08
+        ],
+        [
+          0.05,
+          0.1,
+          0.15,
+          0.05,
+          0.1,
+          0.1,
+          0.85
+        ]
+      ]
+    },
+    {
+      "parent": "actor group",
+      "child": "resistance practice",
+      "matrix": [
+        [
+          0.05,
+          0.25,
+          0.35,
+          0.03
+        ],
+        [
+          0.25,
+          0.3,
+          0.1,
+          0.03
+        ],
+        [
+          0.05,
+          0.25,
+          0.2,
+          0.03
+        ],
+        [
+          0.6,
+          0.1,
+          0.02,
+          0.01
+        ],
+        [
+          0.05,
+          0.1,
+          0.33,
+          0.9
+        ]
+      ]
+    },
+    {
+      "parent": "movement organization",
+      "child": "resistance practice",
+      "matrix": [
+        [
+          0.2,
+          0.2,
+          0.03
+        ],
+        [
+          0.3,
+          0.35,
+          0.03
+        ],
+        [
+          0.25,
+          0.2,
+          0.03
+        ],
+        [
+          0.15,
+          0.15,
+          0.01
+        ],
+        [
+          0.1,
+          0.1,
+          0.9
+        ]
+      ]
+    },
+    {
+      "parent": "technology stance",
+      "child": "resistance practice",
+      "matrix": [
+        [
+          0.2,
+          0.25,
+          0.35,
+          0.1,
+          0.03
+        ],
+        [
+          0.35,
+          0.25,
+          0.1,
+          0.45,
+          0.03
+        ],
+        [
+          0.15,
+          0.2,
+          0.4,
+          0.25,
+          0.03
+        ],
+        [
+          0.2,
+          0.1,
+          0.05,
+          0.05,
+          0.01
+        ],
+        [
+          0.1,
+          0.2,
+          0.1,
+          0.15,
+          0.9
+        ]
+      ]
+    }
+  ],
+  "inferred_components": []
+}

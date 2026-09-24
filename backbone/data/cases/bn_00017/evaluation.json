@@ -1,0 +1,102 @@
+{
+  "backbone_id": "bn_00017",
+  "source_id": "wiki_00016",
+  "subgraph_count": 5,
+  "hierarchy_levels": 1,
+  "judgment": {
+    "criteria": {
+      "nodes": {
+        "score": 0.75,
+        "reason": "The generated text retains climate change, environmental conditions, habitat change, plant function and distribution, non-native plants, pests, wildfires, native vegetation, biodiversity loss, and local extinction. It omits the survey of plant and animal species and the prediction of biodiversity effects using models, including bioclimatic models."
+      },
+      "states": {
+        "score": 0.53,
+        "reason": "The generated text preserves increased fire intensity, severe burn conditions, shorter burn intervals, and vegetation vulnerability. It omits the survey's 2016 date, 976 species, 47% overall extinction incidence, and 39% of plant species affected. Already-observed local extinctions become 'potential outcomes,' and the original's explicit ongoing decline is less clearly represented."
+      },
+      "edges": {
+        "score": 0.72,
+        "reason": "Most broad connections among climate change, environmental change, plant responses, ecological pressures, and biodiversity loss remain. However, the generated text blurs the specific chain from climate-driven habitat change through non-native plants and pests to native vegetation vulnerability. It also flattens the connection from increased wildfire intensity to severe burns and shorter intervals, and entirely omits the model-to-prediction and survey-to-findings connections."
+      },
+      "relationship_type": {
+        "score": 0.65,
+        "reason": "The original explicitly identifies climate change as a cause of biodiversity decline and environmental conditions as key determinants of plant function and distribution; the generated text often substitutes weaker 'associated with' or 'linked to' relationships. It changes documented local extinction into a possibility and presents fire intensity, burn severity, and intervals as parallel alternatives rather than preserving the original conditional causal sequence. Some conditional language and threat relationships are retained."
+      },
+      "overall_similarity": {
+        "score": 0.68,
+        "reason": "The generated text captures the central topic and most ecological pressures, including invasive organisms and changing wildfire regimes threatening native vegetation. However, it loses the original's quantitative empirical evidence and modeling component, weakens several causal explanations, and fails to preserve the distinction between extinctions already observed and possible future outcomes."
+      }
+    },
+    "score_out_of_5": 3.33,
+    "overall_reason": "This is a recognizable but generalized paraphrase of the ecological mechanisms. Its main fidelity losses are the complete omission of the survey details and predictive models, the reframing of observed extinction as a potential outcome, and the flattening of specific causal chains into broad associations."
+  },
+  "structural_metrics": {
+    "nodes": {
+      "correct": 6,
+      "predicted": 6,
+      "target": 7,
+      "missed": 1,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 0.8571428571428571,
+      "f1": 0.923076923076923,
+      "missing_labels": [
+        "impact prediction method"
+      ],
+      "extra_labels": []
+    },
+    "states": {
+      "correct": 23,
+      "predicted": 23,
+      "target": 26,
+      "missed": 3,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 0.8846153846153846,
+      "f1": 0.9387755102040816,
+      "missing_by_node": {
+        "impact prediction method": [
+          "bioclimatic models",
+          "none",
+          "other biodiversity models"
+        ]
+      },
+      "extra_by_node": {}
+    },
+    "edges": {
+      "correct": 10,
+      "predicted": 10,
+      "target": 10,
+      "missed": 0,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "missing_due_to_absent_nodes": [],
+      "missing_relationships_between_present_nodes": [],
+      "extra_edges": []
+    },
+    "cpds": {
+      "skipped": false,
+      "predicted_edges": 10,
+      "target_edges": 10,
+      "matched_edges": 10,
+      "missing_edges": 0,
+      "extra_edges": 0,
+      "complete_target_edges": 10,
+      "target_numeric_cells": 155,
+      "comparable_numeric_cells": 155,
+      "missing_numeric_cells": 0,
+      "cell_coverage": 1.0,
+      "mean_absolute_error": 1.3700115360498106e-05,
+      "max_absolute_error": 4.827586206894441e-05,
+      "complete_columns": 37,
+      "mean_column_kl": 6.396208219264059e-09
+    },
+    "full_coverage": {
+      "nodes": false,
+      "states": false,
+      "edges": true,
+      "nodes_states_edges": false
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "backbone_id": "bn_00033",
+  "source_id": "wiki_00032",
+  "subgraph_count": 24,
+  "hierarchy_levels": 2,
+  "judgment": {
+    "criteria": {
+      "nodes": {
+        "score": 0.78,
+        "reason": "The generated text retains most substantive concepts, including structural unemployment, automation, looms, Luddites, retail cashiers, AI, robotics, and basic income. It omits John Maynard Keynes, Geoffrey Hinton, Daron Acemoğlu, the World Bank, and its World Development Report, and does not distinguish artificial general intelligence from advanced AI."
+      },
+      "states": {
+        "score": 0.81,
+        "reason": "The alternatives of temporary job losses, lasting unemployment, mass unemployment, an end of employment, human necessity or complementarity, and net job creation are largely preserved. Missing details include the 1930s and 2019 dates. The original's prediction of automation of all intellectual and physical tasks becomes partly the weaker possibility that all tasks could be 'affected,' and 'at least as much work' weakens the original report's claim of more jobs on balance."
+      },
+      "edges": {
+        "score": 0.71,
+        "reason": "The generated text preserves many technology-to-employment connections and the link between mechanized looms and Luddite protests. However, it removes every named attribution, including Keynes's popularization of the phrase and the World Bank report's conclusion. It weakens the explicit loom-to-weaver-job-loss and self-service-to-cashier-displacement links into workers being 'affected' or subject to 'concerns.' It also introduces links from new-industry creation to the temporary-maladjustment argument and from competing assessments to social responses that the original does not explicitly establish."
+      },
+      "relationship_type": {
+        "score": 0.72,
+        "reason": "The generated text generally retains uncertainty about long-term unemployment and presents contrasting employment outcomes rather than treating mass unemployment as settled. Nevertheless, the original's causal definition becomes joblessness 'associated with' innovation, and its categorical identification as a key type of structural unemployment becomes conditional classification. Named expert beliefs and a specific report's conclusion become unattributed assessments, while the statement that the debate 'began' with mechanical machines adds an unsupported historical claim."
+      },
+      "overall_similarity": {
+        "score": 0.75,
+        "reason": "The generated text captures the central debate, major historical and contemporary examples, and the competing possibilities of displacement, continued human work, and net job creation. It is less faithful as a factual account because it omits all named sources and dates, blurs the distinctive AGI prediction, and adds interpretive explanations connecting employment scenarios and social responses."
+      }
+    },
+    "score_out_of_5": 3.77,
+    "overall_reason": "The conceptual outline is substantially preserved, but the generated text replaces a sourced historical account with a broader thematic discussion. Lost attributions, dates, and some explicit causal details, together with added interpretive connections, prevent full fidelity."
+  },
+  "structural_metrics": {
+    "nodes": {
+      "correct": 11,
+      "predicted": 11,
+      "target": 11,
+      "missed": 0,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "missing_labels": [],
+      "extra_labels": []
+    },
+    "states": {
+      "correct": 52,
+      "predicted": 52,
+      "target": 52,
+      "missed": 0,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "missing_by_node": {},
+      "extra_by_node": {}
+    },
+    "edges": {
+      "correct": 12,
+      "predicted": 12,
+      "target": 12,
+      "missed": 0,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "missing_due_to_absent_nodes": [],
+      "missing_relationships_between_present_nodes": [],
+      "extra_edges": []
+    },
+    "cpds": {
+      "skipped": false,
+      "predicted_edges": 0,
+      "target_edges": 12,
+      "matched_edges": 0,
+      "missing_edges": 12,
+      "extra_edges": 0,
+      "complete_target_edges": 0,
+      "target_numeric_cells": 356,
+      "comparable_numeric_cells": 0,
+      "missing_numeric_cells": 356,
+      "cell_coverage": 0.0,
+      "mean_absolute_error": null,
+      "max_absolute_error": null,
+      "complete_columns": 0,
+      "mean_column_kl": null
+    },
+    "full_coverage": {
+      "nodes": true,
+      "states": true,
+      "edges": true,
+      "nodes_states_edges": true
+    }
+  }
+}

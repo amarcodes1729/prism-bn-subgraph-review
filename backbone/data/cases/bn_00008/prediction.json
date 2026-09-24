@@ -1,0 +1,218 @@
+{
+  "nodes": [
+    {
+      "node": "public health emergency",
+      "states": [
+        "COVID-19 pandemic",
+        "coronavirus outbreak",
+        "none"
+      ]
+    },
+    {
+      "node": "economic shock",
+      "states": [
+        "COVID-19 economic fallout",
+        "Great Recession",
+        "none"
+      ]
+    },
+    {
+      "node": "bill origination procedure",
+      "states": [
+        "H.R. 748 shell bill",
+        "content replacement",
+        "bill renaming",
+        "Origination Clause compliance",
+        "none"
+      ]
+    },
+    {
+      "node": "legislative negotiation",
+      "states": [
+        "bipartisan negotiations",
+        "unanimous Senate passage",
+        "House voice vote",
+        "presidential signature",
+        "none"
+      ]
+    },
+    {
+      "node": "federal relief legislation",
+      "states": [
+        "CARES Act",
+        "Coronavirus Preparedness and Response Supplemental Appropriations Act",
+        "Families First Coronavirus Response Act",
+        "Consolidated Appropriations Act 2021",
+        "American Recovery and Reinvestment Act of 2009",
+        "none"
+      ]
+    },
+    {
+      "node": "relief recipient group",
+      "states": [
+        "individual taxpayers",
+        "unemployed workers",
+        "small businesses",
+        "corporations",
+        "state and local governments",
+        "none"
+      ]
+    },
+    {
+      "node": "business financial assistance",
+      "states": [
+        "Paycheck Protection Program forgivable loans",
+        "Small Business Administration loans",
+        "loans to major industry",
+        "corporate loans",
+        "none"
+      ]
+    },
+    {
+      "node": "fiscal stimulus scale",
+      "states": [
+        "$831 billion stimulus",
+        "$900 billion relief",
+        "$2 trillion bill",
+        "$2.2 trillion stimulus",
+        "10% of U.S. GDP",
+        "none"
+      ]
+    },
+    {
+      "node": "government financial assistance",
+      "states": [
+        "state and local government aid",
+        "none"
+      ]
+    },
+    {
+      "node": "individual financial assistance",
+      "states": [
+        "one-time cash payments",
+        "$1,200 payments to most single adults",
+        "larger payments to families with children",
+        "direct payments to Americans",
+        "none"
+      ]
+    },
+    {
+      "node": "labor income support",
+      "states": [
+        "increased unemployment benefits",
+        "unemployment compensation",
+        "sick leave compensation",
+        "none"
+      ]
+    },
+    {
+      "node": "legal protection policy",
+      "states": [
+        "eviction moratorium",
+        "bankruptcy protections",
+        "none"
+      ]
+    },
+    {
+      "node": "public health funding",
+      "states": [
+        "vaccine research funding",
+        "vaccine development funding",
+        "none"
+      ]
+    },
+    {
+      "node": "federal budget outcome",
+      "states": [
+        "$1.7 trillion deficit increase",
+        "2020 deficit impact",
+        "2021 deficit impact",
+        "none"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "parent": "public health emergency",
+      "child": "economic shock"
+    },
+    {
+      "parent": "economic shock",
+      "child": "federal relief legislation"
+    },
+    {
+      "parent": "bill origination procedure",
+      "child": "federal relief legislation"
+    },
+    {
+      "parent": "federal relief legislation",
+      "child": "business financial assistance"
+    },
+    {
+      "parent": "federal relief legislation",
+      "child": "fiscal stimulus scale"
+    },
+    {
+      "parent": "legislative negotiation",
+      "child": "fiscal stimulus scale"
+    },
+    {
+      "parent": "federal relief legislation",
+      "child": "government financial assistance"
+    },
+    {
+      "parent": "federal relief legislation",
+      "child": "individual financial assistance"
+    },
+    {
+      "parent": "relief recipient group",
+      "child": "individual financial assistance"
+    },
+    {
+      "parent": "federal relief legislation",
+      "child": "labor income support"
+    },
+    {
+      "parent": "federal relief legislation",
+      "child": "legal protection policy"
+    },
+    {
+      "parent": "federal relief legislation",
+      "child": "public health funding"
+    },
+    {
+      "parent": "fiscal stimulus scale",
+      "child": "federal budget outcome"
+    },
+    {
+      "parent": "relief recipient group",
+      "child": "business financial assistance"
+    },
+    {
+      "parent": "relief recipient group",
+      "child": "labor income support"
+    },
+    {
+      "parent": "relief recipient group",
+      "child": "government financial assistance"
+    }
+  ],
+  "cpds": [],
+  "inferred_components": [
+    {
+      "type": "edge",
+      "value": "relief recipient group -> business financial assistance",
+      "justification": "The recipient states small businesses and corporations directly correspond to the small-business and corporate-loan states of business financial assistance, and one candidate backbone explicitly supports this relation."
+    },
+    {
+      "type": "edge",
+      "value": "relief recipient group -> labor income support",
+      "justification": "The recipient state unemployed workers directly identifies the population targeted by unemployment benefits and compensation, and one candidate backbone explicitly supports this relation."
+    },
+    {
+      "type": "edge",
+      "value": "relief recipient group -> government financial assistance",
+      "justification": "The recipient state state and local governments exactly matches the substantive state of government financial assistance, and one candidate backbone explicitly supports this relation."
+    }
+  ]
+}

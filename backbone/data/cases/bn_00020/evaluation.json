@@ -1,0 +1,131 @@
+{
+  "backbone_id": "bn_00020",
+  "source_id": "wiki_00019",
+  "subgraph_count": 132,
+  "hierarchy_levels": 3,
+  "judgment": {
+    "criteria": {
+      "nodes": {
+        "score": 0.78,
+        "reason": "The generated text retains most major concepts, including cities, adaptation and mitigation investment, construction, transportation, cement, reforestation, climate refugees, infrastructure stress, and urban environmental hazards. It omits the UN attribution, the C40 Cities Climate Leadership Group report, and the distinct concepts of consumption-based versus production-based emissions."
+      },
+      "states": {
+        "score": 0.46,
+        "reason": "The 68 percent urban population projection for 2050 is preserved. However, the generated text omits the 2016 figures of 31 megacities with at least 10 million residents and eight exceeding 20 million, the 500,000-to-1-million size range for secondary cities, and the estimate that 85 percent of goods-associated emissions originate outside the city. It also loses the explicit rankings of cities as major contributors, particularly vulnerable places, and leading opportunities for climate solutions."
+      },
+      "edges": {
+        "score": 0.61,
+        "reason": "Many connections survive, including investments supporting sustainable construction and transportation efficiency, climate-related displacement accompanying urban growth, and urban expansion stressing infrastructure and concentrating poverty. Missing connections include increased density enabling agricultural land redistribution and reforestation, and city consumption generating emissions outside city boundaries. The generated text adds a link from land-use choices to urbanization patterns and replaces the specific sea-level-rise-to-flooding-and-erosion chain with a broad grouping of linked phenomena."
+      },
+      "relationship_type": {
+        "score": 0.55,
+        "reason": "The generated text frequently weakens explicit causal or expected relationships into loose associations: climate change exacerbating air pollution, water scarcity, and heat illness becomes phenomena that 'intersect with' problems, while climate conflict and refugees driving expected urban expansion becomes disruptions that 'relate to' urbanization. Investments described as important for reducing emissions impacts become investments that 'may support' strategies. The original comparison that consumption-based emissions have significantly more impact than production-based emissions is absent."
+      },
+      "overall_similarity": {
+        "score": 0.61,
+        "reason": "The generated text preserves the broad account of urban emissions, climate vulnerability, urbanization pressures, and mitigation options. However, it replaces substantial factual detail and several specific mechanisms with generalized associations, omits almost all quantitative evidence beyond the 2050 projection, and does not clearly preserve the original's central emphasis on cities as simultaneously major contributors, highly vulnerable communities, and important solutions."
+      }
+    },
+    "score_out_of_5": 3.01,
+    "overall_reason": "This is a recognizable thematic summary with substantial concept coverage, but it is not a fully faithful round trip. Important numerical facts, source attributions, the consumption-versus-production emissions finding, and several causal and comparative relationships are missing or diluted."
+  },
+  "structural_metrics": {
+    "nodes": {
+      "correct": 14,
+      "predicted": 14,
+      "target": 18,
+      "missed": 4,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 0.7777777777777778,
+      "f1": 0.8750000000000001,
+      "missing_labels": [
+        "city size category",
+        "emissions accounting basis",
+        "emissions generation location",
+        "urban climate role"
+      ],
+      "extra_labels": []
+    },
+    "states": {
+      "correct": 52,
+      "predicted": 52,
+      "target": 66,
+      "missed": 14,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 0.7878787878787878,
+      "f1": 0.8813559322033898,
+      "missing_by_node": {
+        "city size category": [
+          "mega-cities over 10 million people",
+          "mega-cities over 20 million people",
+          "none",
+          "secondary cities of 500,000 to 1 million people"
+        ],
+        "emissions accounting basis": [
+          "consumption-based emissions",
+          "none",
+          "production-based emissions"
+        ],
+        "emissions generation location": [
+          "emissions generated inside the city",
+          "emissions generated outside the city",
+          "none"
+        ],
+        "urban climate role": [
+          "city as climate contributor",
+          "city as climate solution",
+          "city as vulnerable area",
+          "none"
+        ]
+      },
+      "extra_by_node": {}
+    },
+    "edges": {
+      "correct": 15,
+      "predicted": 15,
+      "target": 16,
+      "missed": 1,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 0.9375,
+      "f1": 0.967741935483871,
+      "missing_due_to_absent_nodes": [
+        {
+          "parent": "emissions generation location",
+          "child": "emissions accounting basis",
+          "absent_endpoints": [
+            "emissions generation location",
+            "emissions accounting basis"
+          ]
+        }
+      ],
+      "missing_relationships_between_present_nodes": [],
+      "extra_edges": []
+    },
+    "cpds": {
+      "skipped": false,
+      "predicted_edges": 15,
+      "target_edges": 16,
+      "matched_edges": 15,
+      "missing_edges": 1,
+      "extra_edges": 0,
+      "complete_target_edges": 15,
+      "target_numeric_cells": 227,
+      "comparable_numeric_cells": 218,
+      "missing_numeric_cells": 9,
+      "cell_coverage": 0.960352422907489,
+      "mean_absolute_error": 1.6932057671677085e-05,
+      "max_absolute_error": 4.999999999999449e-05,
+      "complete_columns": 55,
+      "mean_column_kl": 6.565343877893809e-09
+    },
+    "full_coverage": {
+      "nodes": false,
+      "states": false,
+      "edges": false,
+      "nodes_states_edges": false
+    }
+  }
+}

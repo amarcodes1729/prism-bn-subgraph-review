@@ -1,0 +1,197 @@
+{
+  "backbone_id": "bn_00038",
+  "source_id": "wiki_00037",
+  "subgraph_count": 1,
+  "hierarchy_levels": 1,
+  "judgment": {
+    "criteria": {
+      "nodes": {
+        "score": 0.48,
+        "reason": "The generated text retains spillovers, externalities, independent events, economic activity, trade, market-clearing failure, information, and the plant and garden examples. It omits regional/worldwide scope, non-participants and neighbors, technology/R&D/knowledge spillovers, innovation economics, social crises and market shocks, regional alliances including SAARC and ASEAN, effective versus notional demand/supply, and local banking markets."
+      },
+      "states": {
+        "score": 0.34,
+        "reason": "Undesirable and beneficial effects preserve the negative/positive alternatives and the examples' polarity. However, the original's more-often-negative characterization, non-monetary status of externalities, constrained effective versus unconstrained notional demand/supply, and booms versus crashes are absent. Persistent information asymmetry is added as an explicit alternative not stated in the original."
+      },
+      "edges": {
+        "score": 0.36,
+        "reason": "The generated text connects the named sources to spillovers or externalities and retains the plant/odor and garden/beauty-and-scent connections. It omits trade benefits motivating regional alliances, spillovers producing crises or shocks, and market non-clearing affecting behavior in other markets. It also loses the specific chain in which information about someone generates information about related people, instead inventing a comparison between their associations with eliminating asymmetry."
+      },
+      "relationship_type": {
+        "score": 0.31,
+        "reason": "The original defines economic externalities as non-monetary spillovers on non-participants; the generated text broadly frames externalities as arising from all listed spillover sources, changing the conceptual relationship. The original's conditional positive information spillover becomes an association with unsupported comparative strength and possible persistence of asymmetry. Most causal, cross-market, and alliance-formation relationships are omitted, though the positive/negative character of the concrete examples remains faithful."
+      },
+      "overall_similarity": {
+        "score": 0.35,
+        "reason": "The generated text preserves a recognizable outline of several spillover sources and two illustrative effects, but removes much of the original's definition, scope, applications, and mechanisms. Its expanded information discussion materially departs from the original by adding comparative claims and an asymmetry-persistence alternative while failing to preserve the stated information-generation chain."
+      }
+    },
+    "score_out_of_5": 1.84,
+    "overall_reason": "This is a partial thematic summary rather than a faithful round trip. Several central examples and source concepts survive, but substantial economic detail and relationships are missing, and the information-spillover account contains unsupported additions."
+  },
+  "structural_metrics": {
+    "nodes": {
+      "correct": 4,
+      "predicted": 4,
+      "target": 13,
+      "missed": 9,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 0.3076923076923077,
+      "f1": 0.47058823529411764,
+      "missing_labels": [
+        "affected party",
+        "cross-market behavioral response",
+        "market clearing condition",
+        "market constraint outcome",
+        "regional cooperation arrangement",
+        "social or market outcome",
+        "spillover domain",
+        "spillover valence",
+        "trade outcome"
+      ],
+      "extra_labels": []
+    },
+    "states": {
+      "correct": 16,
+      "predicted": 16,
+      "target": 50,
+      "missed": 34,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 0.32,
+      "f1": 0.48484848484848486,
+      "missing_by_node": {
+        "affected party": [
+          "neighbors",
+          "non-participants",
+          "none",
+          "participants in other markets",
+          "regional nation states",
+          "related people"
+        ],
+        "cross-market behavioral response": [
+          "demand behavior change",
+          "none",
+          "supply behavior change"
+        ],
+        "market clearing condition": [
+          "markets clear",
+          "markets fail to clear",
+          "none"
+        ],
+        "market constraint outcome": [
+          "effective demand differs from notional demand",
+          "effective supply differs from notional supply",
+          "none"
+        ],
+        "regional cooperation arrangement": [
+          "ASEAN",
+          "multilateral alliance",
+          "none",
+          "SAARC"
+        ],
+        "social or market outcome": [
+          "market boom",
+          "market crash",
+          "none",
+          "social crisis"
+        ],
+        "spillover domain": [
+          "information spillover",
+          "knowledge spillover",
+          "none",
+          "R&D spillover",
+          "technology spillover"
+        ],
+        "spillover valence": [
+          "negative impact",
+          "none",
+          "positive impact"
+        ],
+        "trade outcome": [
+          "economic benefits from trade",
+          "increased trade",
+          "none"
+        ]
+      },
+      "extra_by_node": {}
+    },
+    "edges": {
+      "correct": 3,
+      "predicted": 3,
+      "target": 8,
+      "missed": 5,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 0.375,
+      "f1": 0.5454545454545454,
+      "missing_due_to_absent_nodes": [
+        {
+          "parent": "cross-market behavioral response",
+          "child": "market constraint outcome",
+          "absent_endpoints": [
+            "cross-market behavioral response",
+            "market constraint outcome"
+          ]
+        },
+        {
+          "parent": "externality manifestation",
+          "child": "social or market outcome",
+          "absent_endpoints": [
+            "social or market outcome"
+          ]
+        },
+        {
+          "parent": "market clearing condition",
+          "child": "cross-market behavioral response",
+          "absent_endpoints": [
+            "market clearing condition",
+            "cross-market behavioral response"
+          ]
+        },
+        {
+          "parent": "regional cooperation arrangement",
+          "child": "trade outcome",
+          "absent_endpoints": [
+            "regional cooperation arrangement",
+            "trade outcome"
+          ]
+        },
+        {
+          "parent": "spillover valence",
+          "child": "social or market outcome",
+          "absent_endpoints": [
+            "spillover valence",
+            "social or market outcome"
+          ]
+        }
+      ],
+      "missing_relationships_between_present_nodes": [],
+      "extra_edges": []
+    },
+    "cpds": {
+      "skipped": false,
+      "predicted_edges": 3,
+      "target_edges": 8,
+      "matched_edges": 3,
+      "missing_edges": 5,
+      "extra_edges": 0,
+      "complete_target_edges": 3,
+      "target_numeric_cells": 103,
+      "comparable_numeric_cells": 45,
+      "missing_numeric_cells": 58,
+      "cell_coverage": 0.4368932038834951,
+      "mean_absolute_error": 1.6719576719576294e-05,
+      "max_absolute_error": 4.285714285717779e-05,
+      "complete_columns": 12,
+      "mean_column_kl": 1.155582105827833e-08
+    },
+    "full_coverage": {
+      "nodes": false,
+      "states": false,
+      "edges": false,
+      "nodes_states_edges": false
+    }
+  }
+}

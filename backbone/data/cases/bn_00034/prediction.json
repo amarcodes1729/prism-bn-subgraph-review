@@ -1,0 +1,139 @@
+{
+  "nodes": [
+    {
+      "node": "sound recording technique",
+      "states": [
+        "digital recording",
+        "analog recording",
+        "none"
+      ]
+    },
+    {
+      "node": "analog bandwidth determinant",
+      "states": [
+        "physical circuit capability",
+        "electronic circuit capability",
+        "none"
+      ]
+    },
+    {
+      "node": "analog noise source",
+      "states": [
+        "flicker noise",
+        "recording medium imperfection",
+        "none"
+      ]
+    },
+    {
+      "node": "digital bandwidth determinant",
+      "states": [
+        "sample rate",
+        "Nyquist frequency",
+        "none"
+      ]
+    },
+    {
+      "node": "digital signal-to-noise determinant",
+      "states": [
+        "bit depth",
+        "conversion circuit noise",
+        "none"
+      ]
+    },
+    {
+      "node": "digital error mechanism",
+      "states": [
+        "aliasing",
+        "anti-aliasing filter artifact",
+        "jitter",
+        "quantization noise",
+        "none"
+      ]
+    },
+    {
+      "node": "system-specific audio feature",
+      "states": [
+        "transparent filtering algorithm",
+        "harmonic saturation",
+        "speed variation",
+        "none"
+      ]
+    },
+    {
+      "node": "audio performance dimension",
+      "states": [
+        "bandwidth",
+        "signal-to-noise ratio",
+        "linearity",
+        "noise level",
+        "distortion level",
+        "none"
+      ]
+    },
+    {
+      "node": "audio degradation type",
+      "states": [
+        "recording error",
+        "sound distortion",
+        "noise",
+        "none"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "parent": "sound recording technique",
+      "child": "analog bandwidth determinant"
+    },
+    {
+      "parent": "sound recording technique",
+      "child": "analog noise source"
+    },
+    {
+      "parent": "sound recording technique",
+      "child": "digital bandwidth determinant"
+    },
+    {
+      "parent": "sound recording technique",
+      "child": "digital signal-to-noise determinant"
+    },
+    {
+      "parent": "sound recording technique",
+      "child": "digital error mechanism"
+    },
+    {
+      "parent": "sound recording technique",
+      "child": "system-specific audio feature"
+    },
+    {
+      "parent": "analog bandwidth determinant",
+      "child": "audio performance dimension"
+    },
+    {
+      "parent": "analog noise source",
+      "child": "audio performance dimension"
+    },
+    {
+      "parent": "digital bandwidth determinant",
+      "child": "audio performance dimension"
+    },
+    {
+      "parent": "digital signal-to-noise determinant",
+      "child": "audio performance dimension"
+    },
+    {
+      "parent": "system-specific audio feature",
+      "child": "audio performance dimension"
+    },
+    {
+      "parent": "analog noise source",
+      "child": "audio degradation type"
+    },
+    {
+      "parent": "digital error mechanism",
+      "child": "audio degradation type"
+    }
+  ],
+  "cpds": [],
+  "inferred_components": []
+}

@@ -1,0 +1,113 @@
+{
+  "backbone_id": "bn_00021",
+  "source_id": "wiki_00020",
+  "subgraph_count": 225,
+  "hierarchy_levels": 3,
+  "judgment": {
+    "criteria": {
+      "nodes": {
+        "score": 0.87,
+        "reason": "The generated text retains most major entities and concepts, including the United States, Soviet Union, Russian Revolution, Brest-Litovsk, Allied intervention, Red Army, Marshall Plan, Comecon, Berlin crises, and NATO. It omits explicit identification of the United Kingdom and Eastern Bloc, does not distinguish West Berlin from Berlin, and leaves Comecon's full name unstated."
+      },
+      "states": {
+        "score": 0.7,
+        "reason": "The ideological alternatives, Soviet rejection of the Marshall Plan, and transition from wartime cooperation to rivalry are preserved. However, the generated text omits the 1945–1949 consolidation period, the Marshall Plan's 1947 introduction, the blockade's 1948–49 dates, NATO's 1949 creation, and the rivalry's four-decade duration. It also omits the blockade's status as the first major military confrontation."
+      },
+      "edges": {
+        "score": 0.81,
+        "reason": "Most central connections survive: early events strained relations, Soviet communist regimes provoked Western concerns, the Soviet Union rejected the Marshall Plan and established Comecon, and the airlift responded to the blockade. Missing connections include the Soviets' attempt to cut off Western access, the airlift's delivery of supplies to West Berlin, and the Marshall Plan's explicit purpose of preventing communism through capitalist stabilization. The Red Army's enforcement of communist regimes is less explicit."
+      },
+      "relationship_type": {
+        "score": 0.81,
+        "reason": "The generated text generally preserves causal tensions, contrasting political preferences, economic competition, and the blockade-to-airlift response. However, the original specifically attributes Soviet rejection of the Marshall Plan to its perception of US influence, whereas the generated text presents that perception more tentatively and applies it broadly to Western policies. It also says mounting conflict 'led to' NATO's creation, a stronger causal formulation than the original's description of NATO formalizing alliances and signaling prolonged confrontation."
+      },
+      "overall_similarity": {
+        "score": 0.81,
+        "reason": "The generated text faithfully preserves the main account of deteriorating US–Soviet cooperation, disputes over Eastern Europe, competing economic initiatives, the Berlin crisis, and Western alliance formation. Its principal losses are precise chronology, the original's duration and scope markers, and concrete mechanisms such as Red Army enforcement and aerial resupply of West Berlin. Some causal explanations are generalized or strengthened."
+      }
+    },
+    "score_out_of_5": 4.0,
+    "overall_reason": "This is a substantially faithful thematic retelling, but less precise than the original about dates, participants, operational details, and the strength or specificity of several causal connections."
+  },
+  "structural_metrics": {
+    "nodes": {
+      "correct": 14,
+      "predicted": 14,
+      "target": 16,
+      "missed": 2,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 0.875,
+      "f1": 0.9333333333333333,
+      "missing_labels": [
+        "alliance bloc",
+        "state actor"
+      ],
+      "extra_labels": []
+    },
+    "states": {
+      "correct": 55,
+      "predicted": 55,
+      "target": 66,
+      "missed": 11,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 0.8333333333333334,
+      "f1": 0.9090909090909091,
+      "missing_by_node": {
+        "alliance bloc": [
+          "communist states",
+          "Eastern Bloc",
+          "none",
+          "Western Allies",
+          "Western Bloc"
+        ],
+        "state actor": [
+          "Nazi Germany",
+          "none",
+          "Soviet Russia",
+          "Soviet Union",
+          "United Kingdom",
+          "United States"
+        ]
+      },
+      "extra_by_node": {}
+    },
+    "edges": {
+      "correct": 18,
+      "predicted": 18,
+      "target": 18,
+      "missed": 0,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "missing_due_to_absent_nodes": [],
+      "missing_relationships_between_present_nodes": [],
+      "extra_edges": []
+    },
+    "cpds": {
+      "skipped": false,
+      "predicted_edges": 0,
+      "target_edges": 18,
+      "matched_edges": 0,
+      "missing_edges": 18,
+      "extra_edges": 0,
+      "complete_target_edges": 0,
+      "target_numeric_cells": 290,
+      "comparable_numeric_cells": 0,
+      "missing_numeric_cells": 290,
+      "cell_coverage": 0.0,
+      "mean_absolute_error": null,
+      "max_absolute_error": null,
+      "complete_columns": 0,
+      "mean_column_kl": null
+    },
+    "full_coverage": {
+      "nodes": false,
+      "states": false,
+      "edges": true,
+      "nodes_states_edges": false
+    }
+  }
+}

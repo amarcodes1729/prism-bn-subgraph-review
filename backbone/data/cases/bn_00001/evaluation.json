@@ -1,0 +1,118 @@
+{
+  "backbone_id": "bn_00001",
+  "source_id": "wiki_00000",
+  "subgraph_count": 59,
+  "hierarchy_levels": 2,
+  "judgment": {
+    "criteria": {
+      "nodes": {
+        "score": 0.74,
+        "reason": "Preserves unemployment insurance, partial wage replacement, federal and state governments, Wisconsin, the Supreme Court, payroll taxes, misconduct, good cause, and tax treatment. Omits the Social Security Act, Internal Revenue Code, District of Columbia, Puerto Rico, U.S. Virgin Islands, benefit duration, extensions, and the Great Recession. Federal oversight is added without an explicit counterpart in the original."
+      },
+      "states": {
+        "score": 0.53,
+        "reason": "Retains the $1,015 and $235 figures, social-welfare classification, gross-income inclusion, and complete versus temporary disqualification. Omits the historical dates 1932, 1935, and 1937; the 2022 reference; all 50 states; the six-month standard duration; and the 73-week extension. It also fails to identify Massachusetts and Mississippi as the respective payment endpoints or Alaska, New Jersey, and Pennsylvania as states requiring employee contributions."
+      },
+      "edges": {
+        "score": 0.64,
+        "reason": "Correctly connects insurance to partial wage replacement, states to administration and payment, payroll taxes to funding, and job-separation circumstances to eligibility. However, it drops the specific state-to-payment and state-to-employee-contribution connections, the Social Security Act's nationwide creation role, and all duration-to-downturn connections. It adds an explanation that divided governmental responsibility produces variation and associates financing arrangements with benefit levels, neither explicitly stated in the original."
+      },
+      "relationship_type": {
+        "score": 0.68,
+        "reason": "Preserves the broad administrative, funding, and tax relationships, along with state-dependent misconduct penalties. However, the original's categorical exclusion for quitting without good cause in every state becomes merely 'may be denied,' and mandatory employee contributions in three states become possible funding alternatives. Calling Wisconsin's program 'an early' program loses its first-in-the-country status, while saying the program was created through federal action blurs the original distinction between Wisconsin's initial creation and later federal nationwide establishment."
+      },
+      "overall_similarity": {
+        "score": 0.65,
+        "reason": "The generated text accurately conveys the basic purpose, decentralized administration, variable eligibility, misconduct considerations, and taxable nature of U.S. unemployment insurance. It is substantially less faithful on historical specificity, geographic coverage, mandatory funding arrangements, state-specific benefit amounts, and categorical eligibility rules, and entirely omits standard benefit duration and recession-related extensions."
+      }
+    },
+    "score_out_of_5": 3.24,
+    "overall_reason": "The generated text captures the central framework but replaces numerous precise facts with general descriptions. Important omissions and weakened eligibility and funding statements prevent it from being a fully faithful round trip, despite substantial overlap in the main subject matter."
+  },
+  "structural_metrics": {
+    "nodes": {
+      "correct": 13,
+      "predicted": 13,
+      "target": 15,
+      "missed": 2,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 0.8666666666666667,
+      "f1": 0.9285714285714286,
+      "missing_labels": [
+        "benefit duration policy",
+        "macroeconomic condition"
+      ],
+      "extra_labels": []
+    },
+    "states": {
+      "correct": 55,
+      "predicted": 55,
+      "target": 62,
+      "missed": 7,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 0.8870967741935484,
+      "f1": 0.9401709401709402,
+      "missing_by_node": {
+        "benefit duration policy": [
+          "73-week extension",
+          "none",
+          "short-period disqualification",
+          "standard six-month duration"
+        ],
+        "macroeconomic condition": [
+          "economic downturn",
+          "Great Recession",
+          "none"
+        ]
+      },
+      "extra_by_node": {}
+    },
+    "edges": {
+      "correct": 14,
+      "predicted": 14,
+      "target": 15,
+      "missed": 1,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 0.9333333333333333,
+      "f1": 0.9655172413793104,
+      "missing_due_to_absent_nodes": [
+        {
+          "parent": "macroeconomic condition",
+          "child": "benefit duration policy",
+          "absent_endpoints": [
+            "macroeconomic condition",
+            "benefit duration policy"
+          ]
+        }
+      ],
+      "missing_relationships_between_present_nodes": [],
+      "extra_edges": []
+    },
+    "cpds": {
+      "skipped": false,
+      "predicted_edges": 0,
+      "target_edges": 15,
+      "matched_edges": 0,
+      "missing_edges": 15,
+      "extra_edges": 0,
+      "complete_target_edges": 0,
+      "target_numeric_cells": 269,
+      "comparable_numeric_cells": 0,
+      "missing_numeric_cells": 269,
+      "cell_coverage": 0.0,
+      "mean_absolute_error": null,
+      "max_absolute_error": null,
+      "complete_columns": 0,
+      "mean_column_kl": null
+    },
+    "full_coverage": {
+      "nodes": false,
+      "states": false,
+      "edges": false,
+      "nodes_states_edges": false
+    }
+  }
+}

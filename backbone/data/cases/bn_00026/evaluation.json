@@ -1,0 +1,127 @@
+{
+  "backbone_id": "bn_00026",
+  "source_id": "wiki_00025",
+  "subgraph_count": 1,
+  "hierarchy_levels": 1,
+  "judgment": {
+    "criteria": {
+      "nodes": {
+        "score": 0.45,
+        "reason": "The generated text retains casualties, military personnel, civilians, migration, population-size uncertainty, and divergent estimates. It omits the Paraguayan War, Paraguay, the 1864–1870 dates, Jan Kleinpenning and his professional identity, and academic demographic scholarship as the source of estimate limits."
+      },
+      "states": {
+        "score": 0.25,
+        "reason": "Unknown death tolls, immense casualties, and widely varying estimates are represented. However, Kleinpenning's quarter-to-half population-loss estimate and the academic bounds of 7% to 69%, including migration, are missing. The generated text instead introduces unsupported probabilities of about 60% and 53% and an unspecified-severity category."
+      },
+      "edges": {
+        "score": 0.26,
+        "reason": "The generated text preserves the connection between immense casualties and military personnel and civilians, and broadly connects population uncertainty with difficulty estimating losses. It loses the attribution of a population-loss estimate to Kleinpenning and the bounds attributed to academic scholarship. It also recasts migration, originally a non-lethal source of population loss, as a population category with casualty estimates, and invents distributions linking uncertainty conditions to assessment categories."
+      },
+      "relationship_type": {
+        "score": 0.22,
+        "reason": "The original offers an unknown death toll, a widespread qualitative impression, an attributed estimate, and explicit scholarly limits. The generated text turns much of this into probabilistic associations and conditional assessment patterns not stated in the original. In particular, the non-lethal role of migration is not preserved."
+      },
+      "overall_similarity": {
+        "score": 0.24,
+        "reason": "The generated text captures the broad themes of demographic uncertainty, divergent estimates, and immense military and civilian casualties. However, it removes the historical subject and the original's principal quantitative details while adding unsupported statistical assessments and misrepresenting migration's role."
+      }
+    },
+    "score_out_of_5": 1.42,
+    "overall_reason": "There is partial thematic overlap, but the generated text replaces a historically specific account of uncertain Paraguayan War losses with unsupported probabilistic analysis. Major entities, estimate ranges, source attributions, and the distinction between deaths and non-lethal population loss are missing or altered."
+  },
+  "structural_metrics": {
+    "nodes": {
+      "correct": 3,
+      "predicted": 3,
+      "target": 5,
+      "missed": 2,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 0.6,
+      "f1": 0.7499999999999999,
+      "missing_labels": [
+        "population loss magnitude",
+        "population loss mechanism"
+      ],
+      "extra_labels": []
+    },
+    "states": {
+      "correct": 12,
+      "predicted": 12,
+      "target": 21,
+      "missed": 9,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 0.5714285714285714,
+      "f1": 0.7272727272727273,
+      "missing_by_node": {
+        "population loss magnitude": [
+          "25% population loss",
+          "50% population loss",
+          "69% population loss",
+          "7% population loss",
+          "none"
+        ],
+        "population loss mechanism": [
+          "civilian deaths",
+          "migration",
+          "military deaths",
+          "none"
+        ]
+      },
+      "extra_by_node": {}
+    },
+    "edges": {
+      "correct": 2,
+      "predicted": 2,
+      "target": 4,
+      "missed": 2,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "missing_due_to_absent_nodes": [
+        {
+          "parent": "population loss magnitude",
+          "child": "casualty severity assessment",
+          "absent_endpoints": [
+            "population loss magnitude"
+          ]
+        },
+        {
+          "parent": "population loss mechanism",
+          "child": "population loss magnitude",
+          "absent_endpoints": [
+            "population loss mechanism",
+            "population loss magnitude"
+          ]
+        }
+      ],
+      "missing_relationships_between_present_nodes": [],
+      "extra_edges": []
+    },
+    "cpds": {
+      "skipped": false,
+      "predicted_edges": 2,
+      "target_edges": 4,
+      "matched_edges": 2,
+      "missing_edges": 2,
+      "extra_edges": 0,
+      "complete_target_edges": 2,
+      "target_numeric_cells": 72,
+      "comparable_numeric_cells": 32,
+      "missing_numeric_cells": 40,
+      "cell_coverage": 0.4444444444444444,
+      "mean_absolute_error": 1.6062675070026636e-05,
+      "max_absolute_error": 4.705882352941393e-05,
+      "complete_columns": 8,
+      "mean_column_kl": 6.963481531255504e-09
+    },
+    "full_coverage": {
+      "nodes": false,
+      "states": false,
+      "edges": false,
+      "nodes_states_edges": false
+    }
+  }
+}

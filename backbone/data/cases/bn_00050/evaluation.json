@@ -1,0 +1,94 @@
+{
+  "backbone_id": "bn_00050",
+  "source_id": "wiki_00049",
+  "subgraph_count": 139,
+  "hierarchy_levels": 2,
+  "judgment": {
+    "criteria": {
+      "nodes": {
+        "score": 0.84,
+        "reason": "Preserves most core concepts, including menstrual products, education, hygiene infrastructure, stigma, health consequences, school/work absence, justice issues, legislation, and advocacy. Omits the American Medical Women's Association, the approximately 500 million affected women and girls, and the explicit worldwide scope."
+      },
+      "states": {
+        "score": 0.77,
+        "reason": "Retains inadequate access, unsafe period management, fear of shame, infections, reproductive-tract complications, and missed school/work days. However, it omits the original's approximate 500 million figure and women-and-girls population, and does not preserve the stated diversity of legislation and perceptions around the world."
+      },
+      "edges": {
+        "score": 0.78,
+        "reason": "Correctly connects period poverty with inadequate products, education, water, and sanitation, and connects menstrual-management difficulties with health and attendance consequences. However, it adds connections from public perceptions to policy responses and from legislation to specific access provisions that the original does not state. It also omits the Association's definitional attribution and the affected-population estimate."
+      },
+      "relationship_type": {
+        "score": 0.77,
+        "reason": "Generally preserves the original's possibility-based health consequences and the intersection with gender and economic justice. However, it turns listed advocacy avenues into mechanisms for influencing public understanding, adds a perceptions-to-policy relationship, and introduces prescriptive claims that addressing period poverty requires responsive legislation and advocacy. The original describes these topics without asserting those dependencies or requirements."
+      },
+      "overall_similarity": {
+        "score": 0.79,
+        "reason": "The generated text faithfully captures the broad definition, infrastructure needs, health and social harms, and justice and advocacy themes. Its fidelity is reduced by missing the prevalence estimate, affected demographic, named definitional source, and worldwide variation, while expanding the discussion into unsupported policy relationships and recommendations."
+      }
+    },
+    "score_out_of_5": 3.95,
+    "overall_reason": "The central account of period poverty is substantially preserved, but important factual anchors are omitted and the generated text adds a stronger policy-and-advocacy framework than the original supports."
+  },
+  "structural_metrics": {
+    "nodes": {
+      "correct": 12,
+      "predicted": 12,
+      "target": 12,
+      "missed": 0,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "missing_labels": [],
+      "extra_labels": []
+    },
+    "states": {
+      "correct": 39,
+      "predicted": 39,
+      "target": 39,
+      "missed": 0,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "missing_by_node": {},
+      "extra_by_node": {}
+    },
+    "edges": {
+      "correct": 16,
+      "predicted": 16,
+      "target": 16,
+      "missed": 0,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "missing_due_to_absent_nodes": [],
+      "missing_relationships_between_present_nodes": [],
+      "extra_edges": []
+    },
+    "cpds": {
+      "skipped": false,
+      "predicted_edges": 0,
+      "target_edges": 16,
+      "matched_edges": 0,
+      "missing_edges": 16,
+      "extra_edges": 0,
+      "complete_target_edges": 0,
+      "target_numeric_cells": 152,
+      "comparable_numeric_cells": 0,
+      "missing_numeric_cells": 152,
+      "cell_coverage": 0.0,
+      "mean_absolute_error": null,
+      "max_absolute_error": null,
+      "complete_columns": 0,
+      "mean_column_kl": null
+    },
+    "full_coverage": {
+      "nodes": true,
+      "states": true,
+      "edges": true,
+      "nodes_states_edges": true
+    }
+  }
+}

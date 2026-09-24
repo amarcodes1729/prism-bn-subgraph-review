@@ -1,0 +1,94 @@
+{
+  "backbone_id": "bn_00016",
+  "source_id": "wiki_00015",
+  "subgraph_count": 56,
+  "hierarchy_levels": 2,
+  "judgment": {
+    "criteria": {
+      "nodes": {
+        "score": 0.9,
+        "reason": "The generated text retains nearly all named entities and major concepts, including World3, POLES, population growth, economic activity, technologies, the Paris Agreement, the 2018 conference, the IPCC report, adaptation plans, nationally determined contributions, energy supply, and carbon dioxide removal. It omits countries as explicit decision-making actors and the concept of assessing long-term effectiveness, while adding a discussion of projected outcomes."
+      },
+      "states": {
+        "score": 0.75,
+        "reason": "National, regional, and global scales and the three principal driving parameters are preserved. However, the generated text omits the original's characterization of pathways as more concrete and action-oriented and the explicit observation that scenarios and pathways are often used interchangeably. It also treats warming of 1.5 °C as a projected-outcome category, whereas the original explicitly presents that value in the report's title."
+      },
+      "edges": {
+        "score": 0.69,
+        "reason": "The generated text preserves the broad connections between driving forces, scenarios, models, climate policy, and mitigation portfolios. It replaces several specific links with general associations: models quantify parameter effects in the original, countries use studies to understand decisions, and the IPCC report specifically supplied key scientific input to the 2018 conference. The generated text also adds links between projected outcomes, population conditions, and mitigation and adaptation that the original does not state."
+      },
+      "relationship_type": {
+        "score": 0.68,
+        "reason": "Specific functional and evidentiary relationships become weaker and less precise: 'quantify the effects' becomes 'can support this work,' and international goals being 'based on studying these scenarios' becomes informing associated processes. The report's role as a 'key scientific input' to a particular conference is blurred into a list of governance and scientific elements. The added contrast 'rather than adaptation' makes an exclusion explicit that the original does not assert."
+      },
+      "overall_similarity": {
+        "score": 0.73,
+        "reason": "The generated text preserves the topic, most terminology, geographic scope, principal drivers, and policy relevance. It is less faithful to the original's explanatory structure and important details, especially the scenarios/pathways distinction, long-term effectiveness, countries' decision-making use, model quantification, and the specific report-to-conference relationship. Its final discussion of projected outcomes introduces unsupported elaboration."
+      }
+    },
+    "score_out_of_5": 3.75,
+    "overall_reason": "This is a recognizable but generalized paraphrase with strong entity coverage. It loses several defining distinctions and precise relationships, and adds an outcome-oriented interpretation not established by the original."
+  },
+  "structural_metrics": {
+    "nodes": {
+      "correct": 11,
+      "predicted": 11,
+      "target": 11,
+      "missed": 0,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "missing_labels": [],
+      "extra_labels": []
+    },
+    "states": {
+      "correct": 36,
+      "predicted": 36,
+      "target": 36,
+      "missed": 0,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "missing_by_node": {},
+      "extra_by_node": {}
+    },
+    "edges": {
+      "correct": 11,
+      "predicted": 11,
+      "target": 11,
+      "missed": 0,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "missing_due_to_absent_nodes": [],
+      "missing_relationships_between_present_nodes": [],
+      "extra_edges": []
+    },
+    "cpds": {
+      "skipped": false,
+      "predicted_edges": 11,
+      "target_edges": 11,
+      "matched_edges": 11,
+      "missing_edges": 0,
+      "extra_edges": 0,
+      "complete_target_edges": 11,
+      "target_numeric_cells": 118,
+      "comparable_numeric_cells": 118,
+      "missing_numeric_cells": 0,
+      "cell_coverage": 1.0,
+      "mean_absolute_error": 1.9905706666860472e-05,
+      "max_absolute_error": 4.999999999999449e-05,
+      "complete_columns": 36,
+      "mean_column_kl": 5.008867444942248e-09
+    },
+    "full_coverage": {
+      "nodes": true,
+      "states": true,
+      "edges": true,
+      "nodes_states_edges": true
+    }
+  }
+}

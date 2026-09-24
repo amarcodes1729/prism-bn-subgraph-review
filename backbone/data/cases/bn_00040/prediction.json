@@ -1,0 +1,174 @@
+{
+  "nodes": [
+    {
+      "node": "interface capability",
+      "states": [
+        "central interface",
+        "none"
+      ]
+    },
+    {
+      "node": "production system type",
+      "states": [
+        "electronic device",
+        "application software",
+        "integrated stand-alone unit",
+        "central-computer-controlled component system",
+        "none"
+      ]
+    },
+    {
+      "node": "audio workflow function",
+      "states": [
+        "recording audio files",
+        "editing audio files",
+        "producing audio files",
+        "altering multiple recordings",
+        "mixing multiple tracks",
+        "none"
+      ]
+    },
+    {
+      "node": "specialized audio output",
+      "states": [
+        "podcasts",
+        "sound effects",
+        "complex recorded audio",
+        "none"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "parent": "interface capability",
+      "child": "audio workflow function"
+    },
+    {
+      "parent": "production system type",
+      "child": "audio workflow function"
+    },
+    {
+      "parent": "audio workflow function",
+      "child": "specialized audio output"
+    }
+  ],
+  "cpds": [
+    {
+      "parent": "interface capability",
+      "child": "audio workflow function",
+      "matrix": [
+        [
+          0.18,
+          0.02
+        ],
+        [
+          0.18,
+          0.015
+        ],
+        [
+          0.2,
+          0.015
+        ],
+        [
+          0.2,
+          0.01
+        ],
+        [
+          0.22,
+          0.01
+        ],
+        [
+          0.02,
+          0.93
+        ]
+      ]
+    },
+    {
+      "parent": "production system type",
+      "child": "audio workflow function",
+      "matrix": [
+        [
+          0.24,
+          0.22,
+          0.25,
+          0.22,
+          0.04
+        ],
+        [
+          0.18,
+          0.23,
+          0.17,
+          0.18,
+          0.03
+        ],
+        [
+          0.2,
+          0.21,
+          0.19,
+          0.2,
+          0.03
+        ],
+        [
+          0.16,
+          0.14,
+          0.15,
+          0.18,
+          0.02
+        ],
+        [
+          0.17,
+          0.15,
+          0.19,
+          0.17,
+          0.02
+        ],
+        [
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.86
+        ]
+      ]
+    },
+    {
+      "parent": "audio workflow function",
+      "child": "specialized audio output",
+      "matrix": [
+        [
+          0.22,
+          0.25,
+          0.22,
+          0.15,
+          0.1,
+          0.02
+        ],
+        [
+          0.18,
+          0.2,
+          0.18,
+          0.25,
+          0.15,
+          0.02
+        ],
+        [
+          0.4,
+          0.35,
+          0.45,
+          0.4,
+          0.55,
+          0.03
+        ],
+        [
+          0.2,
+          0.2,
+          0.15,
+          0.2,
+          0.2,
+          0.93
+        ]
+      ]
+    }
+  ],
+  "inferred_components": []
+}

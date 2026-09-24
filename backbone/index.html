@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PRISM · Backbone review</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header><h1>Backbone text review</h1><p>Compare the original article with text generated from the GPT-5.6 backbone.</p></header>
+  <nav><a class="active" href="./">Backbone</a><a href="../">Sub-graph</a></nav>
+  <main>
+    <section class="toolbar">
+      <label>Reviewer name<input id="reviewer" maxlength="100" autocomplete="name"></label>
+      <label>Case<select id="case"></select></label>
+      <button id="previous" type="button">Previous</button><button id="next" type="button">Next</button>
+      <button id="change-name" class="secondary" type="button">Change name</button>
+    </section>
+    <p id="status" class="status" role="status"></p>
+    <section class="meta"><strong id="title">Loading…</strong><span id="source-id"></span><span id="position"></span></section>
+    <div class="grid">
+      <article><h2>Original text</h2><pre id="original"></pre></article>
+      <article><h2>Generated text</h2><pre id="generated"></pre></article>
+      <article><h2>Ground truth backbone</h2><pre id="truth"></pre></article>
+      <article><h2>Generated backbone</h2><pre id="prediction"></pre></article>
+    </div>
+    <section class="review">
+      <h2>Human scores</h2>
+      <p>Use continuous scores from 0 to 1 for the five criteria. The separate text score is from 1 to 5.</p>
+      <div class="scores">
+        <label>Nodes<input data-score="nodes" type="number" min="0" max="1" step="any"></label>
+        <label>States<input data-score="states" type="number" min="0" max="1" step="any"></label>
+        <label>Edges<input data-score="edges" type="number" min="0" max="1" step="any"></label>
+        <label>Relationship type<input data-score="relationship_type" type="number" min="0" max="1" step="any"></label>
+        <label>Overall similarity<input data-score="overall_similarity" type="number" min="0" max="1" step="any"></label>
+        <label>Original vs generated text (1–5)<input id="text-score" type="number" min="1" max="5" step="any"></label>
+      </div>
+      <label>Reason (optional)<textarea id="reason" maxlength="5000" rows="4"></textarea></label>
+      <div class="actions"><button id="add-review" type="button">Add review</button><button id="download" type="button" disabled>Download CSV</button><span id="review-status"></span></div>
+    </section>
+  </main>
+  <script src="app.js" defer></script>
+</body>
+</html>

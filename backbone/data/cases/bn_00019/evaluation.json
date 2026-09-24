@@ -1,0 +1,94 @@
+{
+  "backbone_id": "bn_00019",
+  "source_id": "wiki_00018",
+  "subgraph_count": 353,
+  "hierarchy_levels": 3,
+  "judgment": {
+    "criteria": {
+      "nodes": {
+        "score": 0.64,
+        "reason": "The generated text retains the active layer, biomass, decomposition, greenhouse gases, carbon budgets, infrastructure, toxic waste, mercury, and pathogens. It omits underwater sediment, glaciers and ice sheets, permafrost's etymology, and virtually all geographic coverage, including the hemispheres, Arctic regions, Tibetan Plateau, and named countries and mountain ranges."
+      },
+      "states": {
+        "score": 0.34,
+        "reason": "Seasonal freezing and thawing, frozen versus thawed ground, uncertain emissions, and generally low disease risk are preserved. Missing are the below-0 °C threshold and two-year minimum, 700,000-year age, depth extremes, coverage percentages and area, nearly 70% infrastructure exposure, and 13,000–20,000 contaminated sites. The generated text retains 2050 and tens of billions of dollars but omits the latter's second-half-of-century timing. It also changes conditional carbon dioxide or methane release into release of both."
+      },
+      "edges": {
+        "score": 0.62,
+        "reason": "The generated text largely preserves warming leading to thaw, resumed decomposition leading to emissions and climate feedback, thaw threatening infrastructure, and contaminant leakage causing pollution. However, it omits geographic and dimensional connections, invents a connection between exceeded hydraulic saturation and greenhouse-gas releases, and fails to preserve the explicit comparisons with human emissions, deforestation, and large-country emissions. It also introduces a possible path to runaway warming that the original rejects."
+      },
+      "relationship_type": {
+        "score": 0.51,
+        "reason": "Several causal chains and the qualified low pandemic risk remain faithful. However, the original's agreement that permafrost emissions cannot cause runaway warming becomes 'a more extreme possible outcome.' Its clear expectation of emissions smaller than human-caused emissions becomes vague agreement around smaller projections, while comparability with deforestation and national emissions becomes merely being 'alongside' those sources. The generally applicable active-layer description is made unconditional, and the original hydraulic-saturation mechanism is replaced partly by an unsupported association with gas releases."
+      },
+      "overall_similarity": {
+        "score": 0.5,
+        "reason": "The generated text captures much of the broad account of thaw-related carbon release, ground instability, pollution, and low-probability biological hazards. Nevertheless, it drops nearly all quantitative definition, physical extent, geographic distribution, and risk estimates. Its reversal of the runaway-warming conclusion and added hydraulic-saturation/emissions connection materially distort the original's scientific meaning."
+      }
+    },
+    "score_out_of_5": 2.61,
+    "overall_reason": "This is a recognizable but incomplete summary of permafrost-thaw impacts rather than a faithful round trip of the full text. Extensive omissions of definition, geography, and numerical detail combine with consequential changes to the emissions comparisons and the original's explicit rejection of runaway warming."
+  },
+  "structural_metrics": {
+    "nodes": {
+      "correct": 16,
+      "predicted": 16,
+      "target": 16,
+      "missed": 0,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "missing_labels": [],
+      "extra_labels": []
+    },
+    "states": {
+      "correct": 58,
+      "predicted": 58,
+      "target": 58,
+      "missed": 0,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "missing_by_node": {},
+      "extra_by_node": {}
+    },
+    "edges": {
+      "correct": 19,
+      "predicted": 19,
+      "target": 19,
+      "missed": 0,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "missing_due_to_absent_nodes": [],
+      "missing_relationships_between_present_nodes": [],
+      "extra_edges": []
+    },
+    "cpds": {
+      "skipped": false,
+      "predicted_edges": 0,
+      "target_edges": 19,
+      "matched_edges": 0,
+      "missing_edges": 19,
+      "extra_edges": 0,
+      "complete_target_edges": 0,
+      "target_numeric_cells": 266,
+      "comparable_numeric_cells": 0,
+      "missing_numeric_cells": 266,
+      "cell_coverage": 0.0,
+      "mean_absolute_error": null,
+      "max_absolute_error": null,
+      "complete_columns": 0,
+      "mean_column_kl": null
+    },
+    "full_coverage": {
+      "nodes": true,
+      "states": true,
+      "edges": true,
+      "nodes_states_edges": true
+    }
+  }
+}

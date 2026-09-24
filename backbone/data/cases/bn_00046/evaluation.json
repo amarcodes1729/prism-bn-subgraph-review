@@ -1,0 +1,94 @@
+{
+  "backbone_id": "bn_00046",
+  "source_id": "wiki_00045",
+  "subgraph_count": 5,
+  "hierarchy_levels": 1,
+  "judgment": {
+    "criteria": {
+      "nodes": {
+        "score": 0.79,
+        "reason": "The generated text retains Galicia, poverty, landowners, government, population growth, small peasant plots, education, agricultural techniques, malnutrition, famine, disease, productivity, and British Ireland. It omits the full Kingdom of Galicia and Lodomeria designation, Austrian identification, Poles as the nickname's users, and the specific Polish expressions and nickname."
+      },
+      "states": {
+        "score": 0.7,
+        "reason": "Severe and widespread poverty, chronic malnutrition, recurring famines, inadequate education, and primitive agriculture are preserved. The late-19th-century emphasis is absent, as are the alternative proverbial labels and the nickname's 'naked' and 'hungry' meanings. Subsistence-level productivity and living close to subsistence are added descriptions not explicitly present in the original."
+      },
+      "edges": {
+        "score": 0.8,
+        "reason": "Most explanatory connections survive: reform neglect, population pressure, educational and agricultural limitations, and food and health crises contribute to deprivation or reduced productivity. However, population growth causing small plots becomes population growth and small plots jointly intensifying deprivation. The generated text also adds a direct connection from malnutrition, famine, and disease to outside perceptions, while omitting Poles' distortion of the province's name through specific wordplay."
+      },
+      "relationship_type": {
+        "score": 0.79,
+        "reason": "The generated text generally preserves the causal explanation of poverty and the proverbial and comparative character of its public reputation. However, the original's vicious circle is rendered partly as conditions being 'intertwined' or 'accompanied,' weakening explicit feedback. Conversely, it asserts that health and food crises 'contributed directly' to outside perceptions, a causal claim the original does not make. The Ireland comparison also shifts from poverty and regular famines to a broader symbol of rural deprivation."
+      },
+      "overall_similarity": {
+        "score": 0.78,
+        "reason": "The generated text faithfully conveys the main account of severe Galician poverty and its agricultural, demographic, institutional, and health-related causes. It loses important historical specificity, especially Austrian rule, the late-19th-century emphasis, and the detailed Polish proverbial expressions and wordplay. Its expanded discussion of subsistence and outside perceptions introduces interpretive material beyond the original."
+      }
+    },
+    "score_out_of_5": 3.86,
+    "overall_reason": "The central socioeconomic explanation is substantially preserved, but historical and linguistic details are compressed away. Some original causal structure is weakened, and the generated text adds unsupported specificity about subsistence and the formation of outside perceptions."
+  },
+  "structural_metrics": {
+    "nodes": {
+      "correct": 7,
+      "predicted": 7,
+      "target": 7,
+      "missed": 0,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "missing_labels": [],
+      "extra_labels": []
+    },
+    "states": {
+      "correct": 24,
+      "predicted": 24,
+      "target": 24,
+      "missed": 0,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "missing_by_node": {},
+      "extra_by_node": {}
+    },
+    "edges": {
+      "correct": 7,
+      "predicted": 7,
+      "target": 7,
+      "missed": 0,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "missing_due_to_absent_nodes": [],
+      "missing_relationships_between_present_nodes": [],
+      "extra_edges": []
+    },
+    "cpds": {
+      "skipped": false,
+      "predicted_edges": 7,
+      "target_edges": 7,
+      "matched_edges": 7,
+      "missing_edges": 0,
+      "extra_edges": 0,
+      "complete_target_edges": 7,
+      "target_numeric_cells": 89,
+      "comparable_numeric_cells": 89,
+      "missing_numeric_cells": 0,
+      "cell_coverage": 1.0,
+      "mean_absolute_error": 1.1993046689455025e-05,
+      "max_absolute_error": 4.7826086956526126e-05,
+      "complete_columns": 24,
+      "mean_column_kl": 3.4397972837910138e-09
+    },
+    "full_coverage": {
+      "nodes": true,
+      "states": true,
+      "edges": true,
+      "nodes_states_edges": true
+    }
+  }
+}

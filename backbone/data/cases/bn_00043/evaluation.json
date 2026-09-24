@@ -1,0 +1,148 @@
+{
+  "backbone_id": "bn_00043",
+  "source_id": "wiki_00042",
+  "subgraph_count": 2,
+  "hierarchy_levels": 1,
+  "judgment": {
+    "criteria": {
+      "nodes": {
+        "score": 0.43,
+        "reason": "The generated text retains reservations, Native Americans, tribal governments, the Bureau of Indian Affairs, reservation characteristics, and population distribution. It omits the Department of the Interior, Washington, DC, shared colonization histories, poverty, education, healthcare, employment, housing, and economic infrastructure."
+      },
+      "states": {
+        "score": 0.2,
+        "reason": "Sovereign status and variation in size, population, political economy, culture, and traditions are preserved. However, the generated text omits 334 reservations; the 2008 population figures of almost one-third and approximately 700,000; the approximately one-half living on the ten largest reservations; and all poverty percentages and dates. It also omits the explicitly low or deficient conditions across education and other services."
+      },
+      "edges": {
+        "score": 0.34,
+        "reason": "The generated text preserves tribal management of reservations, cooperation with the Bureau of Indian Affairs, and concentration on the ten largest reservations. It omits the Bureau's departmental affiliation and location, all poverty comparisons, and reservations' connections to shared history and contemporary challenges. It introduces unsupported connections between governance arrangements and reservation characteristics, and between those characteristics and population distribution."
+      },
+      "relationship_type": {
+        "score": 0.44,
+        "reason": "Sovereignty, tribal management, and variation across reservations retain their original meaning. However, 'often in cooperation' weakens the original unqualified cooperation statement, and 'some' on the ten largest reservations loses the original quantified concentration. The generated claim that characteristics 'help shape' distribution adds an explanatory relationship not stated in the original, while shared historical and comparative socioeconomic relationships are absent."
+      },
+      "overall_similarity": {
+        "score": 0.29,
+        "reason": "The generated text captures the basic definition of reservations and their diversity, but replaces most of the original's demographic specificity and entire discussion of shared history, poverty, and persistent socioeconomic problems with a general account of residential patterns. It therefore preserves only a limited portion of the original's factual scope and emphasis."
+      }
+    },
+    "score_out_of_5": 1.7,
+    "overall_reason": "This is a partial thematic match rather than a faithful round trip. Basic reservation governance and diversity survive, but nearly all quantitative detail and the central discussion of shared historical and socioeconomic challenges are missing, and several explanatory connections are introduced without support in the original."
+  },
+  "structural_metrics": {
+    "nodes": {
+      "correct": 4,
+      "predicted": 4,
+      "target": 8,
+      "missed": 4,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "missing_labels": [
+        "community service condition",
+        "historical process",
+        "poverty prevalence",
+        "socioeconomic disadvantage"
+      ],
+      "extra_labels": []
+    },
+    "states": {
+      "correct": 17,
+      "predicted": 17,
+      "target": 32,
+      "missed": 15,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 0.53125,
+      "f1": 0.6938775510204082,
+      "missing_by_node": {
+        "community service condition": [
+          "deficient economic infrastructure",
+          "none",
+          "poor healthcare services",
+          "substandard housing"
+        ],
+        "historical process": [
+          "colonization",
+          "none",
+          "sovereignty"
+        ],
+        "poverty prevalence": [
+          "Native American poverty rate of 22 percent",
+          "none",
+          "reservation poverty rate of 28.4 percent",
+          "U.S. poverty rate of 12.7 percent"
+        ],
+        "socioeconomic disadvantage": [
+          "low education levels",
+          "low employment",
+          "none",
+          "poverty"
+        ]
+      },
+      "extra_by_node": {}
+    },
+    "edges": {
+      "correct": 3,
+      "predicted": 3,
+      "target": 6,
+      "missed": 3,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "missing_due_to_absent_nodes": [
+        {
+          "parent": "community service condition",
+          "child": "socioeconomic disadvantage",
+          "absent_endpoints": [
+            "community service condition",
+            "socioeconomic disadvantage"
+          ]
+        },
+        {
+          "parent": "historical process",
+          "child": "poverty prevalence",
+          "absent_endpoints": [
+            "historical process",
+            "poverty prevalence"
+          ]
+        },
+        {
+          "parent": "historical process",
+          "child": "socioeconomic disadvantage",
+          "absent_endpoints": [
+            "historical process",
+            "socioeconomic disadvantage"
+          ]
+        }
+      ],
+      "missing_relationships_between_present_nodes": [],
+      "extra_edges": []
+    },
+    "cpds": {
+      "skipped": false,
+      "predicted_edges": 3,
+      "target_edges": 6,
+      "matched_edges": 3,
+      "missing_edges": 3,
+      "extra_edges": 0,
+      "complete_target_edges": 3,
+      "target_numeric_cells": 98,
+      "comparable_numeric_cells": 58,
+      "missing_numeric_cells": 40,
+      "cell_coverage": 0.5918367346938775,
+      "mean_absolute_error": 1.933256061045349e-05,
+      "max_absolute_error": 5.000000000000143e-05,
+      "complete_columns": 14,
+      "mean_column_kl": 1.510972249403281e-08
+    },
+    "full_coverage": {
+      "nodes": false,
+      "states": false,
+      "edges": false,
+      "nodes_states_edges": false
+    }
+  }
+}

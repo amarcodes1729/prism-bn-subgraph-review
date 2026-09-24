@@ -1,0 +1,695 @@
+{
+  "nodes": [
+    {
+      "node": "commodity market shock",
+      "states": [
+        "oil price war",
+        "oil price drop",
+        "global energy crisis",
+        "none"
+      ]
+    },
+    {
+      "node": "demand condition",
+      "states": [
+        "global demand surge",
+        "strong Asian energy demand",
+        "consumer activity stagnation",
+        "none"
+      ]
+    },
+    {
+      "node": "developing-country hardship",
+      "states": [
+        "remittance drop",
+        "COVID-19-related famine",
+        "none"
+      ]
+    },
+    {
+      "node": "financial market condition",
+      "states": [
+        "stock market crash",
+        "market index recovery",
+        "record market highs",
+        "none"
+      ]
+    },
+    {
+      "node": "geopolitical shock",
+      "states": [
+        "Russo-Ukrainian War escalation",
+        "Russian invasion of Ukraine",
+        "Russia-Saudi Arabia oil price war",
+        "none"
+      ]
+    },
+    {
+      "node": "labor market outcome",
+      "states": [
+        "rapid unemployment increase",
+        "mass unemployment claims",
+        "global working-hour losses",
+        "10% unemployment",
+        "none"
+      ]
+    },
+    {
+      "node": "macroeconomic condition",
+      "states": [
+        "global economic slowdown",
+        "economic stagnation",
+        "economic crisis",
+        "recession",
+        "depression",
+        "economic recovery",
+        "none"
+      ]
+    },
+    {
+      "node": "output performance",
+      "states": [
+        "GDP below pre-pandemic levels",
+        "GDP returned to pre-pandemic levels",
+        "GDP exceeded pre-pandemic levels",
+        "none"
+      ]
+    },
+    {
+      "node": "pandemic-related shock",
+      "states": [
+        "COVID-19 pandemic",
+        "COVID-19 lockdowns",
+        "pandemic precautions",
+        "none"
+      ]
+    },
+    {
+      "node": "public benefit system strain",
+      "states": [
+        "unemployment insurance computer system overload",
+        "unemployment claims process overload",
+        "none"
+      ]
+    },
+    {
+      "node": "sectoral economic outcome",
+      "states": [
+        "tourism collapse",
+        "hospitality industry collapse",
+        "energy industry collapse",
+        "consumer activity downturn",
+        "none"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "parent": "commodity market shock",
+      "child": "sectoral economic outcome"
+    },
+    {
+      "parent": "demand condition",
+      "child": "commodity market shock"
+    },
+    {
+      "parent": "demand condition",
+      "child": "sectoral economic outcome"
+    },
+    {
+      "parent": "geopolitical shock",
+      "child": "commodity market shock"
+    },
+    {
+      "parent": "labor market outcome",
+      "child": "public benefit system strain"
+    },
+    {
+      "parent": "macroeconomic condition",
+      "child": "commodity market shock"
+    },
+    {
+      "parent": "macroeconomic condition",
+      "child": "demand condition"
+    },
+    {
+      "parent": "macroeconomic condition",
+      "child": "developing-country hardship"
+    },
+    {
+      "parent": "macroeconomic condition",
+      "child": "labor market outcome"
+    },
+    {
+      "parent": "macroeconomic condition",
+      "child": "output performance"
+    },
+    {
+      "parent": "macroeconomic condition",
+      "child": "sectoral economic outcome"
+    },
+    {
+      "parent": "pandemic-related shock",
+      "child": "demand condition"
+    },
+    {
+      "parent": "pandemic-related shock",
+      "child": "financial market condition"
+    },
+    {
+      "parent": "pandemic-related shock",
+      "child": "macroeconomic condition"
+    }
+  ],
+  "cpds": [
+    {
+      "parent": "commodity market shock",
+      "child": "sectoral economic outcome",
+      "matrix": [
+        [
+          0.1154,
+          0.1,
+          0.0625,
+          0.1628
+        ],
+        [
+          0.1154,
+          0.1,
+          0.0833,
+          0.1628
+        ],
+        [
+          0.4231,
+          0.4,
+          0.3333,
+          0.0698
+        ],
+        [
+          0.2692,
+          0.3,
+          0.4167,
+          0.186
+        ],
+        [
+          0.0769,
+          0.1,
+          0.1042,
+          0.4186
+        ]
+      ]
+    },
+    {
+      "parent": "demand condition",
+      "child": "commodity market shock",
+      "matrix": [
+        [
+          0.1,
+          0.0833,
+          0.2286,
+          0.0606
+        ],
+        [
+          0.1,
+          0.0833,
+          0.4,
+          0.0909
+        ],
+        [
+          0.6,
+          0.5833,
+          0.0857,
+          0.0606
+        ],
+        [
+          0.2,
+          0.25,
+          0.2857,
+          0.7879
+        ]
+      ]
+    },
+    {
+      "parent": "demand condition",
+      "child": "sectoral economic outcome",
+      "matrix": [
+        [
+          0.05,
+          0.0417,
+          0.2,
+          0.0606
+        ],
+        [
+          0.05,
+          0.0417,
+          0.2,
+          0.0606
+        ],
+        [
+          0.05,
+          0.0417,
+          0.1143,
+          0.0606
+        ],
+        [
+          0.1,
+          0.0417,
+          0.3429,
+          0.1212
+        ],
+        [
+          0.75,
+          0.8333,
+          0.1429,
+          0.697
+        ]
+      ]
+    },
+    {
+      "parent": "geopolitical shock",
+      "child": "commodity market shock",
+      "matrix": [
+        [
+          0.02,
+          0.02,
+          0.48,
+          0.04
+        ],
+        [
+          0.04,
+          0.06,
+          0.44,
+          0.08
+        ],
+        [
+          0.72,
+          0.76,
+          0.02,
+          0.08
+        ],
+        [
+          0.22,
+          0.16,
+          0.06,
+          0.8
+        ]
+      ]
+    },
+    {
+      "parent": "labor market outcome",
+      "child": "public benefit system strain",
+      "matrix": [
+        [
+          0.2235,
+          0.3793,
+          0.0591,
+          0.1953,
+          0.0068
+        ],
+        [
+          0.3352,
+          0.4828,
+          0.0787,
+          0.2734,
+          0.0102
+        ],
+        [
+          0.4413,
+          0.1379,
+          0.8622,
+          0.5312,
+          0.983
+        ]
+      ]
+    },
+    {
+      "parent": "macroeconomic condition",
+      "child": "commodity market shock",
+      "matrix": [
+        [
+          0.1667,
+          0.1364,
+          0.2353,
+          0.2909,
+          0.1667,
+          0.0476,
+          0.0385
+        ],
+        [
+          0.4444,
+          0.3636,
+          0.4118,
+          0.4364,
+          0.3333,
+          0.0952,
+          0.0769
+        ],
+        [
+          0.1111,
+          0.0909,
+          0.1765,
+          0.0909,
+          0.1667,
+          0.5714,
+          0.1154
+        ],
+        [
+          0.2778,
+          0.4091,
+          0.1765,
+          0.1818,
+          0.3333,
+          0.2857,
+          0.7692
+        ]
+      ]
+    },
+    {
+      "parent": "macroeconomic condition",
+      "child": "demand condition",
+      "matrix": [
+        [
+          0.0833,
+          0.0455,
+          0.0588,
+          0.0909,
+          0.0333,
+          0.5714,
+          0.3077
+        ],
+        [
+          0.0556,
+          0.0455,
+          0.0294,
+          0.0545,
+          0.0333,
+          0.2381,
+          0.1923
+        ],
+        [
+          0.6667,
+          0.7273,
+          0.7059,
+          0.6545,
+          0.6667,
+          0.0476,
+          0.0769
+        ],
+        [
+          0.1944,
+          0.1818,
+          0.2059,
+          0.2,
+          0.2667,
+          0.1429,
+          0.4231
+        ]
+      ]
+    },
+    {
+      "parent": "macroeconomic condition",
+      "child": "developing-country hardship",
+      "matrix": [
+        [
+          0.3889,
+          0.2727,
+          0.3529,
+          0.3636,
+          0.3333,
+          0.1429,
+          0.0385
+        ],
+        [
+          0.2222,
+          0.1818,
+          0.2941,
+          0.2182,
+          0.4,
+          0.0952,
+          0.0385
+        ],
+        [
+          0.3889,
+          0.5455,
+          0.3529,
+          0.4182,
+          0.2667,
+          0.7619,
+          0.9231
+        ]
+      ]
+    },
+    {
+      "parent": "macroeconomic condition",
+      "child": "labor market outcome",
+      "matrix": [
+        [
+          0.2222,
+          0.1818,
+          0.2353,
+          0.2182,
+          0.2,
+          0.0762,
+          0.0385
+        ],
+        [
+          0.1667,
+          0.0909,
+          0.2059,
+          0.2,
+          0.1667,
+          0.0571,
+          0.0308
+        ],
+        [
+          0.3889,
+          0.2727,
+          0.2941,
+          0.2727,
+          0.2667,
+          0.1429,
+          0.0462
+        ],
+        [
+          0.1111,
+          0.1364,
+          0.1471,
+          0.1636,
+          0.2667,
+          0.0952,
+          0.0385
+        ],
+        [
+          0.1111,
+          0.3182,
+          0.1176,
+          0.1455,
+          0.1,
+          0.6286,
+          0.8462
+        ]
+      ]
+    },
+    {
+      "parent": "macroeconomic condition",
+      "child": "output performance",
+      "matrix": [
+        [
+          0.6667,
+          0.6364,
+          0.7059,
+          0.6182,
+          0.8333,
+          0.1429,
+          0.0769
+        ],
+        [
+          0.1667,
+          0.1364,
+          0.1176,
+          0.2,
+          0.0667,
+          0.4762,
+          0.2692
+        ],
+        [
+          0.0556,
+          0.0455,
+          0.0294,
+          0.0727,
+          0.0333,
+          0.3333,
+          0.2692
+        ],
+        [
+          0.1111,
+          0.1818,
+          0.1471,
+          0.1091,
+          0.0667,
+          0.0476,
+          0.3846
+        ]
+      ]
+    },
+    {
+      "parent": "macroeconomic condition",
+      "child": "sectoral economic outcome",
+      "matrix": [
+        [
+          0.1562,
+          0.1071,
+          0.2,
+          0.2273,
+          0.2143,
+          0.0417,
+          0.1071
+        ],
+        [
+          0.1562,
+          0.1429,
+          0.2,
+          0.2273,
+          0.2143,
+          0.0417,
+          0.1071
+        ],
+        [
+          0.125,
+          0.1071,
+          0.1667,
+          0.1818,
+          0.1429,
+          0.0417,
+          0.0714
+        ],
+        [
+          0.4375,
+          0.5,
+          0.3333,
+          0.2727,
+          0.3571,
+          0.125,
+          0.1429
+        ],
+        [
+          0.125,
+          0.1429,
+          0.1,
+          0.0909,
+          0.0714,
+          0.75,
+          0.5714
+        ]
+      ]
+    },
+    {
+      "parent": "pandemic-related shock",
+      "child": "demand condition",
+      "matrix": [
+        [
+          0.1333,
+          0.0667,
+          0.15,
+          0.4
+        ],
+        [
+          0.0667,
+          0.0333,
+          0.05,
+          0.2
+        ],
+        [
+          0.6,
+          0.7333,
+          0.6,
+          0.1
+        ],
+        [
+          0.2,
+          0.1667,
+          0.2,
+          0.3
+        ]
+      ]
+    },
+    {
+      "parent": "pandemic-related shock",
+      "child": "financial market condition",
+      "matrix": [
+        [
+          0.4,
+          0.3333,
+          0.2,
+          0.05
+        ],
+        [
+          0.2667,
+          0.2333,
+          0.25,
+          0.15
+        ],
+        [
+          0.1667,
+          0.1333,
+          0.2,
+          0.2
+        ],
+        [
+          0.1667,
+          0.3,
+          0.35,
+          0.6
+        ]
+      ]
+    },
+    {
+      "parent": "pandemic-related shock",
+      "child": "macroeconomic condition",
+      "matrix": [
+        [
+          0.2667,
+          0.1333,
+          0.2,
+          0.1
+        ],
+        [
+          0.1333,
+          0.0667,
+          0.15,
+          0.1
+        ],
+        [
+          0.1667,
+          0.2333,
+          0.2,
+          0.05
+        ],
+        [
+          0.3,
+          0.4,
+          0.25,
+          0.075
+        ],
+        [
+          0.0333,
+          0.0333,
+          0.025,
+          0.025
+        ],
+        [
+          0.0667,
+          0.0667,
+          0.075,
+          0.25
+        ],
+        [
+          0.0333,
+          0.0667,
+          0.1,
+          0.4
+        ]
+      ]
+    }
+  ],
+  "inferred_components": []
+}

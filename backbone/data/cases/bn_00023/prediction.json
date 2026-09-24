@@ -1,0 +1,282 @@
+{
+  "nodes": [
+    {
+      "node": "competition organizer",
+      "states": [
+        "Tug of War International Federation governance",
+        "World Championships organization",
+        "club-team competition organization",
+        "none"
+      ]
+    },
+    {
+      "node": "prohibited technique",
+      "states": [
+        "touching the ground for extended periods",
+        "lowering elbow below knee during pull",
+        "none"
+      ]
+    },
+    {
+      "node": "competition format",
+      "states": [
+        "nation-team competition",
+        "club-team competition",
+        "indoor contest",
+        "outdoor contest",
+        "none"
+      ]
+    },
+    {
+      "node": "team configuration",
+      "states": [
+        "two opposing teams",
+        "teams of eight or more members",
+        "variable team size",
+        "none"
+      ]
+    },
+    {
+      "node": "rope configuration",
+      "states": [
+        "centre line marking",
+        "two equidistant markers",
+        "opposite-end pulling",
+        "none"
+      ]
+    },
+    {
+      "node": "team performance factor",
+      "states": [
+        "cooperation of team members",
+        "physical strength",
+        "none"
+      ]
+    },
+    {
+      "node": "contest objective",
+      "states": [
+        "pull opposing marker across centre line",
+        "bring rope a certain distance in one direction",
+        "overcome opposing team's pull",
+        "none"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "parent": "competition organizer",
+      "child": "competition format"
+    },
+    {
+      "parent": "prohibited technique",
+      "child": "competition format"
+    },
+    {
+      "parent": "competition format",
+      "child": "team configuration"
+    },
+    {
+      "parent": "rope configuration",
+      "child": "contest objective"
+    },
+    {
+      "parent": "team configuration",
+      "child": "contest objective"
+    },
+    {
+      "parent": "team performance factor",
+      "child": "contest objective"
+    }
+  ],
+  "cpds": [
+    {
+      "parent": "competition organizer",
+      "child": "competition format",
+      "matrix": [
+        [
+          0.2821,
+          0.3684,
+          0.0526,
+          0.125
+        ],
+        [
+          0.1795,
+          0.0789,
+          0.6316,
+          0.125
+        ],
+        [
+          0.2564,
+          0.2632,
+          0.1316,
+          0.125
+        ],
+        [
+          0.2564,
+          0.2632,
+          0.1316,
+          0.125
+        ],
+        [
+          0.0256,
+          0.0263,
+          0.0526,
+          0.5
+        ]
+      ]
+    },
+    {
+      "parent": "prohibited technique",
+      "child": "competition format",
+      "matrix": [
+        [
+          0.2222,
+          0.2222,
+          0.1
+        ],
+        [
+          0.1556,
+          0.1556,
+          0.1
+        ],
+        [
+          0.2889,
+          0.2889,
+          0.1
+        ],
+        [
+          0.2889,
+          0.2889,
+          0.1
+        ],
+        [
+          0.0444,
+          0.0444,
+          0.6
+        ]
+      ]
+    },
+    {
+      "parent": "competition format",
+      "child": "team configuration",
+      "matrix": [
+        [
+          0.36,
+          0.35,
+          0.375,
+          0.375,
+          0.1333
+        ],
+        [
+          0.48,
+          0.45,
+          0.45,
+          0.45,
+          0.1333
+        ],
+        [
+          0.14,
+          0.175,
+          0.15,
+          0.15,
+          0.1333
+        ],
+        [
+          0.02,
+          0.025,
+          0.025,
+          0.025,
+          0.6
+        ]
+      ]
+    },
+    {
+      "parent": "rope configuration",
+      "child": "contest objective",
+      "matrix": [
+        [
+          0.4375,
+          0.4848,
+          0.16,
+          0.1
+        ],
+        [
+          0.25,
+          0.2424,
+          0.4,
+          0.1
+        ],
+        [
+          0.2812,
+          0.2424,
+          0.4,
+          0.1
+        ],
+        [
+          0.0312,
+          0.0303,
+          0.04,
+          0.7
+        ]
+      ]
+    },
+    {
+      "parent": "team configuration",
+      "child": "contest objective",
+      "matrix": [
+        [
+          0.2571,
+          0.3667,
+          0.25,
+          0.1333
+        ],
+        [
+          0.3429,
+          0.3333,
+          0.35,
+          0.1333
+        ],
+        [
+          0.3714,
+          0.2667,
+          0.3,
+          0.1333
+        ],
+        [
+          0.0286,
+          0.0333,
+          0.1,
+          0.6
+        ]
+      ]
+    },
+    {
+      "parent": "team performance factor",
+      "child": "contest objective",
+      "matrix": [
+        [
+          0.3111,
+          0.2889,
+          0.1
+        ],
+        [
+          0.2889,
+          0.3111,
+          0.1
+        ],
+        [
+          0.3556,
+          0.3556,
+          0.1
+        ],
+        [
+          0.0444,
+          0.0444,
+          0.7
+        ]
+      ]
+    }
+  ],
+  "inferred_components": []
+}

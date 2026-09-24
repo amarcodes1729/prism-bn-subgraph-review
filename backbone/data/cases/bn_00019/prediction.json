@@ -1,0 +1,222 @@
+{
+  "nodes": [
+    {
+      "node": "biological hazard",
+      "states": [
+        "pathogenic microorganisms surviving thaw",
+        "revived pathogens from permafrost",
+        "none"
+      ]
+    },
+    {
+      "node": "built asset exposure",
+      "states": [
+        "buildings built on frozen permafrost",
+        "infrastructure built on frozen permafrost",
+        "none"
+      ]
+    },
+    {
+      "node": "climate outcome",
+      "states": [
+        "climate change feedback",
+        "global carbon budget impact",
+        "runaway warming",
+        "none"
+      ]
+    },
+    {
+      "node": "contamination source",
+      "states": [
+        "toxic waste sites in permafrost",
+        "natural mercury deposits",
+        "none"
+      ]
+    },
+    {
+      "node": "decomposition process",
+      "states": [
+        "suppressed decomposition",
+        "renewed decomposition after thaw",
+        "accelerated permafrost carbon cycle",
+        "none"
+      ]
+    },
+    {
+      "node": "greenhouse gas emission source",
+      "states": [
+        "thawing permafrost emissions",
+        "human-caused emissions",
+        "deforestation emissions",
+        "large-country annual emissions",
+        "none"
+      ]
+    },
+    {
+      "node": "greenhouse gas species",
+      "states": [
+        "carbon dioxide",
+        "methane",
+        "none"
+      ]
+    },
+    {
+      "node": "ground ice and hydrology condition",
+      "states": [
+        "high ground ice content",
+        "hydraulic saturation exceeded",
+        "none"
+      ]
+    },
+    {
+      "node": "infrastructure consequence",
+      "states": [
+        "infrastructure collapse risk by 2050",
+        "tens of billions of dollars in costs",
+        "none"
+      ]
+    },
+    {
+      "node": "permafrost thermal condition",
+      "states": [
+        "continuously frozen soil",
+        "seasonal active-layer freeze-thaw",
+        "frozen soil thaw",
+        "warmed thawed soil",
+        "none"
+      ]
+    },
+    {
+      "node": "pollution outcome",
+      "states": [
+        "toxic waste leakage",
+        "mercury leakage",
+        "environmental pollution",
+        "none"
+      ]
+    },
+    {
+      "node": "public health outcome",
+      "states": [
+        "future pandemics",
+        "generally low disease risk",
+        "none"
+      ]
+    },
+    {
+      "node": "scientific uncertainty",
+      "states": [
+        "uncertain thaw processes",
+        "difficult greenhouse gas prediction",
+        "widespread agreement on smaller emissions",
+        "none"
+      ]
+    },
+    {
+      "node": "soil carbon condition",
+      "states": [
+        "accumulated dead biomass",
+        "undecomposed carbon storage",
+        "tundra soil carbon sink",
+        "none"
+      ]
+    },
+    {
+      "node": "terrain stability outcome",
+      "states": [
+        "substantial ground shifting",
+        "outright ground collapse",
+        "none"
+      ]
+    },
+    {
+      "node": "thermal forcing",
+      "states": [
+        "global warming",
+        "ecosystem heating",
+        "warming progression",
+        "none"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "parent": "thermal forcing",
+      "child": "permafrost thermal condition"
+    },
+    {
+      "parent": "soil carbon condition",
+      "child": "decomposition process"
+    },
+    {
+      "parent": "permafrost thermal condition",
+      "child": "biological hazard"
+    },
+    {
+      "parent": "permafrost thermal condition",
+      "child": "contamination source"
+    },
+    {
+      "parent": "permafrost thermal condition",
+      "child": "decomposition process"
+    },
+    {
+      "parent": "permafrost thermal condition",
+      "child": "ground ice and hydrology condition"
+    },
+    {
+      "parent": "decomposition process",
+      "child": "greenhouse gas emission source"
+    },
+    {
+      "parent": "decomposition process",
+      "child": "greenhouse gas species"
+    },
+    {
+      "parent": "ground ice and hydrology condition",
+      "child": "greenhouse gas species"
+    },
+    {
+      "parent": "ground ice and hydrology condition",
+      "child": "scientific uncertainty"
+    },
+    {
+      "parent": "ground ice and hydrology condition",
+      "child": "terrain stability outcome"
+    },
+    {
+      "parent": "greenhouse gas emission source",
+      "child": "climate outcome"
+    },
+    {
+      "parent": "greenhouse gas emission source",
+      "child": "scientific uncertainty"
+    },
+    {
+      "parent": "greenhouse gas species",
+      "child": "climate outcome"
+    },
+    {
+      "parent": "contamination source",
+      "child": "pollution outcome"
+    },
+    {
+      "parent": "biological hazard",
+      "child": "public health outcome"
+    },
+    {
+      "parent": "pollution outcome",
+      "child": "public health outcome"
+    },
+    {
+      "parent": "terrain stability outcome",
+      "child": "infrastructure consequence"
+    },
+    {
+      "parent": "built asset exposure",
+      "child": "infrastructure consequence"
+    }
+  ],
+  "cpds": [],
+  "inferred_components": []
+}

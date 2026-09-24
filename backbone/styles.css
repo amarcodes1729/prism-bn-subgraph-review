@@ -1,0 +1,14 @@
+:root { font-family: system-ui, sans-serif; color: #173046; background: #f4f7fa; }
+* { box-sizing: border-box; } body { margin: 0; }
+header { padding: 1.4rem max(1rem, calc((100vw - 1440px)/2)); color: white; background: #113650; }
+header h1 { margin: 0 0 .3rem; } header p { margin: 0; color: #d4e5ed; }
+nav { display: flex; gap: .5rem; padding: .7rem max(1rem, calc((100vw - 1440px)/2)); background: #e7f0f5; border-bottom: 1px solid #d8e2e9; }
+nav a, button { border: 0; border-radius: 7px; padding: .6rem .85rem; color: #19415b; background: #e4eef4; text-decoration: none; cursor: pointer; font: inherit; font-weight: 650; }
+nav a.active, button:not(.secondary) { color: white; background: #116a94; } button.secondary { background: #e4eef4; }
+main { max-width: 1440px; margin: auto; padding: 1rem; }
+.toolbar, .review, article, .meta { display: flex; gap: .8rem; padding: 1rem; margin-bottom: 1rem; border: 1px solid #d8e2e9; border-radius: 10px; background: white; box-shadow: 0 2px 8px #1730460a; }
+.toolbar { align-items: end; flex-wrap: wrap; } label { display: grid; gap: .35rem; font-weight: 650; font-size: .9rem; flex: 1; min-width: 170px; } input, select, textarea { width: 100%; padding: .55rem; border: 1px solid #aebfcb; border-radius: 6px; font: inherit; color: #173046; background: white; }
+.status { min-height: 1.3rem; color: #a52f26; } .meta { align-items: baseline; flex-wrap: wrap; } .meta span { color: #536b7a; font-size: .9rem; }
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; } article { display: block; min-width: 0; } h2 { margin-top: 0; font-size: 1.15rem; } pre { min-height: 180px; max-height: 480px; margin: 0; padding: .8rem; overflow: auto; white-space: pre-wrap; overflow-wrap: anywhere; background: #f8fafc; border: 1px solid #e2e9ee; border-radius: 6px; font: .8rem/1.5 ui-monospace, monospace; }
+.review { display: block; } .review > p { color: #536b7a; } .scores { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: .8rem; margin-bottom: 1rem; } .actions { display: flex; align-items: center; gap: .7rem; margin-top: 1rem; } #review-status { color: #126d45; }
+@media (max-width: 760px) { .grid { grid-template-columns: 1fr; } .toolbar { align-items: stretch; flex-direction: column; } .actions { flex-wrap: wrap; } }

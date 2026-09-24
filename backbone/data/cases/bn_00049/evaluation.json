@@ -1,0 +1,118 @@
+{
+  "backbone_id": "bn_00049",
+  "source_id": "wiki_00048",
+  "subgraph_count": 9,
+  "hierarchy_levels": 1,
+  "judgment": {
+    "criteria": {
+      "nodes": {
+        "score": 0.65,
+        "reason": "Preserves poverty, homelessness, poor and working people, anarchist militancy, housing closures, the Winter Olympics, and the main protest tactics. Omits the Anti-Poverty Committee name and APC abbreviation, Vancouver and British Columbia, the website attribution, and the office space and meetings."
+      },
+      "states": {
+        "score": 0.5,
+        "reason": "Retains the militant, left-wing anarchist orientation and the 2010 Winter Olympics target. Omits the summer 2010 cessation of meetings and explicit inactive status, instead describing campaigning in the present tense. Changes housing projects to a single project and one opening-day small-scale riot to plural riots without the opening-day detail. Also omits the stated 'by any means necessary' commitment."
+      },
+      "edges": {
+        "score": 0.58,
+        "reason": "Correctly connects the movement to anti-poverty campaigning, housing-closure protests, Olympics protests, and direct-action tactics. Loses the organization's Vancouver base, its composition of poor and working people, and the connection between stopping office rental and ceasing meetings. Adds unsupported links between particular targets and the relative frequency of tactics, and generalizes public attention to individual tactics."
+      },
+      "relationship_type": {
+        "score": 0.54,
+        "reason": "Preserves the broad campaigning and protest-target relationships, but replaces a website-attributed self-description with unqualified narration. The original says APC instigated a particular riot; the generated text instead says protests sometimes developed into riots. It also introduces unsupported comparative tendencies about tactics and attention and turns a historical, defunct organization into an apparently ongoing movement."
+      },
+      "overall_similarity": {
+        "score": 0.55,
+        "reason": "Conveys the general political orientation, anti-poverty objectives, protest targets, and confrontational methods. However, it removes the organization's identity, location, and dissolution history, loses the precise Olympics riot event, and adds speculative patterns about tactics and public response. These changes materially reduce factual and temporal fidelity."
+      }
+    },
+    "score_out_of_5": 2.82,
+    "overall_reason": "The generated text preserves the broad activism theme but is substantially less specific and introduces unsupported generalizations. Missing organizational identity and inactive status, together with changes to the riot account and the attribution of claims, prevent a faithful round trip."
+  },
+  "structural_metrics": {
+    "nodes": {
+      "correct": 7,
+      "predicted": 7,
+      "target": 9,
+      "missed": 2,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 0.7777777777777778,
+      "f1": 0.8750000000000001,
+      "missing_labels": [
+        "organizational resource",
+        "organizational status"
+      ],
+      "extra_labels": []
+    },
+    "states": {
+      "correct": 24,
+      "predicted": 24,
+      "target": 31,
+      "missed": 7,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 0.7741935483870968,
+      "f1": 0.8727272727272727,
+      "missing_by_node": {
+        "organizational resource": [
+          "none",
+          "rented office space",
+          "stopped renting office space"
+        ],
+        "organizational status": [
+          "active organization",
+          "ceased meeting",
+          "inactive organization",
+          "none"
+        ]
+      },
+      "extra_by_node": {}
+    },
+    "edges": {
+      "correct": 7,
+      "predicted": 7,
+      "target": 8,
+      "missed": 1,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 0.875,
+      "f1": 0.9333333333333333,
+      "missing_due_to_absent_nodes": [
+        {
+          "parent": "organizational resource",
+          "child": "organizational status",
+          "absent_endpoints": [
+            "organizational resource",
+            "organizational status"
+          ]
+        }
+      ],
+      "missing_relationships_between_present_nodes": [],
+      "extra_edges": []
+    },
+    "cpds": {
+      "skipped": false,
+      "predicted_edges": 7,
+      "target_edges": 8,
+      "matched_edges": 7,
+      "missing_edges": 1,
+      "extra_edges": 0,
+      "complete_target_edges": 7,
+      "target_numeric_cells": 111,
+      "comparable_numeric_cells": 99,
+      "missing_numeric_cells": 12,
+      "cell_coverage": 0.8918918918918919,
+      "mean_absolute_error": 1.4352356319782696e-05,
+      "max_absolute_error": 4.999999999996674e-05,
+      "complete_columns": 25,
+      "mean_column_kl": 5.048303782994394e-09
+    },
+    "full_coverage": {
+      "nodes": false,
+      "states": false,
+      "edges": false,
+      "nodes_states_edges": false
+    }
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "backbone_id": "bn_00023",
+  "source_id": "wiki_00022",
+  "subgraph_count": 3,
+  "hierarchy_levels": 1,
+  "judgment": {
+    "criteria": {
+      "nodes": {
+        "score": 0.5,
+        "reason": "The generated text retains the teams, rope, markers, strength, cooperation, technique rules, international federation, and major competition categories. It omits the alternative names, ancient origins and named civilizations, Olympics, schools and community events, regional popularity, rope-break injuries and engineered ropes, and ritual significance."
+      },
+      "states": {
+        "score": 0.46,
+        "reason": "Eight-or-more participants, variable team size, equidistant markers, indoor/outdoor contests, nation/club teams, and prohibited techniques are retained. Missing details include Olympic participation from 1900 to 1920 and current exclusion, biannual championships, the named ancient and modern regions, and religious, cultural, and historical significance. Typical team size and definite rope markings become merely possible configurations."
+      },
+      "edges": {
+        "score": 0.53,
+        "reason": "The generated text preserves opposing teams pulling a rope, the marker-crossing objective, strength and cooperation requirements, federation governance, and rules restricting techniques. It loses historical participation, Olympic inclusion and removal, geographic and community participation, rope failure causing injury, engineered ropes reducing risk, and ritual connections. It also leaves the federation's responsibility for club competition unclear and adds an explicit connection between the described configurations and all listed competition categories."
+      },
+      "relationship_type": {
+        "score": 0.72,
+        "reason": "Most retained connections preserve their kind: competition mechanics, performance requirements, administrative governance, and prohibitions remain recognizable. However, 'the rope is marked' becomes 'may carry' markings, 'typically' eight or more becomes 'may consist,' and the two objective descriptions become rule-dependent alternatives not explicitly distinguished that way in the original. Federation organization of a similar club competition is weakened to club competitions simply being part of the sport."
+      },
+      "overall_similarity": {
+        "score": 0.5,
+        "reason": "The generated text is a largely accurate summary of the sport's mechanics, teamwork, rules, and some international organization. However, it omits substantial portions of the original's scope: history and Olympic status, contemporary social and geographic reach, safety risks and mitigation, and ritual importance. It also drops championship frequency and qualifies several originally definite or typical details."
+      }
+    },
+    "score_out_of_5": 2.71,
+    "overall_reason": "The round trip preserves the central description of how tug of war is played but reduces a broad historical, organizational, cultural, and safety overview to a narrower account of mechanics and competition. Most retained facts are sound, with some weakened specificity and a few unsupported qualifications."
+  },
+  "structural_metrics": {
+    "nodes": {
+      "correct": 7,
+      "predicted": 7,
+      "target": 16,
+      "missed": 9,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 0.4375,
+      "f1": 0.6086956521739131,
+      "missing_labels": [
+        "competition program status",
+        "equipment failure",
+        "event setting",
+        "health outcome",
+        "historical practice region",
+        "modern popularity region",
+        "safety equipment condition",
+        "social significance",
+        "sport naming convention"
+      ],
+      "extra_labels": []
+    },
+    "states": {
+      "correct": 27,
+      "predicted": 27,
+      "target": 64,
+      "missed": 37,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 0.421875,
+      "f1": 0.5934065934065934,
+      "missing_by_node": {
+        "competition program status": [
+          "included in Summer Olympics",
+          "none",
+          "removed from Olympic program"
+        ],
+        "equipment failure": [
+          "none",
+          "rope breakage",
+          "sudden release of energy"
+        ],
+        "event setting": [
+          "community events",
+          "festivals",
+          "national competitions",
+          "none",
+          "organized competitions",
+          "schools"
+        ],
+        "health outcome": [
+          "lessened injury risk",
+          "none",
+          "serious injuries"
+        ],
+        "historical practice region": [
+          "ancient China",
+          "ancient Egypt",
+          "ancient Greece",
+          "ancient India",
+          "none"
+        ],
+        "modern popularity region": [
+          "Asia",
+          "Europe",
+          "none",
+          "United States"
+        ],
+        "safety equipment condition": [
+          "none",
+          "rope able to withstand force",
+          "specially engineered rope"
+        ],
+        "social significance": [
+          "cultural significance",
+          "historical significance",
+          "none",
+          "religious significance"
+        ],
+        "sport naming convention": [
+          "none",
+          "rope pulling",
+          "rope war",
+          "tug-a-war",
+          "tug o' war",
+          "tug of war"
+        ]
+      },
+      "extra_by_node": {}
+    },
+    "edges": {
+      "correct": 6,
+      "predicted": 6,
+      "target": 10,
+      "missed": 4,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 0.6,
+      "f1": 0.7499999999999999,
+      "missing_due_to_absent_nodes": [
+        {
+          "parent": "equipment failure",
+          "child": "health outcome",
+          "absent_endpoints": [
+            "equipment failure",
+            "health outcome"
+          ]
+        },
+        {
+          "parent": "historical practice region",
+          "child": "social significance",
+          "absent_endpoints": [
+            "historical practice region",
+            "social significance"
+          ]
+        },
+        {
+          "parent": "modern popularity region",
+          "child": "event setting",
+          "absent_endpoints": [
+            "modern popularity region",
+            "event setting"
+          ]
+        },
+        {
+          "parent": "safety equipment condition",
+          "child": "equipment failure",
+          "absent_endpoints": [
+            "safety equipment condition",
+            "equipment failure"
+          ]
+        }
+      ],
+      "missing_relationships_between_present_nodes": [],
+      "extra_edges": []
+    },
+    "cpds": {
+      "skipped": false,
+      "predicted_edges": 6,
+      "target_edges": 10,
+      "matched_edges": 6,
+      "missing_edges": 4,
+      "extra_edges": 0,
+      "complete_target_edges": 6,
+      "target_numeric_cells": 161,
+      "comparable_numeric_cells": 99,
+      "missing_numeric_cells": 62,
+      "cell_coverage": 0.6149068322981367,
+      "mean_absolute_error": 1.598881949760298e-05,
+      "max_absolute_error": 4.999999999999449e-05,
+      "complete_columns": 23,
+      "mean_column_kl": 1.2871679279989268e-08
+    },
+    "full_coverage": {
+      "nodes": false,
+      "states": false,
+      "edges": false,
+      "nodes_states_edges": false
+    }
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "nodes": [
+    {
+      "node": "advocacy channel",
+      "states": [
+        "social media advocacy",
+        "consciousness raising",
+        "awareness campaigns",
+        "arts advocacy",
+        "none"
+      ]
+    },
+    {
+      "node": "attendance outcome",
+      "states": [
+        "missed school days",
+        "missed work days",
+        "none"
+      ]
+    },
+    {
+      "node": "menstrual hygiene education access",
+      "states": [
+        "lack of menstrual hygiene education",
+        "education needed to use menstrual products effectively",
+        "none"
+      ]
+    },
+    {
+      "node": "menstrual hygiene infrastructure access",
+      "states": [
+        "lack of washing facilities",
+        "lack of waste management",
+        "lack of safe water",
+        "lack of sanitation",
+        "none"
+      ]
+    },
+    {
+      "node": "menstrual management condition",
+      "states": [
+        "unsafe period management",
+        "safe period management",
+        "none"
+      ]
+    },
+    {
+      "node": "menstrual product access",
+      "states": [
+        "lack of menstrual products",
+        "inadequate access to sanitary products",
+        "access to proper menstrual products",
+        "none"
+      ]
+    },
+    {
+      "node": "physical health outcome",
+      "states": [
+        "infections",
+        "reproductive tract complications",
+        "none"
+      ]
+    },
+    {
+      "node": "policy response",
+      "states": [
+        "period poverty legislation",
+        "none"
+      ]
+    },
+    {
+      "node": "psychological outcome",
+      "states": [
+        "negative psychological consequences",
+        "shame",
+        "none"
+      ]
+    },
+    {
+      "node": "public perception",
+      "states": [
+        "period poverty perceptions",
+        "none"
+      ]
+    },
+    {
+      "node": "shame-related barrier",
+      "states": [
+        "fear of shame",
+        "stigma",
+        "none"
+      ]
+    },
+    {
+      "node": "structural justice issue",
+      "states": [
+        "gender inequality",
+        "economic injustice",
+        "none"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "parent": "advocacy channel",
+      "child": "public perception"
+    },
+    {
+      "parent": "public perception",
+      "child": "policy response"
+    },
+    {
+      "parent": "structural justice issue",
+      "child": "policy response"
+    },
+    {
+      "parent": "structural justice issue",
+      "child": "menstrual hygiene education access"
+    },
+    {
+      "parent": "structural justice issue",
+      "child": "menstrual hygiene infrastructure access"
+    },
+    {
+      "parent": "structural justice issue",
+      "child": "menstrual product access"
+    },
+    {
+      "parent": "policy response",
+      "child": "menstrual hygiene education access"
+    },
+    {
+      "parent": "policy response",
+      "child": "menstrual hygiene infrastructure access"
+    },
+    {
+      "parent": "policy response",
+      "child": "menstrual product access"
+    },
+    {
+      "parent": "menstrual hygiene education access",
+      "child": "menstrual management condition"
+    },
+    {
+      "parent": "menstrual hygiene infrastructure access",
+      "child": "menstrual management condition"
+    },
+    {
+      "parent": "menstrual product access",
+      "child": "menstrual management condition"
+    },
+    {
+      "parent": "shame-related barrier",
+      "child": "menstrual management condition"
+    },
+    {
+      "parent": "menstrual management condition",
+      "child": "attendance outcome"
+    },
+    {
+      "parent": "menstrual management condition",
+      "child": "physical health outcome"
+    },
+    {
+      "parent": "menstrual management condition",
+      "child": "psychological outcome"
+    }
+  ],
+  "cpds": [],
+  "inferred_components": []
+}

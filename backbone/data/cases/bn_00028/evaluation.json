@@ -1,0 +1,94 @@
+{
+  "backbone_id": "bn_00028",
+  "source_id": "wiki_00027",
+  "subgraph_count": 17,
+  "hierarchy_levels": 1,
+  "judgment": {
+    "criteria": {
+      "nodes": {
+        "score": 0.7,
+        "reason": "Preserves the war, Israel, Egypt, Syria, Palestinian refugees, Suez Crisis, Soviet misinformation, UN peacekeepers, maritime blockade, mobilization, and surprise strike. Omits Jordan, Egypt's United Arab Republic name, Gamal Abdel Nasser, Zeev Maoz, and the demilitarized zone."
+      },
+      "states": {
+        "score": 0.49,
+        "reason": "Omits the war's alternative name and June 5–10, 1967 dates, the 1956 Suez date, the April and May chronology, and the specific May 23 blockade date. Also loses the Red Sea's international-waters status and peacekeepers' presence since Suez. Retains important conditions such as deteriorating relations, refugee displacement, hostility, blockade, and competing self-defense interpretations."
+      },
+      "edges": {
+        "score": 0.68,
+        "reason": "Retains the broad progression from grievances and border clashes through Soviet misinformation, peacekeeper removal, blockade, mobilization, and Israel's surprise strike. However, it obscures Egypt's responsibility for expelling peacekeepers and imposing the blockade, omits Nasser's leadership and knowledge that the blockade could provoke an attack, and weakens the explicit connection between Syrian fire on the tractor and the resulting aerial clash. It presents the Straits, Gulf, and Red Sea as alternative blockade descriptions rather than clearly preserving their geographic connection."
+      },
+      "relationship_type": {
+        "score": 0.63,
+        "reason": "Preserves the existence of competing responsibility and self-defense interpretations, but flattens their attribution and prevalence: the longstanding conventional view, Maoz's account of most scholarly studies, many commentators' anticipatory-self-defense interpretation, and some 21st-century historians' objections become generic competing views. It also shifts the commonly accepted point of inevitability from Nasser's removal and blockade decisions toward mobilization producing a 'growing sense' of inevitability, and omits Israel's explicit treatment of the blockade as an act of war."
+      },
+      "overall_similarity": {
+        "score": 0.66,
+        "reason": "Provides a recognizable and broadly accurate summary of the crisis and interpretive debate, but substantially reduces factual specificity, chronology, named actors, and attribution. It omits the war's full participant list and timeframe, Nasser's decisions and awareness, and the claim that all sides wanted to prevent escalation, while making some causal and geographic relationships less precise."
+      }
+    },
+    "score_out_of_5": 3.16,
+    "overall_reason": "The generated text preserves the main narrative and contested interpretations, but it is a generalized summary rather than a faithful preservation of the original's detailed chronology, actors, agency, geographic relationships, and qualified scholarly claims."
+  },
+  "structural_metrics": {
+    "nodes": {
+      "correct": 10,
+      "predicted": 10,
+      "target": 10,
+      "missed": 0,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "missing_labels": [],
+      "extra_labels": []
+    },
+    "states": {
+      "correct": 40,
+      "predicted": 40,
+      "target": 40,
+      "missed": 0,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "missing_by_node": {},
+      "extra_by_node": {}
+    },
+    "edges": {
+      "correct": 10,
+      "predicted": 10,
+      "target": 10,
+      "missed": 0,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "missing_due_to_absent_nodes": [],
+      "missing_relationships_between_present_nodes": [],
+      "extra_edges": []
+    },
+    "cpds": {
+      "skipped": false,
+      "predicted_edges": 10,
+      "target_edges": 10,
+      "matched_edges": 10,
+      "missing_edges": 0,
+      "extra_edges": 0,
+      "complete_target_edges": 10,
+      "target_numeric_cells": 164,
+      "comparable_numeric_cells": 164,
+      "missing_numeric_cells": 0,
+      "cell_coverage": 1.0,
+      "mean_absolute_error": 1.8787567483351676e-05,
+      "max_absolute_error": 4.999999999999449e-05,
+      "complete_columns": 39,
+      "mean_column_kl": 1.1965917315076162e-08
+    },
+    "full_coverage": {
+      "nodes": true,
+      "states": true,
+      "edges": true,
+      "nodes_states_edges": true
+    }
+  }
+}

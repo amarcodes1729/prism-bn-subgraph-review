@@ -1,0 +1,125 @@
+{
+  "backbone_id": "bn_00048",
+  "source_id": "wiki_00047",
+  "subgraph_count": 1,
+  "hierarchy_levels": 1,
+  "judgment": {
+    "criteria": {
+      "nodes": {
+        "score": 0.62,
+        "reason": "Both texts include Poverty Row, major Hollywood studios, budgets, production values, and the Western, comedy, adventure, and crime genres. The generated text omits B movies, film series, Gower Street, and the concept of Poverty Row as a slang term rather than a specific place."
+      },
+      "states": {
+        "score": 0.53,
+        "reason": "The generated text preserves smaller budgets, lower production values, and all four named genres. It omits the 1920s–1950s period, the explicit characterization as small studios producing B movies, and the qualification that the term need not denote a physical location. It adds an unsupported special prominence for Westerns."
+      },
+      "edges": {
+        "score": 0.61,
+        "reason": "The generated text correctly connects Poverty Row productions with the four genres and with smaller budgets and lower production values relative to major studios. It omits the studios' connection to Gower Street, their production activity during the specified decades, and the connection between many films and genre series. The special association with Westerns is added rather than stated in the original."
+      },
+      "relationship_type": {
+        "score": 0.72,
+        "reason": "The resource comparison remains qualified as general, consistent with the original's 'typically.' However, the generated text introduces a distinction from major studios based on kinds of films, whereas the original explicitly compares budgets and production values without asserting genre differences. It also changes an unranked genre list into one emphasizing Westerns and loses the original's qualified geographic relationship."
+      },
+      "overall_similarity": {
+        "score": 0.6,
+        "reason": "The generated text captures the central contrast in production resources and preserves the genre list, but it is substantially less complete as a description of Poverty Row. It loses the term's slang status, B-movie focus, historical period, geographic context and caveat, and series production, while introducing unsupported emphasis on Westerns and genre-based differentiation."
+      }
+    },
+    "score_out_of_5": 3.08,
+    "overall_reason": "The generated text faithfully preserves the low-budget, lower-production-value comparison and the four genres, but omits much of the original's defining historical and geographic information. Its added emphasis on Westerns and on differences in film kinds slightly distorts the original's scope."
+  },
+  "structural_metrics": {
+    "nodes": {
+      "correct": 3,
+      "predicted": 3,
+      "target": 6,
+      "missed": 3,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "missing_labels": [
+        "film classification",
+        "historical period",
+        "studio location"
+      ],
+      "extra_labels": []
+    },
+    "states": {
+      "correct": 13,
+      "predicted": 13,
+      "target": 25,
+      "missed": 12,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 0.52,
+      "f1": 0.6842105263157895,
+      "missing_by_node": {
+        "film classification": [
+          "B movie",
+          "none",
+          "series film"
+        ],
+        "historical period": [
+          "1920s",
+          "1930s",
+          "1940s",
+          "1950s",
+          "none"
+        ],
+        "studio location": [
+          "Gower Street vicinity",
+          "Hollywood",
+          "none",
+          "unspecified location"
+        ]
+      },
+      "extra_by_node": {}
+    },
+    "edges": {
+      "correct": 2,
+      "predicted": 2,
+      "target": 3,
+      "missed": 1,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "f1": 0.8,
+      "missing_due_to_absent_nodes": [
+        {
+          "parent": "production characteristic",
+          "child": "film classification",
+          "absent_endpoints": [
+            "film classification"
+          ]
+        }
+      ],
+      "missing_relationships_between_present_nodes": [],
+      "extra_edges": []
+    },
+    "cpds": {
+      "skipped": false,
+      "predicted_edges": 2,
+      "target_edges": 3,
+      "matched_edges": 2,
+      "missing_edges": 1,
+      "extra_edges": 0,
+      "complete_target_edges": 2,
+      "target_numeric_cells": 45,
+      "comparable_numeric_cells": 30,
+      "missing_numeric_cells": 15,
+      "cell_coverage": 0.6666666666666666,
+      "mean_absolute_error": 7.4747474747569966e-06,
+      "max_absolute_error": 4.5454545454515216e-05,
+      "complete_columns": 6,
+      "mean_column_kl": 5.477681379162448e-09
+    },
+    "full_coverage": {
+      "nodes": false,
+      "states": false,
+      "edges": false,
+      "nodes_states_edges": false
+    }
+  }
+}

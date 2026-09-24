@@ -1,0 +1,425 @@
+{
+  "nodes": [
+    {
+      "node": "blame target",
+      "states": [
+        "foreign actors",
+        "none"
+      ]
+    },
+    {
+      "node": "document curation choice",
+      "states": [
+        "selective document inclusion",
+        "strategic document presentation",
+        "strategic document ordering",
+        "none"
+      ]
+    },
+    {
+      "node": "event focus",
+      "states": [
+        "current events",
+        "past events",
+        "none"
+      ]
+    },
+    {
+      "node": "geopolitical context",
+      "states": [
+        "wartime",
+        "times of crisis",
+        "World War I",
+        "none"
+      ]
+    },
+    {
+      "node": "official diplomatic publication",
+      "states": [
+        "British Blue Books",
+        "German White Book",
+        "Austrian Red Book",
+        "Russian Orange Book",
+        "color book",
+        "none"
+      ]
+    },
+    {
+      "node": "propaganda mode",
+      "states": [
+        "white propaganda",
+        "government-issued propaganda",
+        "none"
+      ]
+    },
+    {
+      "node": "publication rationale",
+      "states": [
+        "educational reasons",
+        "political reasons",
+        "promotion of government position",
+        "justification of governmental action",
+        "assignment of blame to foreign actors",
+        "none"
+      ]
+    },
+    {
+      "node": "publishing government",
+      "states": [
+        "British government",
+        "German government",
+        "Austrian government",
+        "Russian government",
+        "major power government",
+        "none"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "parent": "document curation choice",
+      "child": "propaganda mode"
+    },
+    {
+      "parent": "geopolitical context",
+      "child": "event focus"
+    },
+    {
+      "parent": "geopolitical context",
+      "child": "propaganda mode"
+    },
+    {
+      "parent": "geopolitical context",
+      "child": "publication rationale"
+    },
+    {
+      "parent": "propaganda mode",
+      "child": "blame target"
+    },
+    {
+      "parent": "publication rationale",
+      "child": "official diplomatic publication"
+    },
+    {
+      "parent": "publication rationale",
+      "child": "propaganda mode"
+    },
+    {
+      "parent": "publishing government",
+      "child": "document curation choice"
+    },
+    {
+      "parent": "publishing government",
+      "child": "official diplomatic publication"
+    }
+  ],
+  "cpds": [
+    {
+      "parent": "document curation choice",
+      "child": "propaganda mode",
+      "matrix": [
+        [
+          0.4667,
+          0.44,
+          0.4444,
+          0.0741
+        ],
+        [
+          0.4333,
+          0.44,
+          0.4444,
+          0.0741
+        ],
+        [
+          0.1,
+          0.12,
+          0.1111,
+          0.8519
+        ]
+      ]
+    },
+    {
+      "parent": "geopolitical context",
+      "child": "event focus",
+      "matrix": [
+        [
+          0.64,
+          0.7,
+          0.6,
+          0.2
+        ],
+        [
+          0.28,
+          0.2,
+          0.3429,
+          0.3
+        ],
+        [
+          0.08,
+          0.1,
+          0.0571,
+          0.5
+        ]
+      ]
+    },
+    {
+      "parent": "geopolitical context",
+      "child": "propaganda mode",
+      "matrix": [
+        [
+          0.52,
+          0.45,
+          0.4571,
+          0.15
+        ],
+        [
+          0.4,
+          0.4,
+          0.4571,
+          0.1
+        ],
+        [
+          0.08,
+          0.15,
+          0.0857,
+          0.75
+        ]
+      ]
+    },
+    {
+      "parent": "geopolitical context",
+      "child": "publication rationale",
+      "matrix": [
+        [
+          0.08,
+          0.1,
+          0.0857,
+          0.3
+        ],
+        [
+          0.16,
+          0.15,
+          0.1714,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.28,
+          0.25,
+          0.2571,
+          0.1
+        ],
+        [
+          0.24,
+          0.25,
+          0.2286,
+          0.05
+        ],
+        [
+          0.04,
+          0.05,
+          0.0571,
+          0.15
+        ]
+      ]
+    },
+    {
+      "parent": "propaganda mode",
+      "child": "blame target",
+      "matrix": [
+        [
+          0.625,
+          0.6286,
+          0.12
+        ],
+        [
+          0.375,
+          0.3714,
+          0.88
+        ]
+      ]
+    },
+    {
+      "parent": "publication rationale",
+      "child": "official diplomatic publication",
+      "matrix": [
+        [
+          0.1923,
+          0.175,
+          0.1818,
+          0.175,
+          0.1667,
+          0.05
+        ],
+        [
+          0.1385,
+          0.15,
+          0.1591,
+          0.15,
+          0.1533,
+          0.04
+        ],
+        [
+          0.1154,
+          0.125,
+          0.1364,
+          0.125,
+          0.1333,
+          0.03
+        ],
+        [
+          0.1154,
+          0.125,
+          0.1364,
+          0.125,
+          0.1333,
+          0.03
+        ],
+        [
+          0.3462,
+          0.35,
+          0.3409,
+          0.375,
+          0.3667,
+          0.1
+        ],
+        [
+          0.0923,
+          0.075,
+          0.0455,
+          0.05,
+          0.0467,
+          0.75
+        ]
+      ]
+    },
+    {
+      "parent": "publication rationale",
+      "child": "propaganda mode",
+      "matrix": [
+        [
+          0.2308,
+          0.4,
+          0.4545,
+          0.5,
+          0.5,
+          0.05
+        ],
+        [
+          0.1538,
+          0.35,
+          0.4091,
+          0.425,
+          0.4333,
+          0.05
+        ],
+        [
+          0.6154,
+          0.25,
+          0.1364,
+          0.075,
+          0.0667,
+          0.9
+        ]
+      ]
+    },
+    {
+      "parent": "publishing government",
+      "child": "document curation choice",
+      "matrix": [
+        [
+          0.3333,
+          0.3438,
+          0.3571,
+          0.3571,
+          0.3571,
+          0.05
+        ],
+        [
+          0.3333,
+          0.3125,
+          0.2857,
+          0.2857,
+          0.2857,
+          0.05
+        ],
+        [
+          0.2222,
+          0.2188,
+          0.2143,
+          0.2143,
+          0.2143,
+          0.05
+        ],
+        [
+          0.1111,
+          0.125,
+          0.1429,
+          0.1429,
+          0.1429,
+          0.85
+        ]
+      ]
+    },
+    {
+      "parent": "publishing government",
+      "child": "official diplomatic publication",
+      "matrix": [
+        [
+          0.7778,
+          0.025,
+          0.0214,
+          0.0214,
+          0.1071,
+          0.02
+        ],
+        [
+          0.0278,
+          0.75,
+          0.0286,
+          0.0214,
+          0.125,
+          0.02
+        ],
+        [
+          0.0167,
+          0.025,
+          0.75,
+          0.0286,
+          0.1071,
+          0.02
+        ],
+        [
+          0.0167,
+          0.0187,
+          0.0214,
+          0.75,
+          0.1071,
+          0.02
+        ],
+        [
+          0.1389,
+          0.1562,
+          0.15,
+          0.15,
+          0.5,
+          0.12
+        ],
+        [
+          0.0222,
+          0.025,
+          0.0286,
+          0.0286,
+          0.0536,
+          0.8
+        ]
+      ]
+    }
+  ],
+  "inferred_components": []
+}

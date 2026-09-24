@@ -1,0 +1,94 @@
+{
+  "backbone_id": "bn_00045",
+  "source_id": "wiki_00044",
+  "subgraph_count": 9,
+  "hierarchy_levels": 1,
+  "judgment": {
+    "criteria": {
+      "nodes": {
+        "score": 0.91,
+        "reason": "The generated text includes most original entities and concepts: Islam, voluntary poverty, Sufism, Sunni and Shi'ite scholarship, the Quran, the Hijra from Mecca, conquest, material wealth, full-time worship, and scholarly veneration. It does not explicitly preserve God as the provider of worldly goods and adds concepts such as political interpretations being compatible with worldly enjoyment."
+      },
+      "states": {
+        "score": 0.8,
+        "reason": "The main alternatives—renunciation, self-denial, charitable sharing, sacrifice, and enjoyment—are present, as are encouragement, rejection, and veneration. However, the original's definite traditional Sunni and Shi'ite judgment that self-denial is inconsistent with the Quran becomes a weaker description of lesser association with ascetic practices. The generated text also explicitly assigns the Middle Ages peak to asceticism, whereas the original's opening grammatically assigns it to Islam."
+      },
+      "edges": {
+        "score": 0.65,
+        "reason": "Several central connections survive, including Sufism with renunciation, the Quranic admonition with legitimate enjoyment, and the post-Hijra period with a political and conquest-oriented character. However, the generated text invents a connection between conquest-oriented interpretations and worldly enjoyment, asserts that the charitable message was retained, and associates Sufism specifically with full-time worship and abandonment of wealth. It also obscures the original sequence in which scholars venerated people who abandoned wealth to worship, thereby increasing poverty's idealization and influencing Islamic ideas about poverty."
+      },
+      "relationship_type": {
+        "score": 0.6,
+        "reason": "The original attributes the proposed shift from an initial charitable message to post-Hijra conquest to 'some scholars'; the generated text presents that history more directly and adds continued charity without that qualification. Explicit doctrinal positions become comparative associations, such as Sunni and Shi'ite scholars being 'less closely associated' with ascetic practices rather than traditionally holding self-denial inconsistent with the Quran. The original causal account of veneration increasing idealization is broadened into a less precise account of multiple scholarly responses shaping several possible attitudes."
+      },
+      "overall_similarity": {
+        "score": 0.7,
+        "reason": "The generated text captures the broad tension between Islamic asceticism and enjoyment of worldly goods and retains most major historical and doctrinal references. Nevertheless, its expanded synthesis introduces unsupported links, weakens important attributed positions, and replaces the original's specific historical and causal claims with a more generalized framework."
+      }
+    },
+    "score_out_of_5": 3.66,
+    "overall_reason": "There is substantial topical and conceptual coverage, but the round trip is not fully faithful: it adds interpretive relationships, changes the strength and attribution of claims, and blurs the specific process by which scholarly veneration increased the idealization of poverty."
+  },
+  "structural_metrics": {
+    "nodes": {
+      "correct": 8,
+      "predicted": 8,
+      "target": 8,
+      "missed": 0,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "missing_labels": [],
+      "extra_labels": []
+    },
+    "states": {
+      "correct": 35,
+      "predicted": 35,
+      "target": 35,
+      "missed": 0,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "missing_by_node": {},
+      "extra_by_node": {}
+    },
+    "edges": {
+      "correct": 8,
+      "predicted": 8,
+      "target": 8,
+      "missed": 0,
+      "extra": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "missing_due_to_absent_nodes": [],
+      "missing_relationships_between_present_nodes": [],
+      "extra_edges": []
+    },
+    "cpds": {
+      "skipped": false,
+      "predicted_edges": 8,
+      "target_edges": 8,
+      "matched_edges": 8,
+      "missing_edges": 0,
+      "extra_edges": 0,
+      "complete_target_edges": 8,
+      "target_numeric_cells": 157,
+      "comparable_numeric_cells": 157,
+      "missing_numeric_cells": 0,
+      "cell_coverage": 1.0,
+      "mean_absolute_error": 9.713267300385537e-06,
+      "max_absolute_error": 4.59459459459452e-05,
+      "complete_columns": 34,
+      "mean_column_kl": 7.019293237424215e-09
+    },
+    "full_coverage": {
+      "nodes": true,
+      "states": true,
+      "edges": true,
+      "nodes_states_edges": true
+    }
+  }
+}
