@@ -91,9 +91,18 @@
           <div>
             <span class="section-label">Finish review</span>
             <h2 id="save-title">Add this comparison to your CSV</h2>
-            <p>Reviews stay in this browser tab until you download them. No scores or names are sent to a server.</p>
+            <p>Complete the score on each tab. Use 1–5 for every model and criterion; decimals are allowed.</p>
           </div>
           <div class="save-controls">
+            <details class="subgraph-scoring-guide">
+              <summary>Scoring guide</summary>
+              <p><strong>Overall:</strong> how accurate is the complete generated subgraph for the source text?</p>
+              <p><strong>Nodes:</strong> are the relevant concepts present, without important omissions or unsupported additions?</p>
+              <p><strong>States:</strong> are the values and alternatives attached to the correct nodes?</p>
+              <p><strong>Edges:</strong> are parent → child directions and relationships correct?</p>
+              <p><strong>CPDs:</strong> do the conditional probability tables make sense given the source text and the displayed states?</p>
+              <p class="guide-scale"><strong>Scale:</strong> 1 = poor or mostly incorrect · 3 = mixed or partly correct · 5 = highly accurate. Use decimals when a score falls between these descriptions.</p>
+            </details>
             <label for="preferred-model">Preferred model for this subgraph</label>
             <select id="preferred-model" required>
               <option value="">Choose a model</option>

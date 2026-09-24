@@ -28,8 +28,9 @@ reloading the tab.
 
 The backbone reviewer bundles its completed GPT-5.6 round-trip cases under
 `backbone/data/`. It shows the original text, ground-truth backbone, generated
-backbone, and generated text, then exports the five continuous criteria, the
-separate 1–5 text score, and the optional reason to CSV.
+backbone, and generated text through matching **Overall**, **Nodes**, **States**,
+and **Edges** tabs. It then exports the five continuous criteria, the separate
+1–5 text score, and the optional reason to CSV.
 
 Download each CSV before closing or reloading its tab. GitHub Pages does not
 store review inputs.

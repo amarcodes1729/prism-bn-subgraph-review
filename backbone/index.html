@@ -18,24 +18,36 @@
     </section>
     <p id="status" class="status" role="status"></p>
     <section class="meta"><strong id="title">Loading…</strong><span id="source-id"></span><span id="position"></span></section>
-    <div class="grid">
-      <article><h2>Original text</h2><pre id="original"></pre></article>
-      <article><h2>Generated text</h2><pre id="generated"></pre></article>
-      <article><h2>Ground truth backbone</h2><pre id="truth"></pre></article>
-      <article><h2>Generated backbone</h2><pre id="prediction"></pre></article>
+    <nav class="review-tabs" role="tablist" aria-label="Backbone review sections">
+      <button class="review-tab active" type="button" role="tab" aria-selected="true" data-tab="overall">1 · Overall</button>
+      <button class="review-tab" type="button" role="tab" aria-selected="false" data-tab="nodes">2 · Nodes</button>
+      <button class="review-tab" type="button" role="tab" aria-selected="false" data-tab="states">3 · States</button>
+      <button class="review-tab" type="button" role="tab" aria-selected="false" data-tab="edges">4 · Edges</button>
+    </nav>
+    <section class="tab-intro"><strong id="tab-title">Overall fidelity</strong><span id="tab-instruction">Read both texts first, then judge the generated backbone description against the original.</span></section>
+    <div id="overall-panel" class="tab-panel active">
+      <div class="grid">
+        <article><h2>Original text</h2><p class="panel-help">This is the reference article. Use it as the source of truth.</p><pre id="original"></pre></article>
+        <article><h2>Generated text</h2><p class="panel-help">This was written from the generated backbone.</p><pre id="generated"></pre></article>
+        <article><h2>Ground truth backbone</h2><p class="panel-help">Reference graph supplied with the dataset.</p><pre id="truth"></pre></article>
+        <article><h2>Generated backbone</h2><p class="panel-help">GPT-5.6 backbone used to produce the generated text.</p><pre id="prediction"></pre></article>
+      </div>
     </div>
+    <div id="nodes-panel" class="tab-panel"><div class="comparison-columns"><article><h2>Ground truth nodes</h2><p class="panel-help">Every reference node should be represented in the generated backbone.</p><div id="truth-nodes" class="inventory"></div></article><article><h2>Generated nodes</h2><p class="panel-help">Check for omitted, merged, or invented nodes.</p><div id="prediction-nodes" class="inventory"></div></article></div></div>
+    <div id="states-panel" class="tab-panel"><div class="comparison-columns"><article><h2>Ground truth states</h2><p class="panel-help">Check every value, category, date, and explicit absence state.</p><div id="truth-states" class="inventory"></div></article><article><h2>Generated states</h2><p class="panel-help">Check that states remain attached to the correct node.</p><div id="prediction-states" class="inventory"></div></article></div></div>
+    <div id="edges-panel" class="tab-panel"><div class="comparison-columns"><article><h2>Ground truth relationships</h2><p class="panel-help">Treat each arrow as a directed relationship and preserve its meaning.</p><div id="truth-edges" class="inventory"></div></article><article><h2>Generated relationships</h2><p class="panel-help">Check direction, omissions, additions, and relationship wording.</p><div id="prediction-edges" class="inventory"></div></article></div></div>
     <section class="review">
       <h2>Human scores</h2>
-      <p>Use continuous scores from 0 to 1 for the five criteria. The separate text score is from 1 to 5.</p>
+      <p>Complete the score on each section. Use 0–1 for criterion coverage and 1–5 for the direct text comparison. Decimals are allowed.</p>
       <details class="scoring-guide" open>
         <summary>Scoring guide — keep this open while reviewing</summary>
         <div class="scoring-guide-body">
-          <div class="guide-item"><strong>Nodes</strong><span>How completely does the generated text cover the distinct concepts, entities, and variables in the original?</span></div>
-          <div class="guide-item"><strong>States</strong><span>Are the original values, categories, dates, quantities, and alternatives represented under the right concepts?</span></div>
-          <div class="guide-item"><strong>Edges</strong><span>Are the original connections, directions, dependencies, and relationships represented without reversals or inventions?</span></div>
-          <div class="guide-item"><strong>Relationship type</strong><span>Does the generated text preserve whether a relationship is causal, historical, administrative, conditional, temporal, or merely associated?</span></div>
-          <div class="guide-item"><strong>Overall similarity</strong><span>How faithfully does the generated text preserve the original meaning, scope, important facts, and qualifiers?</span></div>
-          <div class="guide-item"><strong>Direct text score</strong><span>Give one independent overall rating for the original versus generated text, from 1 to 5.</span></div>
+          <div class="guide-item"><strong>Nodes · Nodes tab</strong><span>Are all distinct concepts, entities, and variables in the original represented in the generated text?</span></div>
+          <div class="guide-item"><strong>States · States tab</strong><span>Are values, categories, dates, quantities, and explicit alternatives represented under the right concepts?</span></div>
+          <div class="guide-item"><strong>Edges · Edges tab</strong><span>Are connections and directions preserved without reversed or invented relationships?</span></div>
+          <div class="guide-item"><strong>Relationship type · Edges tab</strong><span>Is each relationship still causal, historical, administrative, conditional, temporal, or associated as stated in the original?</span></div>
+          <div class="guide-item"><strong>Overall similarity · Overall tab</strong><span>Does the generated text preserve the original meaning, scope, important facts, and qualifiers?</span></div>
+          <div class="guide-item"><strong>Direct text score · Overall tab</strong><span>Give one independent 1–5 rating for the original text versus the generated text.</span></div>
         </div>
         <div class="score-scale"><strong>Scale:</strong> 0.0 = no meaningful coverage · 0.5 = partial or mixed coverage · 1.0 = complete faithful coverage. For the direct score, 1 = very poor match, 3 = mixed match, and 5 = highly faithful match. Decimals are allowed.</div>
       </details>

@@ -22,23 +22,23 @@ const FIELD_BY_TAB = {
 const TAB_COPY = {
   overview: {
     title: "How accurate is the complete subgraph?",
-    detail: "Pan each network independently. Give each model an overall subgraph score from 1 to 5.",
+    detail: "Read the source text first, inspect each graph, and rate whether the full generated subgraph captures the relevant content.",
   },
   nodes: {
     title: "Which concepts became nodes?",
-    detail: "Compare each generated node list with the source text and rate node accuracy from 1 to 5.",
+    detail: "Compare the generated node inventory with the source text. Penalize important omissions, merged concepts, and unsupported additions.",
   },
   states: {
     title: "Are the node states supported?",
-    detail: "Review states under their node names and rate state accuracy from 1 to 5.",
+    detail: "Review every state under its node name. Check that values, categories, dates, quantities, and absence states are attached correctly.",
   },
   edges: {
     title: "Do the directed relationships match?",
-    detail: "Inspect parent → child relationships and rate edge accuracy from 1 to 5.",
+    detail: "Inspect every parent → child relationship. Check direction, missing edges, invented edges, and whether the relationship is supported by the source.",
   },
   cpds: {
     title: "Do the probabilities make sense?",
-    detail: "Review each conditional probability table in context and rate CPD accuracy from 1 to 5.",
+    detail: "Review each conditional probability table against its parent and child states. Score whether the probabilities are plausible and supported by the source.",
   },
 };
 
