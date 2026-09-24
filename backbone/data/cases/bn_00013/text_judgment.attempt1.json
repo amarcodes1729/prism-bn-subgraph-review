@@ -1,0 +1,44 @@
+{
+  "response_id": "resp_0f935f918eb3a5a3016ab374b95bc487d286785b54effff01a",
+  "model": "gpt-6-astra",
+  "status": "completed",
+  "raw": "{\"criteria\":{\"nodes\":{\"score\":0.96,\"reason\":\"The generated text retains hantavirus, HPS, Latin America and the Caribbean, biodiversity, infected rodents, Cricetidae, Andes virus, climate change, rainfall, temperature, extreme weather, and outbreaks. It adds geographic setting as an explanatory factor not identified in the original.\"},\"states\":{\"score\":0.92,\"reason\":\"High biodiversity, significant public-health risk, rodent reservoir status, and principal transmission through infected-rodent contact are preserved. However, Andes virus's uniquely human-to-human-transmissible status is reduced to simply having that transmission route, and HPS loses the original's particular emphasis.\"},\"edges\":{\"score\":0.9,\"reason\":\"The principal connections between climate change, environmental conditions, rodent dynamics, and outbreak potential are preserved, as are Cricetidae reservoir status and Andes virus human-to-human transmission. The generated text additionally makes biodiversity and geographic setting determinants of environmental conditions, whereas the original only identifies high biodiversity as regional context.\"},\"relationship_type\":{\"score\":0.87,\"reason\":\"Reservoir relationships and the primacy of rodent-contact transmission remain intact. However, the original's direct statement that climate change is altering conditions and amplifying rodent dynamics becomes an association with conditions that 'can' amplify populations. Likewise, Andes virus 'transmits between humans' becomes human-to-human transmission being 'associated with' it, weakening the original's definite and unique characterization.\"},\"overall_similarity\":{\"score\":0.92,\"reason\":\"The generated text faithfully preserves the main public-health account of climate-related environmental changes, rodent reservoirs, transmission, and hantavirus outbreak potential in Latin America and the Caribbean. Minor unsupported ecological elaborations, weaker causal wording, and loss of Andes virus's stated uniqueness prevent complete equivalence.\"}},\"overall_reason\":\"The generated text closely matches the original's central entities and transmission-and-climate narrative, but adds a geographic/ecological dependency and softens several explicit claims, particularly climate causation and the uniqueness of Andes virus human-to-human transmission.\"}",
+  "usage": {
+    "input_tokens": 748,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 496,
+    "output_tokens_details": {
+      "reasoning_tokens": 73
+    },
+    "total_tokens": 1244
+  },
+  "accepted": {
+    "criteria": {
+      "nodes": {
+        "score": 0.96,
+        "reason": "The generated text retains hantavirus, HPS, Latin America and the Caribbean, biodiversity, infected rodents, Cricetidae, Andes virus, climate change, rainfall, temperature, extreme weather, and outbreaks. It adds geographic setting as an explanatory factor not identified in the original."
+      },
+      "states": {
+        "score": 0.92,
+        "reason": "High biodiversity, significant public-health risk, rodent reservoir status, and principal transmission through infected-rodent contact are preserved. However, Andes virus's uniquely human-to-human-transmissible status is reduced to simply having that transmission route, and HPS loses the original's particular emphasis."
+      },
+      "edges": {
+        "score": 0.9,
+        "reason": "The principal connections between climate change, environmental conditions, rodent dynamics, and outbreak potential are preserved, as are Cricetidae reservoir status and Andes virus human-to-human transmission. The generated text additionally makes biodiversity and geographic setting determinants of environmental conditions, whereas the original only identifies high biodiversity as regional context."
+      },
+      "relationship_type": {
+        "score": 0.87,
+        "reason": "Reservoir relationships and the primacy of rodent-contact transmission remain intact. However, the original's direct statement that climate change is altering conditions and amplifying rodent dynamics becomes an association with conditions that 'can' amplify populations. Likewise, Andes virus 'transmits between humans' becomes human-to-human transmission being 'associated with' it, weakening the original's definite and unique characterization."
+      },
+      "overall_similarity": {
+        "score": 0.92,
+        "reason": "The generated text faithfully preserves the main public-health account of climate-related environmental changes, rodent reservoirs, transmission, and hantavirus outbreak potential in Latin America and the Caribbean. Minor unsupported ecological elaborations, weaker causal wording, and loss of Andes virus's stated uniqueness prevent complete equivalence."
+      }
+    },
+    "score_out_of_5": 4.57,
+    "overall_reason": "The generated text closely matches the original's central entities and transmission-and-climate narrative, but adds a geographic/ecological dependency and softens several explicit claims, particularly climate causation and the uniqueness of Andes virus human-to-human transmission."
+  }
+}

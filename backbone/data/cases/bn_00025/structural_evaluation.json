@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "correct": 8,
+    "predicted": 8,
+    "target": 8,
+    "missed": 0,
+    "extra": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "missing_labels": [],
+    "extra_labels": []
+  },
+  "states": {
+    "correct": 34,
+    "predicted": 34,
+    "target": 34,
+    "missed": 0,
+    "extra": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "missing_by_node": {},
+    "extra_by_node": {}
+  },
+  "edges": {
+    "correct": 9,
+    "predicted": 9,
+    "target": 9,
+    "missed": 0,
+    "extra": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "missing_due_to_absent_nodes": [],
+    "missing_relationships_between_present_nodes": [],
+    "extra_edges": []
+  },
+  "cpds": {
+    "skipped": false,
+    "predicted_edges": 9,
+    "target_edges": 9,
+    "matched_edges": 9,
+    "missing_edges": 0,
+    "extra_edges": 0,
+    "complete_target_edges": 9,
+    "target_numeric_cells": 180,
+    "comparable_numeric_cells": 180,
+    "missing_numeric_cells": 0,
+    "cell_coverage": 1.0,
+    "mean_absolute_error": 1.4304892638234061e-05,
+    "max_absolute_error": 4.999999999999796e-05,
+    "complete_columns": 43,
+    "mean_column_kl": 1.12938203282805e-08
+  },
+  "full_coverage": {
+    "nodes": true,
+    "states": true,
+    "edges": true,
+    "nodes_states_edges": true
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "response_id": "resp_0d3bb64ca54eae2a016ab37664265487d2bc10e7b232f85eeb",
+  "model": "gpt-5.6-sol",
+  "status": "completed",
+  "raw": "Indigenous peoples live in wide-ranging geographical areas across more than 90 countries, and Indigenous territories account for about 22 percent of the planet’s land. Although definitions of land use vary, Indigenous land stewardship is closely connected to land-based practices, relations, cultures, and livelihoods. These relationships support traditional and social-ecological knowledge, as well as a broader understanding of local environments.\n\nClimate change affects health, environments, and communities, but its effects are not evenly distributed. Indigenous peoples often face disproportionate impacts compared with non-Indigenous populations. This distribution is associated not only with environmental conditions and geographic context, but also with dependence on land-tied livelihoods and the continuing effects of colonialism. Self-determination provides an important contrasting sociopolitical context for how communities experience and address these pressures.\n\nTraditional knowledge, social-ecological knowledge, and environmental understanding contribute to adaptive capacity through adaptation strategies, knowledge keeping, and environmental-preservation practices. Land-based practices and relations also sustain these resources. Together with efforts to preserve environments and maintain social-ecological systems, they support adaptation to and mitigation of climate change, including the large-scale implementation of land-based practices. Such responses can benefit Indigenous communities themselves while also contributing to climate action and environmental stewardship for non-Indigenous communities.",
+  "usage": {
+    "input_tokens": 9560,
+    "input_tokens_details": {
+      "cache_write_tokens": 9557,
+      "cached_tokens": 0
+    },
+    "output_tokens": 377,
+    "output_tokens_details": {
+      "reasoning_tokens": 116
+    },
+    "total_tokens": 9937
+  },
+  "accepted": "Indigenous peoples live in wide-ranging geographical areas across more than 90 countries, and Indigenous territories account for about 22 percent of the planet’s land. Although definitions of land use vary, Indigenous land stewardship is closely connected to land-based practices, relations, cultures, and livelihoods. These relationships support traditional and social-ecological knowledge, as well as a broader understanding of local environments.\n\nClimate change affects health, environments, and communities, but its effects are not evenly distributed. Indigenous peoples often face disproportionate impacts compared with non-Indigenous populations. This distribution is associated not only with environmental conditions and geographic context, but also with dependence on land-tied livelihoods and the continuing effects of colonialism. Self-determination provides an important contrasting sociopolitical context for how communities experience and address these pressures.\n\nTraditional knowledge, social-ecological knowledge, and environmental understanding contribute to adaptive capacity through adaptation strategies, knowledge keeping, and environmental-preservation practices. Land-based practices and relations also sustain these resources. Together with efforts to preserve environments and maintain social-ecological systems, they support adaptation to and mitigation of climate change, including the large-scale implementation of land-based practices. Such responses can benefit Indigenous communities themselves while also contributing to climate action and environmental stewardship for non-Indigenous communities."
+}

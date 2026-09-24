@@ -1,0 +1,19 @@
+{
+  "response_id": "resp_0b0050867d1014a3016ab37d34016887d28a07bc221168c1b7",
+  "model": "gpt-5.6-sol",
+  "status": "completed",
+  "raw": "Official diplomatic publications known as “color books” were issued by major powers to present government documents concerning current or past events, particularly during wartime and other periods of crisis. During World War I, prominent examples included the British Blue Books, the German White Book, the Austrian Red Book, and the Russian Orange Book, each associated with its respective government.\n\nGovernments published these collections for educational and political reasons, including promoting an official position, justifying governmental action, and assigning blame to foreign actors. Their presentation often involved selective inclusion of documents as well as strategic ordering and framing. The publishing government therefore shaped both the choice of material and the identity of the resulting official publication.\n\nSuch curated collections could function as government-issued or white propaganda. This role was especially associated with wartime and crisis conditions, when publications concentrated more heavily on current events and sought to defend official conduct. By presenting genuine official material selectively and strategically, color books could advance a government’s preferred interpretation and direct responsibility toward foreign actors.",
+  "usage": {
+    "input_tokens": 9267,
+    "input_tokens_details": {
+      "cache_write_tokens": 9264,
+      "cached_tokens": 0
+    },
+    "output_tokens": 202,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 9469
+  },
+  "accepted": "Official diplomatic publications known as “color books” were issued by major powers to present government documents concerning current or past events, particularly during wartime and other periods of crisis. During World War I, prominent examples included the British Blue Books, the German White Book, the Austrian Red Book, and the Russian Orange Book, each associated with its respective government.\n\nGovernments published these collections for educational and political reasons, including promoting an official position, justifying governmental action, and assigning blame to foreign actors. Their presentation often involved selective inclusion of documents as well as strategic ordering and framing. The publishing government therefore shaped both the choice of material and the identity of the resulting official publication.\n\nSuch curated collections could function as government-issued or white propaganda. This role was especially associated with wartime and crisis conditions, when publications concentrated more heavily on current events and sought to defend official conduct. By presenting genuine official material selectively and strategically, color books could advance a government’s preferred interpretation and direct responsibility toward foreign actors."
+}

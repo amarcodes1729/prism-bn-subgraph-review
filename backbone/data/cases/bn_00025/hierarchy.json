@@ -1,0 +1,29 @@
+[
+  {
+    "level": 0,
+    "input_graphs": 15,
+    "batches": [
+      {
+        "id": "level00_batch001",
+        "input_ids": [
+          "bn_00025_sub_001",
+          "bn_00025_sub_002",
+          "bn_00025_sub_003",
+          "bn_00025_sub_004",
+          "bn_00025_sub_005",
+          "bn_00025_sub_006",
+          "bn_00025_sub_007",
+          "bn_00025_sub_008",
+          "bn_00025_sub_009",
+          "bn_00025_sub_010",
+          "bn_00025_sub_011",
+          "bn_00025_sub_012",
+          "bn_00025_sub_013",
+          "bn_00025_sub_014",
+          "bn_00025_sub_015"
+        ],
+        "subgraph_count": 15
+      }
+    ]
+  }
+]

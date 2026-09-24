@@ -29,9 +29,10 @@
       <div class="grid">
         <article><h2>Original text</h2><p class="panel-help">This is the reference article. Use it as the source of truth.</p><pre id="original"></pre></article>
         <article><h2>Generated text</h2><p class="panel-help">This was written from the generated backbone.</p><pre id="generated"></pre></article>
-        <article><h2>Ground truth backbone</h2><p class="panel-help">Reference graph supplied with the dataset. Select a node for its states.</p><div id="truth-graph" class="network-canvas"></div></article>
-        <article><h2>Generated backbone</h2><p class="panel-help">GPT-5.6 backbone used to produce the generated text. Select a node for its states.</p><div id="prediction-graph" class="network-canvas"></div></article>
+        <article><h2>Ground truth backbone graph</h2><p class="panel-help">Rendered as a node-and-edge graph. Each box is a backbone node and each arrow is a directed relationship.</p><div id="truth-graph" class="network-canvas" aria-label="Ground truth backbone graph"></div></article>
+        <article><h2>Generated backbone graph</h2><p class="panel-help">Rendered as a node-and-edge graph from the generated GPT-5.6 backbone. The JSON is used only as the data source.</p><div id="prediction-graph" class="network-canvas" aria-label="Generated backbone graph"></div></article>
       </div>
+      <p class="graph-legend"><span class="legend-swatch truth-swatch"></span> Ground truth graph <span class="legend-swatch generated-swatch"></span> Generated graph <span class="legend-arrow">→</span> directed edge</p>
     </div>
     <div id="nodes-panel" class="tab-panel"><div class="comparison-columns"><article><h2>Ground truth nodes</h2><p class="panel-help">Every reference node should be represented in the generated backbone.</p><div id="truth-nodes" class="inventory"></div></article><article><h2>Generated nodes</h2><p class="panel-help">Check for omitted, merged, or invented nodes.</p><div id="prediction-nodes" class="inventory"></div></article></div></div>
     <div id="states-panel" class="tab-panel"><div class="comparison-columns"><article><h2>Ground truth states</h2><p class="panel-help">Check every value, category, date, and explicit absence state.</p><div id="truth-states" class="inventory"></div></article><article><h2>Generated states</h2><p class="panel-help">Check that states remain attached to the correct node.</p><div id="prediction-states" class="inventory"></div></article></div></div>

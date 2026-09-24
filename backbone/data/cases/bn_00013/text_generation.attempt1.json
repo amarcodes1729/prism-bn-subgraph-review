@@ -1,0 +1,19 @@
+{
+  "response_id": "resp_01f6f25de30090b9016ab374b1fdc087d2a65bed7dc5b56586",
+  "model": "gpt-5.6-sol",
+  "status": "completed",
+  "raw": "Hantavirus infection is a significant public-health concern in Latin America and the Caribbean, where ecological conditions connect climate, rodent populations, and opportunities for transmission. Climate change—including shifts in rainfall and temperature and more extreme weather patterns—is associated with altered environmental conditions. The region’s high biodiversity and geographic setting also shape these conditions, which in turn can amplify rodent population dynamics or increase rodent populations.\n\nInfected rodents, particularly those in the family Cricetidae, serve as reservoirs for hantaviruses, including Andes virus. Greater rodent abundance can increase opportunities for people to come into contact with infected animals. Such contact is the principal transmission pathway represented here, although human-to-human transmission is also associated with Andes virus.\n\nExposure through these pathways can result in hantavirus infection, including hantavirus pulmonary syndrome. These disease outcomes may create a significant public-health risk and can lead to hantavirus outbreaks, linking climatic and ecological changes with rodent reservoirs, viral transmission, and human illness across Latin America and the Caribbean.",
+  "usage": {
+    "input_tokens": 8835,
+    "input_tokens_details": {
+      "cache_write_tokens": 8832,
+      "cached_tokens": 0
+    },
+    "output_tokens": 206,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 9041
+  },
+  "accepted": "Hantavirus infection is a significant public-health concern in Latin America and the Caribbean, where ecological conditions connect climate, rodent populations, and opportunities for transmission. Climate change—including shifts in rainfall and temperature and more extreme weather patterns—is associated with altered environmental conditions. The region’s high biodiversity and geographic setting also shape these conditions, which in turn can amplify rodent population dynamics or increase rodent populations.\n\nInfected rodents, particularly those in the family Cricetidae, serve as reservoirs for hantaviruses, including Andes virus. Greater rodent abundance can increase opportunities for people to come into contact with infected animals. Such contact is the principal transmission pathway represented here, although human-to-human transmission is also associated with Andes virus.\n\nExposure through these pathways can result in hantavirus infection, including hantavirus pulmonary syndrome. These disease outcomes may create a significant public-health risk and can lead to hantavirus outbreaks, linking climatic and ecological changes with rodent reservoirs, viral transmission, and human illness across Latin America and the Caribbean."
+}

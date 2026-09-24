@@ -26,11 +26,12 @@ column for each scoring tab. Names, scores, preferences, and notes are not sent
 to a server or stored across reloads. Download the CSV before closing or
 reloading the tab.
 
-The backbone reviewer bundles its completed GPT-5.6 round-trip cases under
-`backbone/data/`. It shows the original text, ground-truth backbone, generated
-backbone, and generated text through matching **Overall**, **Nodes**, **States**,
-and **Edges** tabs. It then exports the five continuous criteria, the separate
-1–5 text score, and the optional reason to CSV.
+The backbone reviewer bundles the five highest-scoring GPT-5.6 round-trip cases
+with complete node, state, and edge coverage under `backbone/data/`. It shows
+the original text, ground-truth backbone, generated backbone, and generated
+text through matching **Overall**, **Nodes**, **States**, and **Edges** tabs. It
+then exports the five continuous criteria, the separate 1–5 text score, and
+the optional reason to CSV.
 
 Download each CSV before closing or reloading its tab. GitHub Pages does not
 store review inputs.
