@@ -1,0 +1,14 @@
+{
+  "completed": [
+    { "backbone_id": "bn_00025", "source_id": "wiki_00024", "judge_score_out_of_5": 5 },
+    { "backbone_id": "bn_00016", "source_id": "wiki_00015", "judge_score_out_of_5": 4 },
+    { "backbone_id": "bn_00041", "source_id": "wiki_00040", "judge_score_out_of_5": 4 },
+    { "backbone_id": "bn_00034", "source_id": "wiki_00033", "judge_score_out_of_5": 4 },
+    { "backbone_id": "bn_00050", "source_id": "wiki_00049", "judge_score_out_of_5": 4 },
+    { "backbone_id": "bn_00036", "source_id": "wiki_00035", "judge_score_out_of_5": 3 },
+    { "backbone_id": "bn_00037", "source_id": "wiki_00036", "judge_score_out_of_5": 3 },
+    { "backbone_id": "bn_00045", "source_id": "wiki_00044", "judge_score_out_of_5": 3 },
+    { "backbone_id": "bn_00046", "source_id": "wiki_00045", "judge_score_out_of_5": 3 },
+    { "backbone_id": "bn_00013", "source_id": "wiki_00012", "judge_score_out_of_5": 3 }
+  ]
+}

@@ -74,16 +74,16 @@
       "child": "economic output"
     },
     {
+      "parent": "knowledge and farming capacity",
+      "child": "economic output"
+    },
+    {
       "parent": "food and health crisis",
       "child": "public perception"
     },
     {
       "parent": "institutional reform stance",
       "child": "social deprivation"
-    },
-    {
-      "parent": "knowledge and farming capacity",
-      "child": "economic output"
     },
     {
       "parent": "social deprivation",
@@ -168,6 +168,27 @@
       ]
     },
     {
+      "parent": "knowledge and farming capacity",
+      "child": "economic output",
+      "matrix": [
+        [
+          0.4857,
+          0.5333,
+          0.2
+        ],
+        [
+          0.4286,
+          0.4,
+          0.3
+        ],
+        [
+          0.0857,
+          0.0667,
+          0.5
+        ]
+      ]
+    },
+    {
       "parent": "food and health crisis",
       "child": "public perception",
       "matrix": [
@@ -220,27 +241,6 @@
           0.0294,
           0.0435,
           0.25
-        ]
-      ]
-    },
-    {
-      "parent": "knowledge and farming capacity",
-      "child": "economic output",
-      "matrix": [
-        [
-          0.4857,
-          0.5333,
-          0.2
-        ],
-        [
-          0.4286,
-          0.4,
-          0.3
-        ],
-        [
-          0.0857,
-          0.0667,
-          0.5
         ]
       ]
     },

@@ -4,30 +4,8 @@
   "subgraph_count": 5,
   "hierarchy_levels": 1,
   "judgment": {
-    "criteria": {
-      "nodes": {
-        "score": 0.79,
-        "reason": "The generated text retains Galicia, poverty, landowners, government, population growth, small peasant plots, education, agricultural techniques, malnutrition, famine, disease, productivity, and British Ireland. It omits the full Kingdom of Galicia and Lodomeria designation, Austrian identification, Poles as the nickname's users, and the specific Polish expressions and nickname."
-      },
-      "states": {
-        "score": 0.7,
-        "reason": "Severe and widespread poverty, chronic malnutrition, recurring famines, inadequate education, and primitive agriculture are preserved. The late-19th-century emphasis is absent, as are the alternative proverbial labels and the nickname's 'naked' and 'hungry' meanings. Subsistence-level productivity and living close to subsistence are added descriptions not explicitly present in the original."
-      },
-      "edges": {
-        "score": 0.8,
-        "reason": "Most explanatory connections survive: reform neglect, population pressure, educational and agricultural limitations, and food and health crises contribute to deprivation or reduced productivity. However, population growth causing small plots becomes population growth and small plots jointly intensifying deprivation. The generated text also adds a direct connection from malnutrition, famine, and disease to outside perceptions, while omitting Poles' distortion of the province's name through specific wordplay."
-      },
-      "relationship_type": {
-        "score": 0.79,
-        "reason": "The generated text generally preserves the causal explanation of poverty and the proverbial and comparative character of its public reputation. However, the original's vicious circle is rendered partly as conditions being 'intertwined' or 'accompanied,' weakening explicit feedback. Conversely, it asserts that health and food crises 'contributed directly' to outside perceptions, a causal claim the original does not make. The Ireland comparison also shifts from poverty and regular famines to a broader symbol of rural deprivation."
-      },
-      "overall_similarity": {
-        "score": 0.78,
-        "reason": "The generated text faithfully conveys the main account of severe Galician poverty and its agricultural, demographic, institutional, and health-related causes. It loses important historical specificity, especially Austrian rule, the late-19th-century emphasis, and the detailed Polish proverbial expressions and wordplay. Its expanded discussion of subsistence and outside perceptions introduces interpretive material beyond the original."
-      }
-    },
-    "score_out_of_5": 3.86,
-    "overall_reason": "The central socioeconomic explanation is substantially preserved, but historical and linguistic details are compressed away. Some original causal structure is weakened, and the generated text adds unsupported specificity about subsistence and the formation of outside perceptions."
+    "score": 3,
+    "reason": "The text accurately reflects the graph’s states and dependency directions, but repeatedly strengthens probabilistic associations into causal claims: agricultural weakness 'deepened' hardship, and deprivation and health crises 'shaped,' 'inspired,' or 'prompted' public perceptions. The graph does not explicitly establish causation."
   },
   "structural_metrics": {
     "nodes": {

@@ -77,14 +77,6 @@
   ],
   "edges": [
     {
-      "parent": "animal reservoir",
-      "child": "transmission pathway"
-    },
-    {
-      "parent": "animal reservoir",
-      "child": "viral agent"
-    },
-    {
       "parent": "climate driver",
       "child": "ecological condition"
     },
@@ -95,6 +87,14 @@
     {
       "parent": "ecological condition",
       "child": "rodent population condition"
+    },
+    {
+      "parent": "animal reservoir",
+      "child": "viral agent"
+    },
+    {
+      "parent": "animal reservoir",
+      "child": "transmission pathway"
     },
     {
       "parent": "rodent population condition",
@@ -118,48 +118,6 @@
     }
   ],
   "cpds": [
-    {
-      "parent": "animal reservoir",
-      "child": "transmission pathway",
-      "matrix": [
-        [
-          0.7778,
-          0.6857,
-          0.15
-        ],
-        [
-          0.0889,
-          0.0857,
-          0.1
-        ],
-        [
-          0.1333,
-          0.2286,
-          0.75
-        ]
-      ]
-    },
-    {
-      "parent": "animal reservoir",
-      "child": "viral agent",
-      "matrix": [
-        [
-          0.6667,
-          0.5143,
-          0.15
-        ],
-        [
-          0.2667,
-          0.4,
-          0.1
-        ],
-        [
-          0.0667,
-          0.0857,
-          0.75
-        ]
-      ]
-    },
     {
       "parent": "climate driver",
       "child": "ecological condition",
@@ -226,6 +184,48 @@
           0.3125,
           0.1042,
           0.65
+        ]
+      ]
+    },
+    {
+      "parent": "animal reservoir",
+      "child": "viral agent",
+      "matrix": [
+        [
+          0.6667,
+          0.5143,
+          0.15
+        ],
+        [
+          0.2667,
+          0.4,
+          0.1
+        ],
+        [
+          0.0667,
+          0.0857,
+          0.75
+        ]
+      ]
+    },
+    {
+      "parent": "animal reservoir",
+      "child": "transmission pathway",
+      "matrix": [
+        [
+          0.7778,
+          0.6857,
+          0.15
+        ],
+        [
+          0.0889,
+          0.0857,
+          0.1
+        ],
+        [
+          0.1333,
+          0.2286,
+          0.75
         ]
       ]
     },

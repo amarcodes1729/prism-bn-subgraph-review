@@ -1,7 +1,0 @@
-Ring modulation is a signal-processing method related to amplitude modulation and frequency mixing. It combines two signals by multiplying an input or modulator signal with a carrier. Unlike amplitude modulation using a positive-shifted modulator signal, ring modulation can use an unshifted modulator signal, producing an audibly different result.
-
-For example, combining a 1,500 Hz signal with a 400 Hz signal produces sum and difference components: a 1,900 Hz sine wave and a 1,100 Hz sine wave. With simple sine waves, these form a simple two-sideband output. Because the resulting components need not be harmonically related, the output can sound quite different from the original signals.
-
-The waveform of the carrier, input, or modulator also shapes the result. A sine wave has a single sine component, while a square wave contains significant overtones; more generally, complicated waveforms can contain many components. Each harmonic can generate its own pair of sum and difference sidebands. These additional sidebands influence whether the output components are harmonically related and therefore affect the overall auditory character.
-
-A ring modulator may be implemented as a diode ring. Although its circuit can resemble a bridge rectifier, the polarization pattern differs: all four diodes in the ring are oriented in the same direction rather than following the usual bridge-rectifier pattern. This circuit implementation supports the signal-combination operation characteristic of ring modulation.

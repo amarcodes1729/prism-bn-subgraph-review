@@ -4,30 +4,8 @@
   "subgraph_count": 42,
   "hierarchy_levels": 2,
   "judgment": {
-    "criteria": {
-      "nodes": {
-        "score": 0.85,
-        "reason": "The generated text retains most technical concepts, including bandwidth, sample rate, Nyquist frequency, bit depth, conversion circuitry, flicker noise, aliasing, jitter, quantization noise, filtering, saturation, and speed variation. It omits musicians and listeners, their superiority debate, and the original's explicit coverage of storage and playback alongside recording."
-      },
-      "states": {
-        "score": 0.69,
-        "reason": "The generated text lists linearity, noise, and distortion but omits the claimed digital advantages of excellent linearity specifically in the audible band and low noise and distortion. It also omits the explicit absence of digital error mechanisms in analog systems and does not preserve the assignment of more transparent filtering to digital systems and harmonic saturation and speed variations to analog systems."
-      },
-      "edges": {
-        "score": 0.76,
-        "reason": "The principal dependencies are preserved: digital bandwidth on sample rate/Nyquist frequency, analog bandwidth on circuit capabilities, digital signal-to-noise performance on bit depth and conversion noise, and analog noise on flicker noise and medium imperfections. However, the advocacy connections are missing, and system-specific features lose their digital or analog attribution. The generated text additionally links those features broadly to bandwidth, signal-to-noise ratio, and other metrics, connections not expressly made in the original."
-      },
-      "relationship_type": {
-        "score": 0.72,
-        "reason": "Most technical dependencies retain their original explanatory character. However, the original frames several advantages as arguments offered by analog or digital advocates, whereas the generated text replaces that framing with a neutral technical inventory. It also strengthens the conditional statement that digital S/N 'may be limited' by bit depth into an unqualified dependency and introduces possible distortion effects for analog noise sources that the original identifies only as noise sources."
-      },
-      "overall_similarity": {
-        "score": 0.76,
-        "reason": "The generated text faithfully conveys much of the technical comparison, especially bandwidth and noise determinants. It is less faithful to the original's scope and balance because it removes the superiority debate, omits the stated digital performance advantages and analog absence-of-errors argument, and blurs which system-specific characteristics belong to which technique."
-      }
-    },
-    "score_out_of_5": 3.78,
-    "overall_reason": "This is a substantially accurate technical summary, but not a complete semantic round trip. The core engineering dependencies survive, while important comparative claims, advocacy framing, scope details, and technique-specific assignments are lost or generalized."
+    "score": 4,
+    "reason": "The text accurately covers the recording techniques, determinants, error mechanisms, and performance dimensions, but saying noise sources 'produce' distortion and digital mechanisms 'result in' degradation asserts causation beyond the graph's conditional dependencies."
   },
   "structural_metrics": {
     "nodes": {

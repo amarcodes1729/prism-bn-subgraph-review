@@ -4,30 +4,8 @@
   "subgraph_count": 139,
   "hierarchy_levels": 2,
   "judgment": {
-    "criteria": {
-      "nodes": {
-        "score": 0.84,
-        "reason": "Preserves most core concepts, including menstrual products, education, hygiene infrastructure, stigma, health consequences, school/work absence, justice issues, legislation, and advocacy. Omits the American Medical Women's Association, the approximately 500 million affected women and girls, and the explicit worldwide scope."
-      },
-      "states": {
-        "score": 0.77,
-        "reason": "Retains inadequate access, unsafe period management, fear of shame, infections, reproductive-tract complications, and missed school/work days. However, it omits the original's approximate 500 million figure and women-and-girls population, and does not preserve the stated diversity of legislation and perceptions around the world."
-      },
-      "edges": {
-        "score": 0.78,
-        "reason": "Correctly connects period poverty with inadequate products, education, water, and sanitation, and connects menstrual-management difficulties with health and attendance consequences. However, it adds connections from public perceptions to policy responses and from legislation to specific access provisions that the original does not state. It also omits the Association's definitional attribution and the affected-population estimate."
-      },
-      "relationship_type": {
-        "score": 0.77,
-        "reason": "Generally preserves the original's possibility-based health consequences and the intersection with gender and economic justice. However, it turns listed advocacy avenues into mechanisms for influencing public understanding, adds a perceptions-to-policy relationship, and introduces prescriptive claims that addressing period poverty requires responsive legislation and advocacy. The original describes these topics without asserting those dependencies or requirements."
-      },
-      "overall_similarity": {
-        "score": 0.79,
-        "reason": "The generated text faithfully captures the broad definition, infrastructure needs, health and social harms, and justice and advocacy themes. Its fidelity is reduced by missing the prevalence estimate, affected demographic, named definitional source, and worldwide variation, while expanding the discussion into unsupported policy relationships and recommendations."
-      }
-    },
-    "score_out_of_5": 3.95,
-    "overall_reason": "The central account of period poverty is substantially preserved, but important factual anchors are omitted and the generated text adds a stronger policy-and-advocacy framework than the original supports."
+    "score": 4,
+    "reason": "The text largely matches the graph’s concepts and dependency directions, including advocacy–perception–policy links and unsafe management’s associations with attendance, health, and psychological outcomes. However, claims that legislation supports access and that stigma creates barriers imply causal effects, whereas the graph specifies conditional dependencies without explicit causation."
   },
   "structural_metrics": {
     "nodes": {

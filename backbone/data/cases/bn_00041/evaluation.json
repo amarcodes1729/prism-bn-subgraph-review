@@ -4,30 +4,8 @@
   "subgraph_count": 12,
   "hierarchy_levels": 1,
   "judgment": {
-    "criteria": {
-      "nodes": {
-        "score": 0.8,
-        "reason": "The generated text retains the strategy, Xi Jinping, Li Keqiang, the Chinese government, CCP, local governments, villages and households, World Bank criteria, and development goals. It omits Xi's General Secretary role, Li's premier role and government report, and introduces China's own poverty definition and a comparison of assessment frameworks absent from the original."
-      },
-      "states": {
-        "score": 0.6,
-        "reason": "The 2014 adoption date and targeted assistance measures are preserved. However, the generated text omits the 2020 elimination date, March 2014 report timing, and moderately prosperous society's status as the first Four Comprehensives objective. It replaces the original's World Bank-defined absolute-poverty elimination with elimination under a Chinese framework."
-      },
-      "edges": {
-        "score": 0.68,
-        "reason": "Connections among targeted assistance, local authorities, resource consolidation, villages and households, and broader development goals remain. But Xi's explicit authorship of the concept becomes mere association, Li's authorship of the quoted recommendations disappears, and the elimination claim is connected to a Chinese framework rather than World Bank criteria. The government's explicit responsibility for adoption is also less clearly stated."
-      },
-      "relationship_type": {
-        "score": 0.65,
-        "reason": "Official adoption and local authorities' expected actions largely retain their original character. However, Xi's necessary condition—that China cannot become moderately prosperous without solving rural poverty—is weakened into a general development connection. The strategy's contribution to the national strategy becomes a stronger claim that the national strategy 'centered on' it, and the categorical elimination statement becomes a qualified declaration with an invented assessment distinction."
-      },
-      "overall_similarity": {
-        "score": 0.66,
-        "reason": "The generated text preserves the broad policy subject, implementation measures, adoption year, and links to political-development goals. Nevertheless, it materially alters the poverty-elimination benchmark, omits the elimination year and important speaker attributions, and weakens the rural-poverty prerequisite and agenda hierarchy."
-      }
-    },
-    "score_out_of_5": 3.39,
-    "overall_reason": "This is a recognizable thematic reconstruction, but not a fully faithful factual round trip. Its strongest coverage is of targeted local assistance and broad development goals; its most consequential divergence is replacing the original's 2020 World Bank-defined elimination claim with an undated Chinese-framework declaration and an unsupported comparison of definitions."
+    "score": 4,
+    "reason": "The text largely matches the graph’s actors, adoption status, implementation actions, measurement criteria, and development objectives. However, the claimed intended progression from identifying poor villages and households to eliminating absolute poverty adds a temporal and purposive relationship not specified by the graph."
   },
   "structural_metrics": {
     "nodes": {

@@ -7,6 +7,7 @@ const MODEL_SPECS = [
   { key: "gpt6_astra", label: "GPT-6 Astra", short_label: "GPT-6 Astra", file: "data/gpt6_astra.json" },
 ];
 const DATASET_FILE = "data/prism_bn.json";
+const TOP_SAMPLE_COUNT = 10;
 const sourceRecords = new Map();
 const predictionMaps = new Map();
 let sharedSourceIds = [];
@@ -84,6 +85,50 @@ async function loadBundledData() {
     }
   }
   if (!sharedSourceIds.length) throw new Error("No sample is shared by all four model outputs.");
+  sharedSourceIds.sort((left, right) => {
+    const difference = sampleAgreement(right) - sampleAgreement(left);
+    return difference || left.localeCompare(right);
+  });
+  sharedSourceIds = sharedSourceIds.slice(0, TOP_SAMPLE_COUNT);
+}
+
+function normalized(value) {
+  return String(value).trim().toLocaleLowerCase().replace(/\s+/g, " ");
+}
+
+function graphParts(record) {
+  const nodes = new Set();
+  const states = new Set();
+  const edges = new Set();
+  for (const [name, info] of Object.entries(record.nodes || {})) {
+    const node = normalized(name);
+    nodes.add(node);
+    for (const state of info?.states || []) states.add(`${node}\u0000${normalized(state)}`);
+    for (const parent of Object.keys(info?.parents || {})) {
+      edges.add(`${normalized(parent)}\u0000${node}`);
+    }
+  }
+  return [nodes, states, edges];
+}
+
+function f1(reference, prediction) {
+  if (!reference.size && !prediction.size) return 1;
+  if (!reference.size || !prediction.size) return 0;
+  let common = 0;
+  for (const item of prediction) if (reference.has(item)) common += 1;
+  return 2 * common / (reference.size + prediction.size);
+}
+
+function sampleAgreement(id) {
+  const reference = graphParts(sourceRecords.get(id));
+  let total = 0;
+  for (const spec of MODEL_SPECS) {
+    const prediction = graphParts(predictionMaps.get(spec.key).get(id).record);
+    for (let part = 0; part < reference.length; part += 1) {
+      total += f1(reference[part], prediction[part]);
+    }
+  }
+  return total / (MODEL_SPECS.length * reference.length);
 }
 
 function recordToGraph(record) {

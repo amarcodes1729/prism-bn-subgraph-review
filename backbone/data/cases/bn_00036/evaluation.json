@@ -4,30 +4,8 @@
   "subgraph_count": 14,
   "hierarchy_levels": 1,
   "judgment": {
-    "criteria": {
-      "nodes": {
-        "score": 0.92,
-        "reason": "The generated text includes most central entities and concepts: historical Luddites, neo-Luddites, the 1811–1817 period, non-affiliated groups, technological risks, the four practices, related movements, and precautionary safety requirements. It omits the alternative name 'new Luddism' and the English identity of the historical Luddites."
-      },
-      "states": {
-        "score": 0.73,
-        "reason": "The historical dates, economic concerns, modern distrust, primitive-technology aim, and resistance practices are represented. However, the generally pejorative status of 'Luddite' is missing, the historical-versus-modern contrast loses the explicit broader and holistic character of modern distrust, and the requirement covering all new technologies is weakened into an optional precautionary position."
-      },
-      "edges": {
-        "score": 0.64,
-        "reason": "Several core connections survive, including industrialization with economic concerns and technological impacts with individuals, communities, and the environment. But the explicit naming relationship to the English Luddites is absent. The generated text adds unsupported links assigning sabotage most strongly to historical Luddites and simple living to technophobic people, and invents dependencies between ideology, organizational form, and chosen practices. The original instead assigns all four practices directly to neo-Luddites."
-      },
-      "relationship_type": {
-        "score": 0.55,
-        "reason": "The original says Neo-Luddism stipulates precaution for all new technologies and insists on demonstrated safety; the generated text says concerns 'can support' precaution and aims 'may involve' safe adoption. The original's categorical description of a leaderless movement becomes something contemporary activity 'often' resembles. Connections with other movements become overlap with 'distinct alternatives,' while unsupported comparative claims such as 'most strongly' and 'more often' alter the strength and kind of practice associations."
-      },
-      "overall_similarity": {
-        "score": 0.67,
-        "reason": "The generated text preserves the broad subject, historical period, major technological concerns, related movements, and repertoire of resistance. However, it recasts a specific account of Neo-Luddism into a generalized taxonomy of risks, ideologies, and organizational behavior, introducing unsupported distinctions and weakening the defining precautionary requirement. Missing pejorative usage and naming history further reduce fidelity."
-      }
-    },
-    "score_out_of_5": 3.51,
-    "overall_reason": "There is substantial vocabulary and topic coverage, but important relationships are redistributed or invented. In particular, resistance practices are reassigned among historical Luddites, neo-Luddites, and technophobic people, and Neo-Luddism's explicit universal safety requirement becomes a possible response to technological concerns."
+    "score": 3,
+    "reason": "The resistance practices, risk categories, and ideology–stance associations largely match the graph. However, the graph does not establish neo-Luddism as Luddism’s successor or link actor groups to specific historical periods. The text also adds causal claims, including stances leading to outcome targets, whereas the graph makes stance and outcome target separately dependent on ideology."
   },
   "structural_metrics": {
     "nodes": {

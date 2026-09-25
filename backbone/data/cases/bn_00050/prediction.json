@@ -11,10 +11,24 @@
       ]
     },
     {
-      "node": "attendance outcome",
+      "node": "public perception",
       "states": [
-        "missed school days",
-        "missed work days",
+        "period poverty perceptions",
+        "none"
+      ]
+    },
+    {
+      "node": "structural justice issue",
+      "states": [
+        "gender inequality",
+        "economic injustice",
+        "none"
+      ]
+    },
+    {
+      "node": "policy response",
+      "states": [
+        "period poverty legislation",
         "none"
       ]
     },
@@ -37,49 +51,11 @@
       ]
     },
     {
-      "node": "menstrual management condition",
-      "states": [
-        "unsafe period management",
-        "safe period management",
-        "none"
-      ]
-    },
-    {
       "node": "menstrual product access",
       "states": [
         "lack of menstrual products",
         "inadequate access to sanitary products",
         "access to proper menstrual products",
-        "none"
-      ]
-    },
-    {
-      "node": "physical health outcome",
-      "states": [
-        "infections",
-        "reproductive tract complications",
-        "none"
-      ]
-    },
-    {
-      "node": "policy response",
-      "states": [
-        "period poverty legislation",
-        "none"
-      ]
-    },
-    {
-      "node": "psychological outcome",
-      "states": [
-        "negative psychological consequences",
-        "shame",
-        "none"
-      ]
-    },
-    {
-      "node": "public perception",
-      "states": [
-        "period poverty perceptions",
         "none"
       ]
     },
@@ -92,10 +68,34 @@
       ]
     },
     {
-      "node": "structural justice issue",
+      "node": "menstrual management condition",
       "states": [
-        "gender inequality",
-        "economic injustice",
+        "unsafe period management",
+        "safe period management",
+        "none"
+      ]
+    },
+    {
+      "node": "attendance outcome",
+      "states": [
+        "missed school days",
+        "missed work days",
+        "none"
+      ]
+    },
+    {
+      "node": "physical health outcome",
+      "states": [
+        "infections",
+        "reproductive tract complications",
+        "none"
+      ]
+    },
+    {
+      "node": "psychological outcome",
+      "states": [
+        "negative psychological consequences",
+        "shame",
         "none"
       ]
     }

@@ -183,7 +183,7 @@ function setTab(tab) {
 }
 
 async function loadData() {
-  const summary = await (await fetch("data/summary.json")).json();
+  const summary = await (await fetch("data/top_cases.json")).json();
   state.cases = summary.completed || [];
   const sourceText = await (await fetch("data/source_backbones.jsonl")).text();
   for (const line of sourceText.split(/\r?\n/)) {

@@ -4,30 +4,8 @@
   "subgraph_count": 56,
   "hierarchy_levels": 2,
   "judgment": {
-    "criteria": {
-      "nodes": {
-        "score": 0.9,
-        "reason": "The generated text retains nearly all named entities and major concepts, including World3, POLES, population growth, economic activity, technologies, the Paris Agreement, the 2018 conference, the IPCC report, adaptation plans, nationally determined contributions, energy supply, and carbon dioxide removal. It omits countries as explicit decision-making actors and the concept of assessing long-term effectiveness, while adding a discussion of projected outcomes."
-      },
-      "states": {
-        "score": 0.75,
-        "reason": "National, regional, and global scales and the three principal driving parameters are preserved. However, the generated text omits the original's characterization of pathways as more concrete and action-oriented and the explicit observation that scenarios and pathways are often used interchangeably. It also treats warming of 1.5 °C as a projected-outcome category, whereas the original explicitly presents that value in the report's title."
-      },
-      "edges": {
-        "score": 0.69,
-        "reason": "The generated text preserves the broad connections between driving forces, scenarios, models, climate policy, and mitigation portfolios. It replaces several specific links with general associations: models quantify parameter effects in the original, countries use studies to understand decisions, and the IPCC report specifically supplied key scientific input to the 2018 conference. The generated text also adds links between projected outcomes, population conditions, and mitigation and adaptation that the original does not state."
-      },
-      "relationship_type": {
-        "score": 0.68,
-        "reason": "Specific functional and evidentiary relationships become weaker and less precise: 'quantify the effects' becomes 'can support this work,' and international goals being 'based on studying these scenarios' becomes informing associated processes. The report's role as a 'key scientific input' to a particular conference is blurred into a list of governance and scientific elements. The added contrast 'rather than adaptation' makes an exclusion explicit that the original does not assert."
-      },
-      "overall_similarity": {
-        "score": 0.73,
-        "reason": "The generated text preserves the topic, most terminology, geographic scope, principal drivers, and policy relevance. It is less faithful to the original's explanatory structure and important details, especially the scenarios/pathways distinction, long-term effectiveness, countries' decision-making use, model quantification, and the specific report-to-conference relationship. Its final discussion of projected outcomes introduces unsupported elaboration."
-      }
-    },
-    "score_out_of_5": 3.75,
-    "overall_reason": "This is a recognizable but generalized paraphrase with strong entity coverage. It loses several defining distinctions and precise relationships, and adds an outcome-oriented interpretation not established by the original."
+    "score": 4,
+    "reason": "The text accurately reflects the listed concepts and dependencies, including inputs to scenarios, governance and planning links, and mitigation components. However, it interprets the 1.5 °C outcome as pathways consistent with limiting warming, a constraint or goal not specified by the graph."
   },
   "structural_metrics": {
     "nodes": {
